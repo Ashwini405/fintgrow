@@ -164,14 +164,14 @@ export default function About() {
 
           {/* LEFT CONTENT */}
           <div>
-            <h2 className="text-4xl font-bold text-primary">About Fint</h2>
+            <h2 className="text-4xl font-bold text-primary">About Arvish Consulting</h2>
 
             <div className="about-indicator">
               <span></span>
             </div>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              <strong>Fint Solutions</strong> provides value-added innovative IT
+              <strong>Arvish Consulting</strong> provides value-added innovative IT
               and software solutions to help businesses save costs and improve
               their ROI.
             </p>

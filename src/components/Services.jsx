@@ -65,7 +65,7 @@ export default function Services() {
   <p className="text-slate-700 leading-relaxed mb-10">
     We provide awesome services for business growth to our clients.
     A keen focus on the realm of IT services, enriched with swift
-    competency building has allowed Fint to deliver large-scale
+    competency building has allowed Arvish Consulting to deliver large-scale
     projects across diverse geographies and business verticals.
   </p>
 

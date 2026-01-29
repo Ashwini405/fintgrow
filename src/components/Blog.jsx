@@ -6,7 +6,7 @@ const blogs = [
     id: 1,
     title: "LLM Poisoning - Part 2: Defense Strategies – Building Resilient AI",
     date: "Dec 18, 2025",
-    author: "Team Fint",
+    author: "Team Arvish Consulting",
     image:
       "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1200&auto=format&fit=crop",
   },
@@ -23,7 +23,7 @@ const blogs = [
     id: 3,
     title: "LLM Poisoning - Part 1: The Hidden Threat to AI Systems",
     date: "Oct 28, 2025",
-    author: "Team Fint",
+    author: "Team Arvish Consulting",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
   },
@@ -114,7 +114,7 @@ export default function Blog() {
           {/* Header */}
           <div className="text-center mb-20">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">
-              FINT – Techtalk – Blog
+              Arvish Consulting – Techtalk – Blog
             </h2>
             <div className="indicator">
               <span></span>

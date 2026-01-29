@@ -30,7 +30,7 @@ const Navbar = () => {
       { name: 'DevOps', link: '/solutions/devops' }
     ],
     'Insights': [
-      { name: 'FINT - Techtalk - Blog', link: '/insights/blog' }
+      { name: 'Arvish Consulting - Techtalk - Blog', link: '/insights/blog' }
     ],
     'Careers': [
       { name: 'What We Offer', link: '/careers/what-we-offer' },
@@ -71,7 +71,7 @@ const Navbar = () => {
                   <path d="M0,-4 L4,0 L0,4 L-4,0 Z" fill="#3b5998"/>
                 </g>
               </svg>
-              <span className="text-3xl font-bold text-[#1e2875] tracking-tight">FINT</span>
+              <span className="text-3xl font-bold text-[#1e2875] tracking-tight">ARVISH CONSULTING</span>
             </Link>
           </div>
 

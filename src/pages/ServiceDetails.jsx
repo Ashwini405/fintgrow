@@ -169,7 +169,7 @@ export default function ServiceDetails() {
                                 <div className="grid md:grid-cols-2 gap-16 items-start">
                                     <div className="text-slate-700 leading-relaxed space-y-6 animate-fadeInLeft">
                                         <p className="hover:text-slate-900 transition-colors duration-300">
-                                            At FINT, we leverage a <b class="hover:text-blue-700 transition-colors duration-200">robust, future-ready AI technology stack</b>
+                                            At Arvish Consulting, we leverage a <b class="hover:text-blue-700 transition-colors duration-200">robust, future-ready AI technology stack</b>
                                             that combines large language models, agentic AI frameworks, and
                                             enterprise-grade cloud infrastructure.
                                         </p>
@@ -352,7 +352,7 @@ export default function ServiceDetails() {
                                         </p>
 
                                         <p>
-                                            FINT partners with enterprises at every stage of their AI maturity.
+                                            Arvish Consulting partners with enterprises at every stage of their AI maturity.
                                             Whether you're experimenting with proof of concept or operationalizing
                                             AI across business units, our AI Maturity Framework helps assess
                                             readiness, define a roadmap, and drive measurable impact.
@@ -422,7 +422,7 @@ export default function ServiceDetails() {
                                         </p>
 
                                         <p>
-                                            At FINT, we integrate AI into the heart of Quality Engineering
+                                            At Arvish Consulting, we integrate AI into the heart of Quality Engineering
                                             to make software delivery faster, smarter, and more reliable.
                                         </p>
 
@@ -467,7 +467,7 @@ export default function ServiceDetails() {
                             <div className="max-w-6xl mx-auto">
                                 <div className="text-center mb-16 animate-fadeInUp">
                                     <h2 className="text-3xl font-bold text-blue-900 mb-4 hover:text-blue-700 transition-colors duration-300">
-                                        Why FINT For AI?
+                                        Why Arvish Consulting For AI?
                                     </h2>
                                     <div className="flex items-center justify-center gap-3">
                                         <span className="w-20 h-1 bg-green-200 rounded"></span>
@@ -1130,8 +1130,8 @@ export default function ServiceDetails() {
                                 />
 
                                 <p className="text-slate-700 leading-relaxed">
-                                    FINT's expertise in implementing CRM solutions is achieved through its technically skilled and certified professionals.
-                                    As your technology partner, FINT delivers Modern Workplace applications utilizing Dynamics CRM that accelerate
+                                    Arvish Consulting's expertise in implementing CRM solutions is achieved through its technically skilled and certified professionals.
+                                    As your technology partner, Arvish Consulting delivers Modern Workplace applications utilizing Dynamics CRM that accelerate
                                     business growth and faster ROI. Whether it is a single application or multiple applications, we have you covered
                                     with our expertise.
                                 </p>
@@ -1192,7 +1192,7 @@ export default function ServiceDetails() {
                                     </h2>
 
                                     <p>
-                                        FINT Solutions is a specialist technology success partner delivering strategic business outcomes.
+                                        Arvish Consulting Solutions is a specialist technology success partner delivering strategic business outcomes.
                                         We help organizations identify, build, implement, service and support Dynamics CRM solutions.
                                     </p>
 

@@ -26,7 +26,7 @@ export const CompanyOverview = () => {
         <h1 className="text-5xl font-bold text-slate-900 mb-8">Company Overview</h1>
         <div className="bg-white rounded-2xl shadow-xl p-10">
           <p className="text-xl text-slate-700 mb-6 leading-relaxed">
-            FINT is a leading technology services company specializing in digital transformation, 
+            ARVISH CONSULTING is a leading technology services company specializing in digital transformation, 
             enterprise solutions, and innovative technology implementations.
           </p>
           <p className="text-lg text-slate-600 mb-6">
@@ -85,7 +85,7 @@ export const Culture = () => {
         <h1 className="text-5xl font-bold text-slate-900 mb-8">Our Culture</h1>
         <div className="bg-white rounded-2xl shadow-xl p-10">
           <p className="text-xl text-slate-700 mb-8 leading-relaxed">
-            At FINT, we foster a culture of innovation, collaboration, and continuous growth. 
+            At ARVISH CONSULTING, we foster a culture of innovation, collaboration, and continuous growth. 
             Our team members are encouraged to think creatively, take ownership, and contribute 
             to meaningful projects that make a difference.
           </p>
@@ -121,7 +121,7 @@ export const Leaders = () => {
               <div className="p-6">
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Leader Name</h3>
                 <p className="text-lg text-blue-600 font-medium mb-3">Position Title</p>
-                <p className="text-slate-600">Brief description about the leader and their role at FINT.</p>
+                <p className="text-slate-600">Brief description about the leader and their role at ARVISH CONSULTING.</p>
               </div>
             </div>
           ))}

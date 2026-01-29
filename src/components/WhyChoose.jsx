@@ -157,7 +157,7 @@ export default function WhyChoose() {
             </div>
 
             <p className="text-gray-700 mb-10">
-              Fint helps you realize your vision so you can focus on what matters.
+              Arvish Consulting helps you realize your vision so you can focus on what matters.
               We build secure, scalable, future-ready digital solutions.
             </p>
 

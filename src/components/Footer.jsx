@@ -294,7 +294,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="text-center mt-10 pt-6 border-t border-gray-300">
         <p className="text-xs text-gray-600">
-          Copyright © 2025 <span className="font-semibold">Fint Solutions.</span> All Rights Reserved
+          Copyright © 2025 <span className="font-semibold">Arvish Consulting.</span> All Rights Reserved
         </p>
       </div>
     </footer>
