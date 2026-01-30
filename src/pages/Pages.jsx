@@ -501,27 +501,131 @@ export const CurrentOpenings = () => {
 
 export const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      <div className="max-w-4xl mx-auto px-6 py-20">
-        <h1 className="text-5xl font-bold text-slate-900 mb-12 text-center">Contact Us</h1>
-        <div className="bg-white rounded-2xl shadow-xl p-10">
-          <form className="space-y-6">
-            <div>
-              <label className="block text-slate-700 font-medium mb-2">Name</label>
-              <input type="text" className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200/30 rounded-full animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-48 h-48 bg-purple-200/20 rounded-full animate-bounce" style={{animationDuration: '3s'}}></div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 py-20 relative z-10">
+        <div className="text-center mb-16">
+          <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">Get In Touch</h1>
+          <p className="text-xl text-slate-600 max-w-2xl mx-auto">Ready to transform your business? Let's discuss how we can help you achieve your goals.</p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12">
+          {/* Contact Form */}
+          <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/20">
+            <h2 className="text-3xl font-bold text-slate-900 mb-8">Send us a Message</h2>
+            <form className="space-y-6">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-slate-700 font-semibold mb-2">First Name</label>
+                  <input type="text" className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="John" />
+                </div>
+                <div>
+                  <label className="block text-slate-700 font-semibold mb-2">Last Name</label>
+                  <input type="text" className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="Doe" />
+                </div>
+              </div>
+              <div>
+                <label className="block text-slate-700 font-semibold mb-2">Email Address</label>
+                <input type="email" className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="john@company.com" />
+              </div>
+              <div>
+                <label className="block text-slate-700 font-semibold mb-2">Company</label>
+                <input type="text" className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all" placeholder="Your Company" />
+              </div>
+              <div>
+                <label className="block text-slate-700 font-semibold mb-2">Service Interest</label>
+                <select className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                  <option>Select a Service</option>
+                  <option>Artificial Intelligence</option>
+                  <option>Digital Experience</option>
+                  <option>Data Analytics</option>
+                  <option>Enterprise Applications</option>
+                  <option>Cloud Operations</option>
+                  <option>Process Automation</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-slate-700 font-semibold mb-2">Message</label>
+                <textarea rows="4" className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all resize-none" placeholder="Tell us about your project..."></textarea>
+              </div>
+              <button type="submit" className="group w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                <span className="flex items-center justify-center gap-2">
+                  Send Message
+                  <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin group-hover:animate-pulse"></div>
+                </span>
+              </button>
+            </form>
+          </div>
+
+          {/* Contact Info */}
+          <div className="space-y-8">
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/20">
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Contact Information</h2>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span className="text-blue-600 text-xl">📍</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900 mb-1">Office Address</h3>
+                    <p className="text-slate-600">123 Business District<br />Hyderabad, Telangana 500001<br />India</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                    <span className="text-green-600 text-xl">📞</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900 mb-1">Phone</h3>
+                    <p className="text-slate-600">+91 40 1234 5678<br />+91 98765 43210</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                    <span className="text-purple-600 text-xl">✉️</span>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-slate-900 mb-1">Email</h3>
+                    <p className="text-slate-600">info@arvishconsulting.com<br />sales@arvishconsulting.com</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div>
-              <label className="block text-slate-700 font-medium mb-2">Email</label>
-              <input type="email" className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+
+            <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/20">
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">Business Hours</h3>
+              <div className="space-y-2 text-slate-600">
+                <div className="flex justify-between">
+                  <span>Monday - Friday</span>
+                  <span className="font-semibold">9:00 AM - 6:00 PM</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Saturday</span>
+                  <span className="font-semibold">10:00 AM - 4:00 PM</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Sunday</span>
+                  <span className="font-semibold text-red-500">Closed</span>
+                </div>
+              </div>
             </div>
-            <div>
-              <label className="block text-slate-700 font-medium mb-2">Message</label>
-              <textarea rows="5" className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+
+            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
+              <div className="flex gap-4">
+                {['LinkedIn', 'Twitter', 'Facebook', 'Instagram'].map((social, i) => (
+                  <div key={i} className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all cursor-pointer transform hover:scale-110">
+                    <span className="text-sm font-bold">{social[0]}</span>
+                  </div>
+                ))}
+              </div>
             </div>
-            <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-lg transition-colors">
-              Send Message
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
