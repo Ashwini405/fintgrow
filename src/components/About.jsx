@@ -1,254 +1,332 @@
+import { useState, useEffect } from 'react';
+
 export default function About() {
+  const [hoveredFeature, setHoveredFeature] = useState(null);
+  
+  // Animated background dots
+  const [dots, setDots] = useState([]);
+
+  useEffect(() => {
+    // Generate random dots for background
+    const dotsArray = Array.from({ length: 40 }, (_, i) => ({
+      id: i,
+      size: Math.random() * 4 + 1,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      delay: Math.random() * 5,
+      duration: Math.random() * 10 + 10
+    }));
+    setDots(dotsArray);
+  }, []);
+
+  const features = [
+    { 
+      title: "Operational Excellence", 
+      icon: "🚀",
+      description: "Streamlined processes for maximum efficiency"
+    },
+    { 
+      title: "Actionable Insights", 
+      icon: "📊",
+      description: "Data-driven visibility for informed decisions"
+    },
+    { 
+      title: "Customer Excellence", 
+      icon: "⭐",
+      description: "Exceptional experiences at every touchpoint"
+    },
+    { 
+      title: "Quality Development", 
+      icon: "💻",
+      description: "High-quality, scalable software solutions"
+    },
+    { 
+      title: "Modern Infrastructure", 
+      icon: "🏗️",
+      description: "Integrated, future-ready IT infrastructure"
+    },
+    { 
+      title: "Compliant Processes", 
+      icon: "✅",
+      description: "CMMI compliant systems & methodologies"
+    }
+  ];
+
   return (
     <>
-      {/* ================= INTERNAL CSS ================= */}
-      <style>{`
-        /* -------- Heading Indicator -------- */
-        @keyframes moveDot {
-          0% { left: 0%; }
-          50% { left: 70%; }
-          100% { left: 0%; }
+      <style jsx global>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-20px); }
         }
 
-        .about-indicator {
-          position: relative;
-          width: 120px;
-          height: 6px;
-          background: #cceedd;
-          border-radius: 999px;
-          margin: 14px 0 28px;
+        @keyframes pulse {
+          0%, 100% { opacity: 0.1; }
+          50% { opacity: 0.3; }
         }
 
-        .about-indicator span {
-          position: absolute;
-          top: -4px;
-          width: 14px;
-          height: 14px;
-          background: #e11d48;
-          border-radius: 50%;
-          animation: moveDot 4s ease-in-out infinite;
-        }
-
-        /* -------- Orbit Wrapper -------- */
-        .orbit-wrapper {
-          position: relative;
-          width: 500px;
-          height: 500px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        /* -------- Dot Rings -------- */
-        .dot-ring {
-          position: absolute;
-          inset: 0;
-          border-radius: 50%;
-          animation: rotateSlow 36s linear infinite;
-        }
-
-        .dot-ring.inner {
-          inset: 40px;
-          animation: rotateFast 22s linear infinite reverse;
-        }
-
-        @keyframes rotateSlow {
+        @keyframes spin-slow {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
 
-        @keyframes rotateFast {
+        @keyframes spin-reverse {
           from { transform: rotate(360deg); }
           to { transform: rotate(0deg); }
         }
 
-        .dot {
-          position: absolute;
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          opacity: 0.9;
+        @keyframes shimmer {
+          0% { background-position: -1000px 0; }
+          100% { background-position: 1000px 0; }
         }
 
-        .green { background: #22c55e; }
-        .blue { background: #3b82f6; }
-        .purple { background: #a855f7; }
-
-        .d1 { top: 0; left: 50%; transform: translateX(-50%); }
-        .d2 { right: 0; top: 50%; transform: translateY(-50%); }
-        .d3 { bottom: 0; left: 50%; transform: translateX(-50%); }
-        .d4 { left: 0; top: 50%; transform: translateY(-50%); }
-        .d5 { top: 18%; left: 18%; }
-        .d6 { bottom: 18%; right: 18%; }
-
-        /* -------- Center Image -------- */
-        .center-image {
-          width: 260px;
-          z-index: 3;
-          animation: floatMain 7s ease-in-out infinite;
+        @keyframes gradient-shift {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
         }
 
-        @keyframes floatMain {
-          0% { transform: translateY(0); }
-          50% { transform: translateY(-14px); }
-          100% { transform: translateY(0); }
+        .animate-float {
+          animation: float 6s ease-in-out infinite;
         }
 
-        /* -------- Static Icons -------- */
-        .icon {
-          position: absolute;
-          width: 56px;
-          height: 56px;
-          background: white;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 10px 22px rgba(0,0,0,0.08);
-          z-index: 2;
+        .animate-pulse-slow {
+          animation: pulse 4s ease-in-out infinite;
         }
 
-        .icon img {
-          width: 30px;
-          height: 30px;
+        .animate-spin-slow {
+          animation: spin-slow 40s linear infinite;
         }
 
-        .icon.cloud { top: 40px; left: 140px; }
-        .icon.globe { top: 20px; right: 120px; }
-        .icon.mail { right: 30px; top: 50%; transform: translateY(-50%); }
-        .icon.code { left: 40px; bottom: 140px; }
-        .icon.analytics { bottom: 30px; left: 50%; transform: translateX(-50%); }
-        .icon.search { bottom: 80px; right: 100px; }
-
-        /* -------- Feature Boxes -------- */
-        .feature-grid {
-          display: grid;
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-          gap: 18px;
-          margin-top: 40px;
+        .animate-spin-reverse {
+          animation: spin-reverse 30s linear infinite;
         }
 
-        .feature-box {
-          background: white;
-          padding: 14px 18px;
-          border-radius: 8px;
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-          font-weight: 600;
-          color: #64748b;
-          transition: all 0.35s ease;
-          cursor: pointer;
+        .animate-shimmer {
+          animation: shimmer 2s infinite linear;
+          background: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+          background-size: 1000px 100%;
         }
 
-        .feature-box:hover {
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient-shift 8s ease infinite;
+        }
+
+        .hover-lift {
+          transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .hover-scale {
+          transition: transform 0.3s ease;
+        }
+
+        .hover-scale:hover {
+          transform: scale(1.05);
+        }
+
+        .hover-glow {
+          transition: all 0.3s ease;
+        }
+
+        .hover-glow:hover {
+          box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background: #f1f5f9;
+          border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
           background: linear-gradient(135deg, #22c1dc, #2dd4bf);
-          color: white;
-          transform: translateY(-3px);
-        }
-
-        .feature-box .check {
-          color: #ef4444;
-          font-size: 18px;
-        }
-
-        .feature-box:hover .check {
-          color: white;
+          border-radius: 10px;
         }
       `}</style>
 
-      {/* ================= SECTION ================= */}
-      <section className="py-24 bg-slate-50">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-20 px-6 items-center">
+      <section className="relative min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          {dots.map(dot => (
+            <div
+              key={dot.id}
+              className="absolute rounded-full bg-gradient-to-r from-blue-200 to-cyan-200"
+              style={{
+                left: `${dot.x}%`,
+                top: `${dot.y}%`,
+                width: `${dot.size}px`,
+                height: `${dot.size}px`,
+                opacity: 0.1,
+                animation: `float ${dot.duration}s ease-in-out infinite`,
+                animationDelay: `${dot.delay}s`
+              }}
+            />
+          ))}
+        </div>
 
-          {/* LEFT CONTENT */}
-          <div>
-            <h2 className="text-4xl font-bold text-primary">About Arvish Consulting</h2>
+        {/* Floating particles */}
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full blur-3xl opacity-20 animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
 
-            <div className="about-indicator">
-              <span></span>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            
+            {/* Left Content */}
+            <div className="relative z-10">
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-100 mb-8">
+                <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-blue-700">About Our Company</span>
+              </div>
+
+              {/* Main Heading */}
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">
+                <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-purple-600 bg-clip-text text-transparent">
+                  Transforming Businesses
+                </span>
+                <br />
+                <span className="text-slate-900">Through Digital Innovation</span>
+              </h1>
+
+              {/* Animated indicator */}
+              <div className="relative w-32 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent mb-10 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
+              </div>
+
+              {/* Description */}
+              <div className="space-y-6 mb-10">
+                <p className="text-lg text-slate-700 leading-relaxed">
+                  <span className="font-bold text-blue-600">Arvish Consulting Solutions</span> is a premier 
+                  technology partner that delivers value-added innovative IT and software solutions 
+                  designed to optimize costs and maximize ROI for businesses worldwide.
+                </p>
+                
+                <p className="text-lg text-slate-700 leading-relaxed">
+                  Our client-centered approach, combined with cutting-edge technology and 
+                  customized service plans, drives measurable business success and sustainable 
+                  growth in today's dynamic digital landscape.
+                </p>
+              </div>
+
+              {/* Stats */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
+                {[
+                  { value: "15+", label: "Years Experience" },
+                  { value: "200+", label: "Projects Delivered" },
+                  { value: "50+", label: "Happy Clients" },
+                  { value: "99%", label: "Satisfaction Rate" }
+                ].map((stat, index) => (
+                  <div 
+                    key={index} 
+                    className="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-slate-200 hover-lift hover-glow"
+                  >
+                    <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                      {stat.value}
+                    </div>
+                    <div className="text-sm text-slate-600 mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                  Explore Our Services →
+                </button>
+                <button className="bg-white border border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-semibold hover:bg-slate-50 transition-all duration-300">
+                  Download Company Profile
+                </button>
+              </div>
             </div>
 
-            <p className="text-gray-700 leading-relaxed mb-6">
-              <strong>Arvish Consulting</strong> provides value-added innovative IT
-              and software solutions to help businesses save costs and improve
-              their ROI.
-            </p>
+            {/* Right Visual - Enhanced Orbit System */}
+            <div className="relative lg:min-h-[600px] flex items-center justify-center">
+              {/* Outer orbit rings */}
+              <div className="absolute w-[500px] h-[500px] sm:w-[550px] sm:h-[550px] lg:w-[600px] lg:h-[600px]">
+                {/* Outer ring */}
+                <div className="absolute inset-0 border-2 border-dashed border-blue-200/50 rounded-full animate-spin-slow"></div>
+                
+                {/* Middle ring */}
+                <div className="absolute inset-12 border border-dotted border-cyan-200/50 rounded-full animate-spin-reverse"></div>
+                
+                {/* Inner ring */}
+                <div className="absolute inset-24 border border-dashed border-purple-200/50 rounded-full animate-spin-slow"></div>
 
-            <p className="text-gray-700 leading-relaxed">
-              Our client-centered and customized service plans, backed by
-              cutting-edge technology, drive measurable business success.
-            </p>
+                {/* Floating nodes */}
+                {[
+                  { icon: "☁️", label: "Cloud", color: "from-blue-400 to-cyan-400", pos: "top-0 left-1/2 -translate-x-1/2 -translate-y-1/2" },
+                  { icon: "🌐", label: "Global", color: "from-cyan-400 to-emerald-400", pos: "top-1/2 right-0 translate-x-1/2 -translate-y-1/2" },
+                  { icon: "📧", label: "Connect", color: "from-purple-400 to-pink-400", pos: "bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2" },
+                  { icon: "💻", label: "Code", color: "from-emerald-400 to-teal-400", pos: "top-1/2 left-0 -translate-x-1/2 -translate-y-1/2" },
+                  { icon: "📊", label: "Analytics", color: "from-orange-400 to-amber-400", pos: "top-1/4 left-1/4" },
+                  { icon: "🔍", label: "Research", color: "from-pink-400 to-rose-400", pos: "bottom-1/4 right-1/4" }
+                ].map((node, index) => (
+                  <div 
+                    key={index}
+                    className={`absolute ${node.pos} group`}
+                  >
+                    <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${node.color} 
+                      flex items-center justify-center shadow-xl hover-lift cursor-pointer
+                      transition-all duration-300 animate-float`}
+                      style={{ animationDelay: `${index * 0.5}s` }}
+                    >
+                      <div className="text-2xl">{node.icon}</div>
+                    </div>
+                    <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 
+                      transition-all duration-300 text-sm font-semibold text-slate-700 bg-white/90 
+                      backdrop-blur-sm px-3 py-1 rounded-lg shadow-lg whitespace-nowrap">
+                      {node.label}
+                    </div>
+                  </div>
+                ))}
+              </div>
 
-            <div className="feature-grid">
-              {[
-                "Operational Excellence",
-                "Actionable Business Insight & Visibility",
-                "Exceptional Customer Experiences",
-                "High-quality software development",
-                "An Integrated Modern IT Infrastructure",
-                "CMMI compliant Processes & Systems",
-              ].map((item) => (
-                <div key={item} className="feature-box">
-                  <span className="check">✓</span>
-                  {item}
+              {/* Center Core */}
+              <div className="relative z-10">
+                <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80">
+                  {/* Core gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-cyan-500 to-purple-500 rounded-full blur-xl opacity-30 animate-pulse-slow"></div>
+                  
+                  {/* Core border */}
+                  <div className="absolute inset-0 border-4 border-transparent rounded-full 
+                    bg-gradient-to-r from-blue-500 via-cyan-500 to-purple-500 bg-origin-border 
+                    [mask-composite:exclude] [mask:linear-gradient(#fff_0_0)_padding-box,linear-gradient(#fff_0_0)] animate-spin-slow">
+                  </div>
+
+                  {/* Inner core */}
+                  <div className="absolute inset-8 bg-gradient-to-br from-white to-slate-100 rounded-full 
+                    shadow-2xl flex items-center justify-center hover-scale transition-all duration-500">
+                    <div className="text-center p-6">
+                      <div className="text-4xl mb-4">🚀</div>
+                      <div className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                        Arvish
+                      </div>
+                      <div className="text-sm text-slate-600 mt-2">Consulting</div>
+                    </div>
+                  </div>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
 
-          {/* RIGHT VISUAL */}
-          <div className="flex justify-center">
-            <div className="orbit-wrapper">
+        
 
-              {/* Outer ring */}
-              <div className="dot-ring">
-                <div className="dot green d1"></div>
-                <div className="dot blue d2"></div>
-                <div className="dot purple d3"></div>
-                <div className="dot green d4"></div>
-                <div className="dot blue d5"></div>
-                <div className="dot purple d6"></div>
-              </div>
-
-              {/* Inner ring */}
-              <div className="dot-ring inner">
-                <div className="dot green d1"></div>
-                <div className="dot blue d3"></div>
-                <div className="dot purple d5"></div>
-              </div>
-
-              {/* Static icons */}
-              <div className="icon cloud">
-                <img src="https://cdn-icons-png.flaticon.com/512/3063/3063825.png" />
-              </div>
-              <div className="icon globe">
-                <img src="https://cdn-icons-png.flaticon.com/512/814/814513.png" />
-              </div>
-              <div className="icon mail">
-                <img src="https://cdn-icons-png.flaticon.com/512/126/126472.png" />
-              </div>
-              <div className="icon code">
-                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" />
-              </div>
-              <div className="icon analytics">
-                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" />
-              </div>
-              <div className="icon search">
-                <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" />
-              </div>
-
-              {/* Center image */}
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/4762/4762311.png"
-                className="center-image"
-                alt="Business Ecosystem"
-              />
-            </div>
-          </div>
+            
+             
 
         </div>
+
+        {/* Bottom gradient */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
     </>
   );

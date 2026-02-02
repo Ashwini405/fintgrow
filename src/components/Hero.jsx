@@ -321,50 +321,71 @@ export default function Hero() {
         effect="fade"
         fadeEffect={{ crossFade: true }}
         loop={true}
-        className="h-[85vh]"
+        className="h-[100vh] sm:h-[90vh] md:h-[85vh]"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className={`h-full w-full ${slide.bgColor} relative overflow-hidden`}>
               {/* Content Container */}
-              <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center h-full py-12">
+              <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
+                <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center h-full py-8 sm:py-12 lg:py-16">
                   
                   {/* Left Content */}
-                  <div className="space-y-6 animate-slide-in-left">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight">
+                  <div className="space-y-4 sm:space-y-6 lg:space-y-8 animate-slide-in-left text-center lg:text-left">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-900 leading-tight">
                       {slide.title}
                     </h1>
                     
-                    <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-xl">
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-700 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                       {slide.description}
                     </p>
                     
-                    <div className="pt-4">
+                    <div className="pt-2 sm:pt-4 flex justify-center lg:justify-start">
                       <button 
                         onClick={() => handleReadMore(slide.link)}
-                        className="group relative inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-md shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300"
+                        className="group relative inline-flex items-center gap-2 sm:gap-3 lg:gap-4 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                       >
-                        <span>READ MORE</span>
-                        <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                        </svg>
+                        {/* Animated Background */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        
+                        {/* Ripple Effect */}
+                        <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transform scale-0 group-hover:scale-110 transition-all duration-500"></div>
+                        
+                        {/* Content */}
+                        <div className="relative flex items-center gap-2 sm:gap-3 lg:gap-4">
+                          <div className="relative w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10">
+                            <div className="absolute inset-0 bg-white/30 transform rotate-45 animate-pulse group-hover:rotate-90 transition-all duration-500"></div>
+                            <div className="absolute inset-1 bg-white/20 transform -rotate-12 animate-bounce group-hover:rotate-45 transition-all duration-700"></div>
+                            <div className="absolute inset-2 bg-white rounded-full animate-ping group-hover:animate-pulse"></div>
+                          </div>
+                          <span className="group-hover:translate-x-1 sm:group-hover:translate-x-2 transition-transform duration-500">READ MORE</span>
+                          <div className="relative w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6">
+                            <div className="absolute inset-0 border-2 border-white transform rotate-0 group-hover:rotate-180 transition-all duration-1000 ease-in-out"></div>
+                            <div className="absolute inset-1 border border-white/60 transform rotate-45 group-hover:rotate-225 transition-all duration-800"></div>
+                            <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-white transform -translate-x-1/2 -translate-y-1/2 animate-pulse group-hover:scale-300"></div>
+                          </div>
+                        </div>
+                        
+                        {/* Shine Effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 transform -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                       </button>
                     </div>
                   </div>
                   
                   {/* Right Illustration */}
-                  <div className="hidden lg:flex items-center justify-center animate-fade-in">
-                    {slide.illustration === 'digital-experience' && <DigitalExperienceIllustration />}
-                    {slide.illustration === 'ai' && <AIIllustration />}
-                    {slide.illustration === 'analytics' && <AnalyticsIllustration />}
-                    {slide.illustration === 'enterprise' && <EnterpriseIllustration />}
+                  <div className="hidden lg:flex items-center justify-center animate-fade-in order-first lg:order-last">
+                    <div className="w-full max-w-lg xl:max-w-xl 2xl:max-w-2xl">
+                      {slide.illustration === 'digital-experience' && <DigitalExperienceIllustration />}
+                      {slide.illustration === 'ai' && <AIIllustration />}
+                      {slide.illustration === 'analytics' && <AnalyticsIllustration />}
+                      {slide.illustration === 'enterprise' && <EnterpriseIllustration />}
+                    </div>
                   </div>
                 </div>
               </div>
               
               {/* Decorative Elements */}
-              <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
+              <div className="absolute bottom-0 left-0 w-full h-16 sm:h-24 lg:h-32 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
             </div>
           </SwiperSlide>
         ))}
@@ -376,29 +397,85 @@ export default function Hero() {
         :global(.swiper-button-prev) {
           color: #1e293b !important;
           background: white;
-          width: 48px !important;
-          height: 48px !important;
+          width: 40px !important;
+          height: 40px !important;
           border-radius: 50%;
           box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
         }
         
+        @media (min-width: 640px) {
+          :global(.swiper-button-next),
+          :global(.swiper-button-prev) {
+            width: 48px !important;
+            height: 48px !important;
+          }
+        }
+        
         :global(.swiper-button-next:after),
         :global(.swiper-button-prev:after) {
-          font-size: 20px !important;
+          font-size: 16px !important;
           font-weight: 900;
         }
         
+        @media (min-width: 640px) {
+          :global(.swiper-button-next:after),
+          :global(.swiper-button-prev:after) {
+            font-size: 20px !important;
+          }
+        }
+        
         :global(.swiper-pagination-bullet) {
-          width: 12px !important;
-          height: 12px !important;
+          width: 8px !important;
+          height: 8px !important;
           background: #cbd5e1 !important;
           opacity: 1 !important;
+          margin: 0 4px !important;
+        }
+        
+        @media (min-width: 640px) {
+          :global(.swiper-pagination-bullet) {
+            width: 12px !important;
+            height: 12px !important;
+            margin: 0 6px !important;
+          }
         }
         
         :global(.swiper-pagination-bullet-active) {
           background: #dc2626 !important;
-          width: 32px !important;
+          width: 24px !important;
           border-radius: 6px !important;
+        }
+        
+        @media (min-width: 640px) {
+          :global(.swiper-pagination-bullet-active) {
+            width: 32px !important;
+          }
+        }
+        
+        :global(.swiper-pagination) {
+          bottom: 20px !important;
+        }
+        
+        @media (min-width: 640px) {
+          :global(.swiper-pagination) {
+            bottom: 30px !important;
+          }
+        }
+        
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(10px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fade-in-up {
+          animation: fadeInUp 0.6s ease-out forwards;
+          animation-delay: 0.3s;
         }
       `}</style>
     </div>

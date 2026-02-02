@@ -83,8 +83,8 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center justify-center flex-1 gap-1 xl:gap-2">
+          {/* Desktop Navigation - Show on medium screens and up */}
+          <nav className="hidden md:flex items-center justify-center flex-1 gap-1 mx-4 lg:mx-8">
             {Object.keys(menuItems).map((menu) => (
               <div
                 key={menu}
@@ -93,13 +93,13 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <button
-                  className={`px-2 xl:px-3 py-2 text-xs xl:text-sm font-semibold transition-all duration-300 flex items-center gap-1 ${
+                  className={`px-1 md:px-2 lg:px-3 py-2 text-xs md:text-sm font-semibold transition-all duration-300 flex items-center gap-1 whitespace-nowrap ${
                     activeDropdown === menu ? 'text-red-600' : 'text-slate-700 hover:text-red-600'
                   }`}
                 >
                   {menu}
                   <svg 
-                    className={`w-3 h-3 xl:w-4 xl:h-4 transition-transform ${activeDropdown === menu ? 'rotate-180' : ''}`} 
+                    className={`w-3 h-3 md:w-4 md:h-4 transition-transform ${activeDropdown === menu ? 'rotate-180' : ''}`} 
                     fill="none" 
                     viewBox="0 0 24 24" 
                     stroke="currentColor"
@@ -110,13 +110,13 @@ const Navbar = () => {
 
                 {/* Dropdown Menu */}
                 {activeDropdown === menu && (
-                  <div className="absolute top-full left-0 mt-1 bg-white shadow-xl rounded-lg border border-slate-100 min-w-[250px] xl:min-w-[280px] py-3 animate-fade-in-down">
+                  <div className="absolute top-full left-0 mt-1 bg-white shadow-xl rounded-lg border border-slate-100 min-w-[280px] py-3 animate-fade-in-down z-50">
                     {menuItems[menu].map((item, index) => (
                       <Link
                         key={index}
                         to={item.link}
                         onClick={closeDropdown}
-                        className="block px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base text-slate-700 hover:bg-slate-50 hover:text-[#1e2875] transition-colors font-medium"
+                        className="block px-6 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-[#1e2875] transition-colors font-medium"
                       >
                         {item.name}
                       </Link>
@@ -158,7 +158,8 @@ const Navbar = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={toggleMobileMenu}
-              className="lg:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+              className="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors"
+              aria-label="Toggle mobile menu"
             >
               <svg className="w-5 h-5 sm:w-6 sm:h-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMobileMenuOpen ? (
@@ -192,7 +193,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
+        <div className="md:hidden bg-white border-t border-gray-200 shadow-lg">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
             <nav className="space-y-2">
               {Object.keys(menuItems).map((menu) => (
@@ -220,7 +221,7 @@ const Navbar = () => {
                           key={index}
                           to={item.link}
                           onClick={closeMobileMenu}
-                          className="block py-2 px-4 text-slate-600 hover:text-[#1e2875] hover:bg-slate-50 rounded-md transition-colors text-sm"
+                          className="block py-2 px-4 text-sm text-slate-600 hover:text-[#1e2875] hover:bg-slate-50 rounded-md transition-colors"
                         >
                           {item.name}
                         </Link>
@@ -230,7 +231,7 @@ const Navbar = () => {
                 </div>
               ))}
 
-              {/* Contact Us Button for Mobile */}
+              {/* Mobile Contact Us Button */}
               <div className="pt-4 space-y-3">
                 <Link
                   to="/contact"
@@ -241,11 +242,14 @@ const Navbar = () => {
                 </Link>
                 
                 {/* Mobile Badge */}
-                <div className="flex justify-center">
-                  <div className="bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 text-white px-4 py-2 rounded-lg shadow-lg border border-slate-600/30">
-                    <div className="flex items-center justify-center gap-1.5">
+                <div className="flex justify-center sm:hidden">
+                  <div className="bg-gradient-to-br from-slate-800 via-slate-700 to-slate-900 text-white px-3 py-2 rounded-lg shadow-lg border border-slate-600/30">
+                    <div className="flex items-center gap-1.5 justify-center">
                       <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse"></div>
-                      <div className="text-[10px] font-bold tracking-wide text-emerald-400">CERTIFIED AI Excellence</div>
+                      <div className="text-[10px] font-bold tracking-wide text-emerald-400">CERTIFIED</div>
+                    </div>
+                    <div className="text-xs font-extrabold mt-0.5 bg-gradient-to-r from-white to-slate-200 bg-clip-text text-transparent text-center">
+                      AI Excellence
                     </div>
                     <div className="text-[8px] text-slate-300 mt-0.5 opacity-90 text-center">
                       ISO 27001 • SOC 2 Type II
