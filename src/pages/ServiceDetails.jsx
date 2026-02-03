@@ -368,25 +368,111 @@ const QualityEngineeringIllustration = () => (
 
 const ServiceNowIllustration = () => (
   <div className="relative w-full h-full flex items-center justify-center">
-    <div className="relative w-[300px] h-[300px] animate-float">
-      {/* Central Workflow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-8xl animate-pulse-slow">
-        🔄
+    <div className="relative w-[350px] h-[350px] animate-float">
+      {/* Central Workflow Hub with Gear Animation */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="w-28 h-28 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-full shadow-2xl flex items-center justify-center animate-spin-slow">
+          <div className="w-20 h-20 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-full flex items-center justify-center animate-spin-slow-reverse">
+            <span className="text-white text-2xl font-bold">🔄</span>
+          </div>
+        </div>
+        {/* Gear Teeth */}
+        <div className="absolute inset-0 w-32 h-32 -translate-x-2 -translate-y-2">
+          {[...Array(8)].map((_, i) => (
+            <div key={i} className={`absolute w-3 h-6 bg-indigo-400 rounded-sm`} 
+                 style={{
+                   top: '50%',
+                   left: '50%',
+                   transform: `translate(-50%, -50%) rotate(${i * 45}deg) translateY(-16px)`,
+                   transformOrigin: 'center'
+                 }}></div>
+          ))}
+        </div>
       </div>
 
-      {/* Orbiting Elements */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 animate-spin-slow">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 text-3xl animate-bounce">📋</div>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-3xl animate-bounce">👥</div>
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 text-3xl animate-bounce">💻</div>
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 text-3xl animate-bounce">📞</div>
+      {/* Orbiting Service Modules */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 animate-spin-very-slow">
+        {/* ITSM Module */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl shadow-lg flex items-center justify-center animate-bounce-3d">
+          <div className="text-center">
+            <div className="text-white text-xs font-bold">ITSM</div>
+            <div className="text-white text-lg">📋</div>
+          </div>
+        </div>
+
+        {/* ITOM Module */}
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-600 rounded-xl shadow-lg flex items-center justify-center animate-bounce-3d" style={{animationDelay: '0.5s'}}>
+          <div className="text-center">
+            <div className="text-white text-xs font-bold">ITOM</div>
+            <div className="text-white text-lg">👥</div>
+          </div>
+        </div>
+
+        {/* HRSD Module */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl shadow-lg flex items-center justify-center animate-bounce-3d" style={{animationDelay: '1s'}}>
+          <div className="text-center">
+            <div className="text-white text-xs font-bold">HRSD</div>
+            <div className="text-white text-lg">💻</div>
+          </div>
+        </div>
+
+        {/* CSM Module */}
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-600 rounded-xl shadow-lg flex items-center justify-center animate-bounce-3d" style={{animationDelay: '1.5s'}}>
+          <div className="text-center">
+            <div className="text-white text-xs font-bold">CSM</div>
+            <div className="text-white text-lg">📞</div>
+          </div>
+        </div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute top-8 right-12 text-2xl animate-float-delayed-1">⚡</div>
-      <div className="absolute top-20 right-32 text-xl animate-float-delayed-2">🔗</div>
-      <div className="absolute bottom-12 left-8 text-2xl animate-float-delayed-3">🎯</div>
-      <div className="absolute bottom-32 left-24 text-xl animate-bounce-slow">📈</div>
+      {/* Inner Orbit - Workflow Connectors */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-56 h-56 animate-spin-slow-reverse">
+        {[...Array(6)].map((_, i) => (
+          <div key={i} className={`absolute w-3 h-3 bg-blue-400 rounded-full animate-pulse`}
+               style={{
+                 top: '50%',
+                 left: '50%',
+                 transform: `translate(-50%, -50%) rotate(${i * 60}deg) translateY(-28px)`,
+                 animationDelay: `${i * 0.2}s`
+               }}></div>
+        ))}
+      </div>
+
+      {/* Workflow Data Streams */}
+      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 350 350">
+        <defs>
+          <linearGradient id="workflowStream" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#3b82f6" stopOpacity="0" />
+            <stop offset="50%" stopColor="#3b82f6" stopOpacity="0.8" />
+            <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        {/* Connecting Lines Between Modules */}
+        <line x1="175" y1="55" x2="175" y2="125" stroke="url(#workflowStream)" strokeWidth="2" strokeDasharray="8,4" className="animate-dash" />
+        <line x1="295" y1="175" x2="225" y2="175" stroke="url(#workflowStream)" strokeWidth="2" strokeDasharray="8,4" className="animate-dash" style={{animationDelay: '0.5s'}} />
+        <line x1="175" y1="295" x2="175" y2="225" stroke="url(#workflowStream)" strokeWidth="2" strokeDasharray="8,4" className="animate-dash" style={{animationDelay: '1s'}} />
+        <line x1="55" y1="175" x2="125" y2="175" stroke="url(#workflowStream)" strokeWidth="2" strokeDasharray="8,4" className="animate-dash" style={{animationDelay: '1.5s'}} />
+      </svg>
+
+      {/* Floating Automation Indicators */}
+      <div className="absolute top-12 right-12 bg-gradient-to-r from-green-400 to-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-float-delayed-1 shadow-lg">
+        ⚡ Auto
+      </div>
+      <div className="absolute top-12 left-12 bg-gradient-to-r from-blue-400 to-indigo-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-float-delayed-2 shadow-lg">
+        🔗 Connect
+      </div>
+      <div className="absolute bottom-12 right-12 bg-gradient-to-r from-purple-400 to-violet-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-float-delayed-3 shadow-lg">
+        📊 Insights
+      </div>
+      <div className="absolute bottom-12 left-12 bg-gradient-to-r from-orange-400 to-red-500 text-white px-3 py-1 rounded-full text-xs font-bold animate-float-delayed-4 shadow-lg">
+        🎯 Optimize
+      </div>
+
+      {/* Workflow Particles */}
+      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
+      <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-green-400 rounded-full animate-ping" style={{animationDelay: '0.5s'}}></div>
+      <div className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-purple-400 rounded-full animate-ping" style={{animationDelay: '1s'}}></div>
+      <div className="absolute bottom-1/4 right-1/4 w-2 h-2 bg-orange-400 rounded-full animate-ping" style={{animationDelay: '1.5s'}}></div>
     </div>
   </div>
 );
@@ -980,6 +1066,147 @@ export default function ServiceDetails() {
                         }
                     }
 
+                    /* Enhanced 3D and Animation Effects */
+                    @keyframes orbit {
+                        0% {
+                            transform: rotate(0deg) translateX(150px) rotate(0deg);
+                        }
+                        100% {
+                            transform: rotate(360deg) translateX(150px) rotate(-360deg);
+                        }
+                    }
+
+                    @keyframes pulse-glow {
+                        0%, 100% {
+                            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+                        }
+                        50% {
+                            box-shadow: 0 0 40px rgba(59, 130, 246, 0.8), 0 0 60px rgba(139, 92, 246, 0.4);
+                        }
+                    }
+
+                    @keyframes rotate-3d {
+                        0% {
+                            transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+                        }
+                        25% {
+                            transform: perspective(1000px) rotateY(90deg) rotateX(10deg);
+                        }
+                        50% {
+                            transform: perspective(1000px) rotateY(180deg) rotateX(0deg);
+                        }
+                        75% {
+                            transform: perspective(1000px) rotateY(270deg) rotateX(-10deg);
+                        }
+                        100% {
+                            transform: perspective(1000px) rotateY(360deg) rotateX(0deg);
+                        }
+                    }
+
+                    @keyframes bounce-3d {
+                        0%, 100% {
+                            transform: perspective(1000px) translateZ(0px) rotateX(0deg);
+                        }
+                        50% {
+                            transform: perspective(1000px) translateZ(50px) rotateX(10deg);
+                        }
+                    }
+
+                    @keyframes float-delayed-1 {
+                        0%, 100% {
+                            transform: translateY(0px) translateX(0px);
+                        }
+                        33% {
+                            transform: translateY(-15px) translateX(5px);
+                        }
+                        66% {
+                            transform: translateY(-5px) translateX(-5px);
+                        }
+                    }
+
+                    @keyframes float-delayed-2 {
+                        0%, 100% {
+                            transform: translateY(0px) translateX(0px) rotate(0deg);
+                        }
+                        50% {
+                            transform: translateY(-20px) translateX(10px) rotate(5deg);
+                        }
+                    }
+
+                    @keyframes float-delayed-3 {
+                        0%, 100% {
+                            transform: translateY(0px) scale(1);
+                        }
+                        50% {
+                            transform: translateY(-12px) scale(1.05);
+                        }
+                    }
+
+                    @keyframes float-delayed-4 {
+                        0%, 100% {
+                            transform: translateY(0px) translateX(0px);
+                        }
+                        25% {
+                            transform: translateY(-8px) translateX(-3px);
+                        }
+                        75% {
+                            transform: translateY(-18px) translateX(3px);
+                        }
+                    }
+
+                    @keyframes spin-slow {
+                        from {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    @keyframes spin-very-slow {
+                        from {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    @keyframes spin-slow-reverse {
+                        from {
+                            transform: rotate(360deg);
+                        }
+                        to {
+                            transform: rotate(0deg);
+                        }
+                    }
+
+                    @keyframes bounce-slow {
+                        0%, 100% {
+                            transform: translateY(0);
+                        }
+                        50% {
+                            transform: translateY(-20px);
+                        }
+                    }
+
+                    @keyframes pulse-slow {
+                        0%, 100% {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
+                        50% {
+                            opacity: 0.8;
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    @keyframes dash {
+                        to {
+                            stroke-dashoffset: -20;
+                        }
+                    }
+
                     .animate-fadeInUp {
                         animation: fadeInUp 0.8s ease-out forwards;
                     }
@@ -1002,6 +1229,63 @@ export default function ServiceDetails() {
 
                     .animate-slideInLeft {
                         animation: slideInLeft 0.8s ease-out forwards;
+                    }
+
+                    /* Enhanced Animation Classes */
+                    .animate-orbit {
+                        animation: orbit 20s linear infinite;
+                    }
+
+                    .animate-pulse-glow {
+                        animation: pulse-glow 2s ease-in-out infinite;
+                    }
+
+                    .animate-rotate-3d {
+                        animation: rotate-3d 15s ease-in-out infinite;
+                    }
+
+                    .animate-bounce-3d {
+                        animation: bounce-3d 4s ease-in-out infinite;
+                    }
+
+                    .animate-float-delayed-1 {
+                        animation: float-delayed-1 4s ease-in-out infinite;
+                    }
+
+                    .animate-float-delayed-2 {
+                        animation: float-delayed-2 5s ease-in-out infinite;
+                    }
+
+                    .animate-float-delayed-3 {
+                        animation: float-delayed-3 3.5s ease-in-out infinite;
+                    }
+
+                    .animate-float-delayed-4 {
+                        animation: float-delayed-4 4.5s ease-in-out infinite;
+                    }
+
+                    .animate-spin-slow {
+                        animation: spin-slow 8s linear infinite;
+                    }
+
+                    .animate-spin-very-slow {
+                        animation: spin-very-slow 15s linear infinite;
+                    }
+
+                    .animate-spin-slow-reverse {
+                        animation: spin-slow-reverse 12s linear infinite;
+                    }
+
+                    .animate-bounce-slow {
+                        animation: bounce-slow 3s ease-in-out infinite;
+                    }
+
+                    .animate-pulse-slow {
+                        animation: pulse-slow 4s ease-in-out infinite;
+                    }
+
+                    .animate-dash {
+                        animation: dash 2s linear infinite;
                     }
 
                     .hover-lift {
@@ -1345,72 +1629,263 @@ export default function ServiceDetails() {
                         </section>
 
                         {/* ================= AI MATURITY MODEL ================= */}
-                        <section className="mt-24 py-20 px-6 bg-white">
-                            <div className="max-w-7xl mx-auto">
+                        <section className="mt-24 py-20 px-6 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 relative overflow-hidden">
+                            {/* Background Animation */}
+                            <div className="absolute inset-0 opacity-10">
+                                <svg className="w-full h-full" viewBox="0 0 1000 1000">
+                                    <defs>
+                                        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" stopColor="#3b82f6" />
+                                            <stop offset="50%" stopColor="#8b5cf6" />
+                                            <stop offset="100%" stopColor="#06b6d4" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="200" cy="200" r="100" fill="url(#bgGrad)" opacity="0.3" className="animate-pulse">
+                                        <animateTransform attributeName="transform" type="translate" values="0,0; 50,30; 0,0" dur="8s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="800" cy="300" r="80" fill="url(#bgGrad)" opacity="0.2" className="animate-bounce">
+                                        <animateTransform attributeName="transform" type="translate" values="0,0; -30,50; 0,0" dur="10s" repeatCount="indefinite" />
+                                    </circle>
+                                    <circle cx="600" cy="800" r="120" fill="url(#bgGrad)" opacity="0.25" className="animate-pulse">
+                                        <animateTransform attributeName="transform" type="translate" values="0,0; 40,-20; 0,0" dur="12s" repeatCount="indefinite" />
+                                    </circle>
+                                </svg>
+                            </div>
+
+                            <div className="max-w-7xl mx-auto relative z-10">
                                 <div className="text-center mb-16">
-                                    <h2 className="text-3xl font-bold text-blue-900 mb-4 hover:text-blue-700 transition-colors duration-300 animate-fadeInUp">
+                                    <h2 className="text-4xl font-bold text-blue-900 mb-6 hover:text-blue-700 transition-colors duration-300 animate-fadeInUp">
                                         AI Maturity Model for Enterprises
                                     </h2>
+                                    <p className="text-xl text-slate-600 max-w-3xl mx-auto animate-fadeInUp stagger-1">
+                                        Navigate your AI transformation journey with our comprehensive maturity framework
+                                    </p>
                                 </div>
 
-                                <div className="grid md:grid-cols-2 gap-12 items-center">
-                                    <div className="flex justify-center">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&auto=format&fit=crop&q=80"
-                                            alt="AI Maturity Model Illustration"
-                                            className="max-w-full rounded-lg shadow-lg hover-scale transition-transform duration-300"
-                                        />
+                                <div className="grid md:grid-cols-2 gap-16 items-center">
+                                    {/* Enhanced AI Maturity SVG Illustration */}
+                                    <div className="flex justify-center animate-fadeInLeft">
+                                        <div className="relative w-[500px] h-[500px]">
+                                            <svg viewBox="0 0 500 500" className="w-full h-full">
+                                                <defs>
+                                                    {/* Gradients */}
+                                                    <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+                                                        <stop offset="0%" stopColor="#3b82f6" />
+                                                        <stop offset="100%" stopColor="#1e40af" />
+                                                    </radialGradient>
+                                                    <linearGradient id="stage1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" stopColor="#ef4444" />
+                                                        <stop offset="100%" stopColor="#dc2626" />
+                                                    </linearGradient>
+                                                    <linearGradient id="stage2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" stopColor="#f59e0b" />
+                                                        <stop offset="100%" stopColor="#d97706" />
+                                                    </linearGradient>
+                                                    <linearGradient id="stage3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" stopColor="#3b82f6" />
+                                                        <stop offset="100%" stopColor="#1d4ed8" />
+                                                    </linearGradient>
+                                                    <linearGradient id="stage4" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" stopColor="#10b981" />
+                                                        <stop offset="100%" stopColor="#059669" />
+                                                    </linearGradient>
+                                                    <linearGradient id="stage5" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                        <stop offset="0%" stopColor="#8b5cf6" />
+                                                        <stop offset="100%" stopColor="#7c3aed" />
+                                                    </linearGradient>
+                                                    
+                                                    {/* Filters for 3D effects */}
+                                                    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                                        <feDropShadow dx="3" dy="3" stdDeviation="3" floodColor="#000" floodOpacity="0.3"/>
+                                                    </filter>
+                                                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                                                        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                                        <feMerge>
+                                                            <feMergeNode in="coloredBlur"/>
+                                                            <feMergeNode in="SourceGraphic"/>
+                                                        </feMerge>
+                                                    </filter>
+                                                </defs>
+
+                                                {/* Central AI Core */}
+                                                <g transform="translate(250,250)">
+                                                    <circle r="80" fill="url(#centerGrad)" filter="url(#shadow)" className="animate-pulse">
+                                                        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="20s" repeatCount="indefinite" />
+                                                    </circle>
+                                                    <circle r="60" fill="none" stroke="#60a5fa" strokeWidth="2" strokeDasharray="5,5" opacity="0.6">
+                                                        <animateTransform attributeName="transform" type="rotate" values="360; 0" dur="15s" repeatCount="indefinite" />
+                                                    </circle>
+                                                    <text textAnchor="middle" dy="-10" fill="white" fontSize="16" fontWeight="bold">AI</text>
+                                                    <text textAnchor="middle" dy="10" fill="white" fontSize="12" opacity="0.8">Maturity</text>
+                                                </g>
+
+                                                {/* Maturity Stages - Orbiting */}
+                                                <g transform="translate(250,250)">
+                                                    <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="30s" repeatCount="indefinite" />
+                                                    
+                                                    {/* Stage 1: Awareness */}
+                                                    <g transform="translate(0,-150)">
+                                                        <circle r="25" fill="url(#stage1)" filter="url(#glow)" className="hover:scale-110 transition-transform cursor-pointer">
+                                                            <animate attributeName="r" values="25; 30; 25" dur="3s" repeatCount="indefinite" />
+                                                        </circle>
+                                                        <text textAnchor="middle" dy="-5" fill="white" fontSize="12" fontWeight="bold">1</text>
+                                                        <text textAnchor="middle" dy="8" fill="white" fontSize="8">Aware</text>
+                                                    </g>
+
+                                                    {/* Stage 2: Experimentation */}
+                                                    <g transform="translate(106,106)">
+                                                        <circle r="25" fill="url(#stage2)" filter="url(#glow)" className="hover:scale-110 transition-transform cursor-pointer">
+                                                            <animate attributeName="r" values="25; 30; 25" dur="3s" begin="0.6s" repeatCount="indefinite" />
+                                                        </circle>
+                                                        <text textAnchor="middle" dy="-5" fill="white" fontSize="12" fontWeight="bold">2</text>
+                                                        <text textAnchor="middle" dy="8" fill="white" fontSize="8">Pilot</text>
+                                                    </g>
+
+                                                    {/* Stage 3: Operationalization */}
+                                                    <g transform="translate(150,0)">
+                                                        <circle r="25" fill="url(#stage3)" filter="url(#glow)" className="hover:scale-110 transition-transform cursor-pointer">
+                                                            <animate attributeName="r" values="25; 30; 25" dur="3s" begin="1.2s" repeatCount="indefinite" />
+                                                        </circle>
+                                                        <text textAnchor="middle" dy="-5" fill="white" fontSize="12" fontWeight="bold">3</text>
+                                                        <text textAnchor="middle" dy="8" fill="white" fontSize="8">Ops</text>
+                                                    </g>
+
+                                                    {/* Stage 4: Enterprise Adoption */}
+                                                    <g transform="translate(106,-106)">
+                                                        <circle r="25" fill="url(#stage4)" filter="url(#glow)" className="hover:scale-110 transition-transform cursor-pointer">
+                                                            <animate attributeName="r" values="25; 30; 25" dur="3s" begin="1.8s" repeatCount="indefinite" />
+                                                        </circle>
+                                                        <text textAnchor="middle" dy="-5" fill="white" fontSize="12" fontWeight="bold">4</text>
+                                                        <text textAnchor="middle" dy="8" fill="white" fontSize="8">Scale</text>
+                                                    </g>
+
+                                                    {/* Stage 5: Autonomous Intelligence */}
+                                                    <g transform="translate(-106,-106)">
+                                                        <circle r="25" fill="url(#stage5)" filter="url(#glow)" className="hover:scale-110 transition-transform cursor-pointer">
+                                                            <animate attributeName="r" values="25; 30; 25" dur="3s" begin="2.4s" repeatCount="indefinite" />
+                                                        </circle>
+                                                        <text textAnchor="middle" dy="-5" fill="white" fontSize="12" fontWeight="bold">5</text>
+                                                        <text textAnchor="middle" dy="8" fill="white" fontSize="8">Auto</text>
+                                                    </g>
+                                                </g>
+
+                                                {/* Connection Lines */}
+                                                <g transform="translate(250,250)" opacity="0.3">
+                                                    <line x1="0" y1="-150" x2="0" y2="150" stroke="#8b5cf6" strokeWidth="2" strokeDasharray="5,5">
+                                                        <animate attributeName="stroke-dashoffset" values="0; 10" dur="2s" repeatCount="indefinite" />
+                                                    </line>
+                                                    <line x1="-150" y1="0" x2="150" y2="0" stroke="#8b5cf6" strokeWidth="2" strokeDasharray="5,5">
+                                                        <animate attributeName="stroke-dashoffset" values="0; 10" dur="2s" begin="1s" repeatCount="indefinite" />
+                                                    </line>
+                                                    <circle r="120" fill="none" stroke="#60a5fa" strokeWidth="1" strokeDasharray="10,5">
+                                                        <animate attributeName="stroke-dashoffset" values="0; 15" dur="3s" repeatCount="indefinite" />
+                                                    </circle>
+                                                </g>
+
+                                                {/* Floating Progress Indicators */}
+                                                <g transform="translate(400,100)">
+                                                    <rect width="60" height="20" rx="10" fill="#10b981" filter="url(#shadow)">
+                                                        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="4s" repeatCount="indefinite" />
+                                                    </rect>
+                                                    <text x="30" y="14" textAnchor="middle" fill="white" fontSize="10" fontWeight="bold">75% ROI</text>
+                                                </g>
+
+                                                <g transform="translate(50,400)">
+                                                    <rect width="80" height="25" rx="12" fill="#3b82f6" filter="url(#shadow)">
+                                                        <animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="5s" repeatCount="indefinite" />
+                                                    </rect>
+                                                    <text x="40" y="16" textAnchor="middle" fill="white" fontSize="10" fontWeight="bold">Enterprise</text>
+                                                </g>
+
+                                                {/* Data Flow Animation */}
+                                                <g opacity="0.6">
+                                                    <circle r="3" fill="#06b6d4">
+                                                        <animateMotion dur="6s" repeatCount="indefinite">
+                                                            <path d="M 100,250 Q 250,100 400,250 Q 250,400 100,250" />
+                                                        </animateMotion>
+                                                    </circle>
+                                                    <circle r="2" fill="#8b5cf6">
+                                                        <animateMotion dur="8s" repeatCount="indefinite">
+                                                            <path d="M 250,100 Q 400,250 250,400 Q 100,250 250,100" />
+                                                        </animateMotion>
+                                                    </circle>
+                                                </g>
+                                            </svg>
+                                        </div>
                                     </div>
 
-                                    <div className="text-slate-700 leading-relaxed space-y-6">
-                                        <p className="font-semibold text-blue-900">
-                                            Accelerate Your AI Journey – From Exploration to Enterprise-Scale Transformation
-                                        </p>
+                                    <div className="text-slate-700 leading-relaxed space-y-6 animate-fadeInRight">
+                                        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border-l-4 border-blue-500 animate-fadeInUp">
+                                            <h3 className="font-bold text-blue-900 text-xl mb-3">
+                                                🚀 Accelerate Your AI Journey
+                                            </h3>
+                                            <p className="text-slate-700">
+                                                From Exploration to Enterprise-Scale Transformation
+                                            </p>
+                                        </div>
 
-                                        <p>
+                                        <p className="animate-fadeInUp stagger-1">
                                             FINT partners with enterprises at every stage of their AI maturity.
                                             Whether you're experimenting with proof of concept or operationalizing
                                             AI across business units, our AI Maturity Framework helps assess
                                             readiness, define a roadmap, and drive measurable impact.
                                         </p>
 
-                                        <h3 className="text-lg font-semibold text-blue-900 mt-6">
-                                            Our AI Maturity Stages:
-                                        </h3>
+                                        <div className="space-y-4 animate-fadeInUp stagger-2">
+                                            <h3 className="text-lg font-semibold text-blue-900 mt-6">
+                                                Our AI Maturity Stages:
+                                            </h3>
 
-                                        <ul className="space-y-4">
-                                            <li className="hover:translate-x-2 transition-transform duration-300">
-                                                <span className="text-red-600 font-bold">■</span>{" "}
-                                                <b class="hover:text-blue-700 transition-colors duration-200">Awareness & Assessment:</b> Identify opportunities and evaluate
-                                                current data and process readiness.
-                                            </li>
-                                            <li className="hover:translate-x-2 transition-transform duration-300">
-                                                <span className="text-red-600 font-bold">■</span>{" "}
-                                                <b class="hover:text-blue-700 transition-colors duration-200">Experimentation & Pilots:</b> Build initial POCs using generative
-                                                AI, machine learning models, or automation.
-                                            </li>
-                                            <li className="hover:translate-x-2 transition-transform duration-300">
-                                                <span className="text-red-600 font-bold">■</span>{" "}
-                                                <b class="hover:text-blue-700 transition-colors duration-200">Operationalization:</b> Integrate AI into production systems with
-                                                proper MLOps, governance, and data pipelines.
-                                            </li>
-                                            <li className="hover:translate-x-2 transition-transform duration-300">
-                                                <span className="text-red-600 font-bold">■</span>{" "}
-                                                <b class="hover:text-blue-700 transition-colors duration-200">Enterprise Adoption:</b> Scale AI across functions while ensuring
-                                                interoperability, security, and ROI tracking.
-                                            </li>
-                                            <li className="hover:translate-x-2 transition-transform duration-300">
-                                                <span className="text-red-600 font-bold">■</span>{" "}
-                                                <b class="hover:text-blue-700 transition-colors duration-200">Autonomous Intelligence:</b> Implement AI agents and self-learning
-                                                systems that continuously optimize operations.
-                                            </li>
-                                        </ul>
+                                            <div className="space-y-4">
+                                                <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-red-50 to-red-100 rounded-lg hover:shadow-md transition-all duration-300 hover:translate-x-2">
+                                                    <div className="w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                                                    <div>
+                                                        <h4 className="font-semibold text-red-700">Awareness & Assessment</h4>
+                                                        <p className="text-sm text-slate-600">Identify opportunities and evaluate current data and process readiness.</p>
+                                                    </div>
+                                                </div>
 
-                                        <p>
-                                            FINT's experts work closely with business and technology leaders to
-                                            define strategy, establish governance, and prioritize investments
-                                            aligned with transformation goals.
-                                        </p>
+                                                <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-orange-50 to-orange-100 rounded-lg hover:shadow-md transition-all duration-300 hover:translate-x-2">
+                                                    <div className="w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                                                    <div>
+                                                        <h4 className="font-semibold text-orange-700">Experimentation & Pilots</h4>
+                                                        <p className="text-sm text-slate-600">Build initial POCs using generative AI, machine learning models, or automation.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-blue-50 to-blue-100 rounded-lg hover:shadow-md transition-all duration-300 hover:translate-x-2">
+                                                    <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                                                    <div>
+                                                        <h4 className="font-semibold text-blue-700">Operationalization</h4>
+                                                        <p className="text-sm text-slate-600">Integrate AI into production systems with proper MLOps, governance, and data pipelines.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-green-50 to-green-100 rounded-lg hover:shadow-md transition-all duration-300 hover:translate-x-2">
+                                                    <div className="w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold text-sm">4</div>
+                                                    <div>
+                                                        <h4 className="font-semibold text-green-700">Enterprise Adoption</h4>
+                                                        <p className="text-sm text-slate-600">Scale AI across functions while ensuring interoperability, security, and ROI tracking.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-purple-50 to-purple-100 rounded-lg hover:shadow-md transition-all duration-300 hover:translate-x-2">
+                                                    <div className="w-8 h-8 bg-purple-500 text-white rounded-full flex items-center justify-center font-bold text-sm">5</div>
+                                                    <div>
+                                                        <h4 className="font-semibold text-purple-700">Autonomous Intelligence</h4>
+                                                        <p className="text-sm text-slate-600">Implement AI agents and self-learning systems that continuously optimize operations.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="bg-gradient-to-r from-slate-50 to-slate-100 p-6 rounded-xl border-l-4 border-slate-500 animate-fadeInUp stagger-3">
+                                            <p className="text-slate-700">
+                                                <span className="font-semibold text-slate-900">🎯 Expert Partnership:</span> FINT's experts work closely with business and technology leaders to
+                                                define strategy, establish governance, and prioritize investments
+                                                aligned with transformation goals.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1852,12 +2327,8 @@ export default function ServiceDetails() {
 
                         <section className="py-20 px-6 bg-white border-t">
                             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                                <div className="flex justify-center">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&auto=format&fit=crop"
-                                        alt="Analytics Operation"
-                                        className="max-w-sm w-full rounded-lg shadow-lg hover-scale hover-glow transition-all duration-300 animate-fadeInLeft"
-                                    />
+                                <div className="flex justify-center animate-fadeInLeft">
+                                    <AnalyticsOperationIllustration />
                                 </div>
 
                                 <div>
@@ -1871,6 +2342,14 @@ export default function ServiceDetails() {
                                         statistical ML algorithms for predictive and prescriptive analytics
                                         across all stages of analytics maturity.
                                     </p>
+
+                                    <div className="bg-gradient-to-r from-teal-50 to-cyan-50 p-6 rounded-xl border-l-4 border-teal-500 mt-6">
+                                        <div className="flex items-center gap-3 mb-2">
+                                            <span className="text-2xl">🚀</span>
+                                            <span className="font-semibold text-teal-900">Operational Excellence</span>
+                                        </div>
+                                        <p className="text-slate-700">Our analytics operations deliver <span className="font-bold text-teal-600">60% faster insights</span>, <span className="font-bold text-teal-600">40% cost reduction</span>, and <span className="font-bold text-teal-600">95% accuracy</span> in predictive modeling.</p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
@@ -2599,11 +3078,91 @@ export default function ServiceDetails() {
                                     IT service management efficiency.
                                 </p>
                             </div>
-                            <img
-                                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop"
-                                alt="ServiceNow Platform"
-                                className="w-full max-w-md mx-auto rounded-lg shadow-lg hover-scale hover-glow transition-all duration-300 animate-fadeInRight"
-                            />
+                            <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
+                              <div className="flex justify-between items-center mb-4">
+                                <span className="text-sm font-semibold text-gray-800">ServiceNow Platform Analytics</span>
+                                <span className="px-3 py-1 bg-green-500 text-white text-xs rounded-full font-bold animate-pulse">ACTIVE</span>
+                              </div>
+                              
+                              <div className="flex gap-6 mb-4">
+                                <div className="flex flex-col">
+                                  <span className="text-blue-600 text-xl font-bold animate-bounce">1.2K</span>
+                                  <span className="text-gray-500 text-xs">Workflows/day</span>
+                                </div>
+                                <div className="flex flex-col">
+                                  <span className="text-purple-600 text-xl font-bold animate-pulse">98.5%</span>
+                                  <span className="text-gray-500 text-xs">Uptime</span>
+                                </div>
+                              </div>
+
+                              <svg viewBox="0 0 280 120" className="w-full h-32">
+                                <defs>
+                                  <linearGradient id="serviceGradient" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.8" />
+                                    <stop offset="100%" stopColor="#1e40af" stopOpacity="0.4" />
+                                  </linearGradient>
+                                  <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.2" />
+                                    <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.05" />
+                                  </linearGradient>
+                                </defs>
+                                
+                                {/* Animated grid lines */}
+                                {[30, 60, 90].map((y, i) => (
+                                  <line key={y} x1="0" y1={y} x2="280" y2={y} stroke="#e5e7eb" strokeWidth="0.5" strokeDasharray="2,2">
+                                    <animate attributeName="stroke-dashoffset" values="0;4" dur="2s" repeatCount="indefinite" begin={`${i * 0.5}s`} />
+                                  </line>
+                                ))}
+                                
+                                {/* Animated data bars */}
+                                {[65, 78, 85, 72, 90, 88, 95].map((height, i) => (
+                                  <rect
+                                    key={i}
+                                    x={i * 35 + 15}
+                                    y={120 - height}
+                                    width="20"
+                                    height={height}
+                                    rx="2"
+                                    fill="url(#serviceGradient)"
+                                  >
+                                    <animate attributeName="height" values="0;{height};{height}" dur="1.5s" begin={`${i * 0.2}s`} />
+                                    <animate attributeName="y" values="120;{120 - height};{120 - height}" dur="1.5s" begin={`${i * 0.2}s`} />
+                                  </rect>
+                                ))}
+                                
+                                {/* Animated line chart */}
+                                <polyline
+                                  points="25,55 60,42 95,35 130,48 165,30 200,32 235,25"
+                                  fill="none"
+                                  stroke="#10b981"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeDasharray="300"
+                                >
+                                  <animate attributeName="stroke-dashoffset" values="300;0" dur="3s" />
+                                </polyline>
+                                
+                                {/* Animated data points */}
+                                {[[25,55], [60,42], [95,35], [130,48], [165,30], [200,32], [235,25]].map(([x,y], i) => (
+                                  <circle key={i} cx={x} cy={y} r="3" fill="#10b981">
+                                    <animate attributeName="r" values="0;3;3" dur="0.5s" begin={`${2 + i * 0.2}s`} />
+                                    <animate attributeName="opacity" values="0;1" dur="0.3s" begin={`${2 + i * 0.2}s`} />
+                                  </circle>
+                                ))}
+                                
+                                {/* Floating data particles */}
+                                <circle r="2" fill="#3b82f6" opacity="0.6">
+                                  <animateMotion dur="4s" repeatCount="indefinite">
+                                    <path d="M 50,100 Q 140,20 230,80" />
+                                  </animateMotion>
+                                </circle>
+                                <circle r="1.5" fill="#10b981" opacity="0.4">
+                                  <animateMotion dur="5s" repeatCount="indefinite" begin="1s">
+                                    <path d="M 30,80 Q 150,30 250,60" />
+                                  </animateMotion>
+                                </circle>
+                              </svg>
+                            </div>
                         </div>
                         {/* ================= SERVICENOW PLATFORM ================= */}
 
@@ -2627,19 +3186,19 @@ export default function ServiceDetails() {
       </p>
 
       <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li className="hover:translate-x-2 transition-transform duration-300">
+        <li className="hover:translate-x-1 transition-transform duration-150">
           IT Service Management (ITSM)
         </li>
-        <li className="hover:translate-x-2 transition-transform duration-300">
+        <li className="hover:translate-x-1 transition-transform duration-150">
           IT Operations Management (ITOM)
         </li>
-        <li className="hover:translate-x-2 transition-transform duration-300">
+        <li className="hover:translate-x-1 transition-transform duration-150">
           IT Asset Management (ITAM)
         </li>
-        <li className="hover:translate-x-2 transition-transform duration-300">
+        <li className="hover:translate-x-1 transition-transform duration-150">
           HR Service Delivery (HRSD)
         </li>
-        <li className="hover:translate-x-2 transition-transform duration-300">
+        <li className="hover:translate-x-1 transition-transform duration-150">
           Customer Service Management (CSM)
         </li>
       </ul>
@@ -2677,11 +3236,189 @@ export default function ServiceDetails() {
 
 <section className="py-16 px-8 max-w-7xl mx-auto">
   <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1581091012184-7b3c5b2a7f6a?w=600&auto=format&fit=crop"
-      className="w-full max-w-sm rounded-lg shadow-lg"
-      alt="ServiceNow ITSM"
-    />
+    <div className="w-full max-w-sm rounded-lg shadow-lg" style={{
+      height: "280px",
+      padding: "16px",
+      background: "linear-gradient(145deg, #020617 0%, #0f172a 50%, #020617 100%)",
+      boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08), 0 8px 32px rgba(0,0,0,0.3)",
+      position: "relative",
+      overflow: "hidden"
+    }}>
+      <div style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        marginBottom: "12px",
+        color: "#e5e7eb",
+        fontSize: "11px"
+      }}>
+        <span style={{
+          opacity: 0.9,
+          fontWeight: 600,
+          letterSpacing: "0.5px"
+        }}>🚀 ENTERPRISE SUCCESS METRICS · LIVE</span>
+        <span style={{
+          padding: "3px 10px",
+          borderRadius: "999px",
+          fontSize: "9px",
+          fontWeight: 700,
+          color: "white",
+          backgroundColor: "#16a34a",
+          textShadow: "0 1px 2px rgba(0,0,0,0.3)",
+          animation: "pulse 2s infinite"
+        }}>🔥 PROVEN ROI</span>
+      </div>
+      
+      <div style={{
+        display: "flex",
+        gap: "20px",
+        marginBottom: "16px"
+      }}>
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start"
+        }}>
+          <span style={{
+            color: "#22d3ee",
+            fontSize: "18px",
+            fontWeight: 700,
+            lineHeight: 1,
+            textShadow: "0 0 10px rgba(34,211,238,0.5)"
+          }}>300%</span>
+          <span style={{
+            color: "#94a3b8",
+            fontSize: "10px",
+            opacity: 0.8,
+            marginTop: "2px"
+          }}>ROI Increase</span>
+        </div>
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start"
+        }}>
+          <span style={{
+            color: "#22d3ee",
+            fontSize: "18px",
+            fontWeight: 700,
+            lineHeight: 1,
+            textShadow: "0 0 10px rgba(34,211,238,0.5)"
+          }}>85%</span>
+          <span style={{
+            color: "#94a3b8",
+            fontSize: "10px",
+            opacity: 0.8,
+            marginTop: "2px"
+          }}>Cost Reduction</span>
+        </div>
+      </div>
+
+      <svg viewBox="0 0 300 140" style={{
+        width: "100%",
+        height: "160px"
+      }}>
+        {/* Grid lines */}
+        {[25, 50, 75, 100, 125].map((y) => (
+          <line
+            key={y}
+            x1="0"
+            y1={y}
+            x2="300"
+            y2={y}
+            stroke="rgba(255,255,255,0.06)"
+            strokeDasharray="2,4"
+          />
+        ))}
+        
+        {/* Vertical grid */}
+        {[50, 100, 150, 200, 250].map((x) => (
+          <line
+            key={x}
+            x1={x}
+            y1="0"
+            x2={x}
+            y2="140"
+            stroke="rgba(255,255,255,0.04)"
+            strokeDasharray="1,3"
+          />
+        ))}
+
+        {/* Area fill */}
+        <path
+          d="M 20,85 L 60,75 L 100,65 L 140,80 L 180,60 L 220,70 L 260,55 L 260,140 L 20,140 Z"
+          fill="url(#areaGradient)"
+          style={{
+            transition: "all 1.2s ease"
+          }}
+        />
+
+        {/* Bars */}
+        {[85, 75, 65, 80, 60, 70, 55].map((p, i) => (
+          <rect
+            key={i}
+            x={i * 40 + 14}
+            y={140 - p}
+            width="12"
+            height={p}
+            rx="2"
+            fill="url(#barGradient)"
+            style={{
+              transition: "all 1.2s ease",
+              filter: "drop-shadow(0 0 8px rgba(34,211,238,0.8))"
+            }}
+          />
+        ))}
+
+        {/* Line */}
+        <polyline
+          points="20,85 60,75 100,65 140,80 180,60 220,70 260,55"
+          fill="none"
+          stroke="#22d3ee"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          style={{
+            filter: "drop-shadow(0 0 8px rgba(34,211,238,0.6))",
+            transition: "all 1.2s ease"
+          }}
+        />
+
+        {/* Data points */}
+        {[[20,85], [60,75], [100,65], [140,80], [180,60], [220,70], [260,55]].map(([x,y], i) => (
+          <circle
+            key={i}
+            cx={x}
+            cy={y}
+            r="3"
+            fill="#22d3ee"
+            style={{
+              filter: "drop-shadow(0 0 4px rgba(34,211,238,0.9))",
+              transition: "all 1.2s ease"
+            }}
+          />
+        ))}
+
+        <defs>
+          <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#22d3ee" stopOpacity="0.9" />
+            <stop offset="50%" stopColor="#0ea5e9" stopOpacity="0.7" />
+            <stop offset="100%" stopColor="#1e40af" stopOpacity="0.5" />
+          </linearGradient>
+          <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#22d3ee" stopOpacity="0.3" />
+            <stop offset="100%" stopColor="#22d3ee" stopOpacity="0.05" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <style>{`
+        @keyframes pulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.7; transform: scale(1.2); }
+        }
+      `}</style>
+    </div>
 
     <div>
       <h3 className="text-2xl font-semibold text-blue-900 mb-4">
@@ -2699,11 +3436,44 @@ export default function ServiceDetails() {
 
 <section className="py-16 px-8 max-w-7xl mx-auto border-t">
   <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop"
-      className="w-full max-w-sm rounded-lg shadow-lg"
-      alt="ServiceNow ITOM"
-    />
+    <div className="relative">
+      <img
+        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop"
+        className="w-full max-w-sm rounded-lg shadow-lg"
+        alt="ServiceNow ITOM"
+      />
+      {/* SVG Orbit Animation */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 300">
+        <circle
+          cx="200"
+          cy="150"
+          r="180"
+          fill="none"
+          stroke="#3b82f6"
+          strokeWidth="2"
+          strokeDasharray="20 10"
+          opacity="0.6"
+          style={{
+            animation: "rotate 8s linear infinite"
+          }}
+        />
+        <circle cx="380" cy="150" r="3" fill="#3b82f6" opacity="0.8">
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values="0 200 150;360 200 150"
+            dur="8s"
+            repeatCount="indefinite"
+          />
+        </circle>
+      </svg>
+      <style>{`
+        @keyframes rotate {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
+    </div>
 
     <div>
       <h3 className="text-2xl font-semibold text-blue-900 mb-4">
@@ -2721,11 +3491,38 @@ export default function ServiceDetails() {
 
 <section className="py-16 px-8 max-w-7xl mx-auto border-t">
   <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop"
-      className="w-full max-w-sm rounded-lg shadow-lg"
-      alt="ServiceNow HRSD"
-    />
+    <div className="relative">
+      <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop"
+        className="w-full max-w-sm rounded-lg shadow-lg"
+        alt="ServiceNow HRSD"
+      />
+      {/* SVG Orbit Animation */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 300">
+        <circle
+          cx="200"
+          cy="150"
+          r="170"
+          fill="none"
+          stroke="#10b981"
+          strokeWidth="2"
+          strokeDasharray="15 8"
+          opacity="0.7"
+          style={{
+            animation: "rotate 10s linear infinite reverse"
+          }}
+        />
+        <circle cx="370" cy="150" r="2.5" fill="#10b981" opacity="0.9">
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values="360 200 150;0 200 150"
+            dur="10s"
+            repeatCount="indefinite"
+          />
+        </circle>
+      </svg>
+    </div>
 
     <div>
       <h3 className="text-2xl font-semibold text-blue-900 mb-4">
@@ -2743,11 +3540,52 @@ export default function ServiceDetails() {
 
 <section className="py-16 px-8 max-w-7xl mx-auto border-t">
   <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&auto=format&fit=crop"
-      className="w-full max-w-md rounded-lg shadow-lg"
-      alt="ServiceNow CSM"
-    />
+    <div className="relative">
+      <img
+        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&auto=format&fit=crop"
+        className="w-full max-w-md rounded-lg shadow-lg"
+        alt="ServiceNow CSM"
+      />
+      {/* SVG Orbit Animation */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 300">
+        <circle
+          cx="200"
+          cy="150"
+          r="160"
+          fill="none"
+          stroke="#8b5cf6"
+          strokeWidth="2"
+          strokeDasharray="25 5"
+          opacity="0.6"
+          style={{
+            animation: "rotate 12s linear infinite"
+          }}
+        />
+        <circle cx="360" cy="150" r="3" fill="#8b5cf6" opacity="0.8">
+          <animateTransform
+            attributeName="transform"
+            type="rotate"
+            values="0 200 150;360 200 150"
+            dur="12s"
+            repeatCount="indefinite"
+          />
+        </circle>
+        {/* Additional inner orbit */}
+        <circle
+          cx="200"
+          cy="150"
+          r="120"
+          fill="none"
+          stroke="#f59e0b"
+          strokeWidth="1"
+          strokeDasharray="10 15"
+          opacity="0.4"
+          style={{
+            animation: "rotate 6s linear infinite reverse"
+          }}
+        />
+      </svg>
+    </div>
 
     <div>
       <h3 className="text-2xl font-semibold text-blue-900 mb-4">
