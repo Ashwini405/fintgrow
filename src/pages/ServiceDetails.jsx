@@ -1878,7 +1878,7 @@ export default function ServiceDetails() {
                 )}
 
                 {/* ================= ENTERPRISE APPLICATIONS ================= */}
-                {serviceName === "enterprise-applications" && (
+                {(serviceName === "enterprise-applications" || serviceName === "enterprise-application") && (
                     <>
                         <div className="grid md:grid-cols-2 gap-12 items-center mb-20 ea-bg">
                             <div>
@@ -2310,215 +2310,100 @@ export default function ServiceDetails() {
                     </>
                 )}
 
-                {/* ================= INTELLIGENT IT & CLOUD ================= */}
-                {serviceName === "intelligent-it-&-cloud" && (
+                {/* ================= DIGITAL INTEGRATION ================= */}
+                {serviceName === "digital-integration" && (
                     <>
-                        <div className="grid md:grid-cols-2 gap-12 items-center mb-20 it-bg">
-                            <div>
-                                <h1 className="text-4xl font-bold text-blue-900 mb-4 hover:text-blue-700 transition-colors duration-300 animate-fadeInLeft">
-                                    Intelligent IT & Cloud
+                        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+                            <div className="animate-fadeInLeft">
+                                <h1 className="text-5xl font-bold text-blue-900 mb-6 hover:text-blue-700 transition-colors duration-300">
+                                    Digital Integration
                                 </h1>
-                                <p className="italic text-lg text-slate-600 mb-6 hover:text-slate-800 transition-colors duration-300">
-                                    Cloud-first strategies for modern enterprises
+                                <p className="italic text-xl text-slate-600 mb-8 hover:text-slate-800 transition-colors duration-300 animate-fadeInLeft stagger-1">
+                                    Seamless System Integration for Modern Enterprises
                                 </p>
-                                <p className="text-slate-700 leading-relaxed">
-                                    We design secure, scalable cloud infrastructures
-                                    that enable agility, cost optimization, and
-                                    business continuity.
+                                <p className="text-slate-700 leading-relaxed text-lg animate-fadeInLeft stagger-2 mb-6">
+                                    Connect disparate systems and applications with our comprehensive integration solutions.
+                                    We enable seamless data flow, process automation, and real-time synchronization across
+                                    your entire technology ecosystem.
                                 </p>
+                                <div className="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-xl border-l-4 border-orange-500 animate-fadeInLeft stagger-3">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <span className="text-2xl">🔗</span>
+                                        <span className="font-semibold text-orange-900">Integration Excellence</span>
+                                    </div>
+                                    <p className="text-slate-700">Our integration solutions reduce <span className="font-bold text-orange-600">data silos by 90%</span> and improve <span className="font-bold text-orange-600">operational efficiency by 65%</span>.</p>
+                                </div>
+                            </div>
+                            <div className="flex justify-center animate-fadeInRight">
+                                <img
+                                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop"
+                                    alt="Digital Integration"
+                                    className="max-w-md w-full rounded-lg shadow-lg hover-scale hover-glow transition-all duration-300"
+                                />
+                            </div>
+                        </div>
+                    </>
+                )}
+
+                {/* ================= CLOUD OPERATIONS ================= */}
+                {(serviceName === "cloud-operations" || serviceName === "intelligent-it-&-cloud") && (
+                    <>
+                        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+                            <div className="animate-fadeInLeft">
+                                <h1 className="text-5xl font-bold text-blue-900 mb-6 hover:text-blue-700 transition-colors duration-300">
+                                    Cloud Operations
+                                </h1>
+                                <p className="italic text-xl text-slate-600 mb-8 hover:text-slate-800 transition-colors duration-300 animate-fadeInLeft stagger-1">
+                                    Intelligent Cloud Management & Operations
+                                </p>
+                                <p className="text-slate-700 leading-relaxed text-lg animate-fadeInLeft stagger-2 mb-6">
+                                    Optimize your cloud infrastructure with our comprehensive cloud operations services.
+                                    From migration to ongoing management, we ensure your cloud environment is secure,
+                                    scalable, and cost-effective.
+                                </p>
+                                <div className="bg-gradient-to-r from-cyan-50 to-blue-50 p-6 rounded-xl border-l-4 border-cyan-500 animate-fadeInLeft stagger-3">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <span className="text-2xl">☁️</span>
+                                        <span className="font-semibold text-cyan-900">Cloud Excellence</span>
+                                    </div>
+                                    <p className="text-slate-700">Achieve <span className="font-bold text-cyan-600">99.9% uptime</span> and <span className="font-bold text-cyan-600">40% cost optimization</span> with our cloud operations expertise.</p>
+                                </div>
                             </div>
                             <CloudOperationsIllustration />
                         </div>
-
-                        <section className="py-16 px-8 max-w-7xl mx-auto">
-                            <div className="grid md:grid-cols-2 gap-10 items-start">
-                                <img
-                                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop"
-                                    alt="Intelligent Operations"
-                                    className="w-full max-w-md rounded-lg shadow-lg"
-                                />
-
-                                <div>
-                                    <p className="text-gray-700 leading-relaxed mb-4">
-                                        As enterprises continue to look for new ways to enhance their financial performance,
-                                        Intelligent Operations is an effective approach to achieve operational excellence.
-                                        Intelligent Operations uses digital transformation to minimize equipment downtime,
-                                        optimize production, manage operational risks and enhance human performance.
-                                    </p>
-
-                                    <p className="text-gray-700 leading-relaxed mb-4">
-                                        Our Intelligent Operations services include:
-                                    </p>
-
-                                    <ul className="list-disc list-inside space-y-2 text-gray-700">
-                                        <li className="hover:translate-x-2 transition-transform duration-300">24x7 L1–L4 total coverage</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Compliance monitoring</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Patch maintenance & break-fix management</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Upgrade planning & execution</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Change-management tracking</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="bg-gray-50 py-16">
-                            <h2 className="text-center text-3xl font-semibold text-blue-900 mb-10">
-                                The Competitive Advantage We Offer
-                            </h2>
-
-                            <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto px-6">
-                                <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow animate-fadeInUp group">
-                                    ✔ Significant inventory cost reduction
-                                </div>
-
-                                <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow animate-fadeInUp group">
-                                    ✔ Increased workforce productivity
-                                </div>
-
-                                <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow animate-fadeInUp group">
-                                    ✔ Highly scalable fault tolerant systems
-                                </div>
-
-                                <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow animate-fadeInUp group">
-                                    ✔ Increased availability
-                                </div>
-
-                                <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow animate-fadeInUp group col-span-2 text-center">
-                                    ✔ Reduces operational costs and drives revenue
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="py-16 px-8 max-w-7xl mx-auto">
-                            <div className="grid md:grid-cols-2 gap-10 items-start">
-                                <img
-                                    src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&auto=format&fit=crop"
-                                    className="w-full max-w-sm rounded-lg shadow-lg"
-                                    alt="Cloud Migration"
-                                />
-
-                                <div>
-                                    <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-                                        Cloud Migration and Strategy
-                                    </h3>
-
-                                    <p className="text-gray-700 leading-relaxed">
-                                        Our comprehensive cloud migration strategy helps you migrate critical and complex
-                                        applications to the cloud while minimizing disruption and operational risks.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="py-16 px-8 max-w-7xl mx-auto border-t">
-                            <div className="grid md:grid-cols-2 gap-10 items-start">
-                                <img
-                                    src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&auto=format&fit=crop"
-                                    className="w-full max-w-sm rounded-lg shadow-lg"
-                                    alt="Cloud Automation"
-                                />
-
-                                <div>
-                                    <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-                                        Cloud Automation and Optimization
-                                    </h3>
-
-                                    <p className="text-gray-700 leading-relaxed">
-                                        We automate cloud infrastructure to ensure performance, reduce complexity and
-                                        optimize costs while enabling scalable and reliable cloud environments.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="py-16 px-8 max-w-7xl mx-auto border-t">
-                            <div className="grid md:grid-cols-2 gap-10 items-start">
-                                <img
-                                    className="w-full max-w-sm rounded-lg shadow-lg"
-                                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop"
-                                    alt="Cloud Operations"
-                                />
-
-                                <div>
-                                    <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-                                        Cloud Operations
-                                    </h3>
-
-                                    <p className="text-gray-700 leading-relaxed">
-                                        Our cloud operation services ensure availability, reliability and ease of use
-                                        while helping organizations accelerate towards growth and stability.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="py-16 px-8 max-w-7xl mx-auto border-t">
-                            <div className="grid md:grid-cols-2 gap-10 items-start">
-                                <img 
-                                    className="w-full max-w-sm rounded-lg shadow-lg" 
-                                    src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&auto=format&fit=crop"
-                                    alt="DevSecOps"
-                                />
-
-                                <div>
-                                    <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-                                        DevSecOps
-                                    </h3>
-
-                                    <p className="text-gray-700 leading-relaxed">
-                                        We integrate security into DevOps pipelines ensuring compliance, automation
-                                        and end-to-end protection across your cloud and application lifecycle.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="py-16 px-8 max-w-7xl mx-auto border-t">
-                            <div className="grid md:grid-cols-2 gap-10 items-start">
-                                <img 
-                                    className="w-full max-w-md rounded-lg shadow-lg" 
-                                    src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&auto=format&fit=crop"
-                                    alt="Managed IT"
-                                />
-
-                                <div>
-                                    <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-                                        Managed IT Services
-                                    </h3>
-
-                                    <p className="text-gray-700 leading-relaxed mb-4">
-                                        We help enterprises transform IT operations through automation,
-                                        AI-based solutions and infrastructure optimization.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section className="py-16 px-8 max-w-7xl mx-auto border-t">
-                            <div className="grid md:grid-cols-2 gap-10 items-start">
-                                <img 
-                                    className="w-full max-w-md rounded-lg shadow-lg" 
-                                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop"
-                                    alt="IT Support"
-                                />
-
-                                <div>
-                                    <h3 className="text-2xl font-semibold text-blue-900 mb-4">
-                                        IT Support
-                                    </h3>
-
-                                    <ul className="list-disc list-inside text-gray-700 space-y-2">
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Server Management</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Remote Installation</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Emergency Support</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Network Troubleshooting</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">System Backup & Restore</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
                     </>
                 )}
+
+                {/* ================= PROCESS AUTOMATION ================= */}
+                {serviceName === "process-automation" && (
+                    <>
+                        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
+                            <div className="animate-fadeInLeft">
+                                <h1 className="text-5xl font-bold text-blue-900 mb-6 hover:text-blue-700 transition-colors duration-300">
+                                    Process Automation
+                                </h1>
+                                <p className="italic text-xl text-slate-600 mb-8 hover:text-slate-800 transition-colors duration-300 animate-fadeInLeft stagger-1">
+                                    Intelligent Process Automation for Business Excellence
+                                </p>
+                                <p className="text-slate-700 leading-relaxed text-lg animate-fadeInLeft stagger-2 mb-6">
+                                    Transform your business processes with intelligent automation solutions.
+                                    We help you eliminate manual tasks, reduce errors, and accelerate operations
+                                    through RPA, workflow automation, and AI-powered process optimization.
+                                </p>
+                                <div className="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-xl border-l-4 border-purple-500 animate-fadeInLeft stagger-3">
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <span className="text-2xl">🔄</span>
+                                        <span className="font-semibold text-purple-900">Automation Impact</span>
+                                    </div>
+                                    <p className="text-slate-700">Our automation solutions deliver <span className="font-bold text-purple-600">70% faster processing</span> and <span className="font-bold text-purple-600">95% error reduction</span>.</p>
+                                </div>
+                            </div>
+                            <ServiceNowIllustration />
+                        </div>
+                    </>
+                )}
+
+
 
                 {/* ================= QUALITY ENGINEERING ================= */}
                 {serviceName === "quality-engineering" && (

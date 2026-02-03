@@ -97,7 +97,7 @@ export default function Footer() {
             </li>
             <li>
               <button 
-                onClick={() => handleNavigation('/services/enterprise-application')}
+                onClick={() => handleNavigation('/services/enterprise-applications')}
                 className="hover:text-blue-600 transition-colors text-left w-full"
               >
                 Enterprise Application Services
@@ -113,7 +113,7 @@ export default function Footer() {
             </li>
             <li>
               <button 
-                onClick={() => handleNavigation('/services/cloud-operations')}
+                onClick={() => handleNavigation('/services/intelligent-it-&-cloud')}
                 className="hover:text-blue-600 transition-colors text-left w-full"
               >
                 Intelligent IT & Cloud Operations
@@ -176,7 +176,7 @@ export default function Footer() {
             </li>
             <li>
               <button 
-                onClick={() => handleNavigation('/solutions/servicenow')}
+                onClick={() => handleNavigation('/services/servicenow-platform')}
                 className="hover:text-blue-600 transition-colors text-left w-full"
               >
                 ServiceNow
