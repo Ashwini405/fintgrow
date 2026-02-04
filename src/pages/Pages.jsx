@@ -1,4 +1,4 @@
-// pages/Home.jsx
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Blog from '../components/Blog';
@@ -21,34 +21,82 @@ export const Home = () => {
 
 export const CompanyOverview = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      <div className="max-w-7xl mx-auto px-6 py-20">
-        <h1 className="text-5xl font-bold text-slate-900 mb-8">Company Overview</h1>
-        <div className="bg-white rounded-2xl shadow-xl p-10">
-          <p className="text-xl text-slate-700 mb-6 leading-relaxed">
-            ARVISH CONSULTING is a leading technology services company specializing in digital transformation, 
-            enterprise solutions, and innovative technology implementations.
+    <div className="min-h-screen bg-gray-50">
+      <section className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div className="flex items-center gap-2 text-blue-600 font-semibold mb-4">
+            <Link to="/">Home</Link>
+            <span>/</span>
+            <span className="text-slate-600">About Us</span>
+          </div>
+          <h1 className="text-5xl font-bold text-blue-900 mb-6">
+            About ARVISH CONSULTING
+          </h1>
+          <p className="text-xl text-slate-600 mb-6">
+            Excellence in Technology Consulting & Digital Innovation
           </p>
-          <p className="text-lg text-slate-600 mb-6">
-            Founded with a vision to empower businesses through cutting-edge technology solutions, 
-            we have grown to become a trusted partner for organizations worldwide.
+          <p className="text-slate-700 text-lg leading-relaxed mb-6">
+            ARVISH CONSULTING was born in the era where digital transformation began reshaping industries across the globe.
           </p>
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <div className="text-center p-6 bg-blue-50 rounded-xl">
-              <h3 className="text-4xl font-bold text-blue-600 mb-2">500+</h3>
-              <p className="text-slate-700 font-medium">Projects Delivered</p>
-            </div>
-            <div className="text-center p-6 bg-green-50 rounded-xl">
-              <h3 className="text-4xl font-bold text-green-600 mb-2">200+</h3>
-              <p className="text-slate-700 font-medium">Happy Clients</p>
-            </div>
-            <div className="text-center p-6 bg-purple-50 rounded-xl">
-              <h3 className="text-4xl font-bold text-purple-600 mb-2">15+</h3>
-              <p className="text-slate-700 font-medium">Years Experience</p>
-            </div>
+          <div className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
+            We help enterprises design, build, and scale solutions across
+            <span className="font-bold text-blue-600"> Digital Experience, Data & AI, Enterprise Applications </span>
+            and
+            <span className="font-bold text-blue-600"> Intelligent Cloud Operations.</span>
           </div>
         </div>
-      </div>
+        <div className="flex justify-center text-8xl">🏢</div>
+      </section>
+      <section className="bg-gradient-to-r from-emerald-500 to-teal-500 py-20 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="bg-white p-10 rounded-2xl shadow-xl">
+            <h3 className="text-3xl font-bold mb-4">Our Vision</h3>
+            <p>To be a pioneer in the technology services marketplace by delivering innovative solutions.</p>
+          </div>
+          <div className="bg-white p-10 rounded-2xl shadow-xl">
+            <h3 className="text-3xl font-bold mb-4">Our Mission</h3>
+            <p>We build strong partnerships improving services, reducing costs, and accelerating outcomes.</p>
+          </div>
+        </div>
+      </section>
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          {[
+            "Experienced team of experts",
+            "Innovative future-ready solutions",
+            "Client-centered approach",
+            "Optimized cost implementations",
+            "Customized service methodology",
+            "Flexible delivery model",
+            "Strategic guidance",
+            "Consistent quality framework",
+          ].map((item, i) => (
+            <div key={i} className="bg-white p-6 rounded-xl shadow-md flex gap-4">
+              <span className="text-green-600 font-bold">✓</span>
+              <p>{item}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="max-w-7xl mx-auto px-6 pb-24 grid md:grid-cols-2 gap-12">
+        <div className="bg-white p-10 rounded-2xl shadow-xl">
+          <h3 className="text-3xl font-bold mb-6">Accreditations</h3>
+          <ul className="space-y-3">
+            <li>CMMI DEV Level 5</li>
+            <li>ISO 27001:2013</li>
+            <li>ISO 9001:2015</li>
+          </ul>
+        </div>
+        <div className="bg-white p-10 rounded-2xl shadow-xl">
+          <h3 className="text-3xl font-bold mb-6">Partnerships</h3>
+          <ul className="space-y-3">
+            <li>Gold Application Integration</li>
+            <li>Gold Data Analytics</li>
+            <li>Gold Cloud Platform</li>
+            <li>Gold Business Applications</li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 };
@@ -58,20 +106,10 @@ export const CoreValues = () => {
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-50">
       <div className="max-w-7xl mx-auto px-6 py-20">
         <h1 className="text-5xl font-bold text-slate-900 mb-8">Our Core Values</h1>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            { title: 'Innovation', desc: 'Pushing boundaries with creative solutions', color: 'blue' },
-            { title: 'Integrity', desc: 'Maintaining highest ethical standards', color: 'green' },
-            { title: 'Excellence', desc: 'Delivering superior quality always', color: 'purple' },
-            { title: 'Collaboration', desc: 'Working together for success', color: 'orange' },
-            { title: 'Customer Focus', desc: 'Putting clients at the center', color: 'red' },
-            { title: 'Continuous Learning', desc: 'Growing through knowledge', color: 'teal' }
-          ].map((value, i) => (
-            <div key={i} className={`bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-shadow border-t-4 border-${value.color}-500`}>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">{value.title}</h3>
-              <p className="text-slate-600">{value.desc}</p>
-            </div>
-          ))}
+        <div className="bg-white rounded-2xl shadow-xl p-10">
+          <p className="text-xl text-slate-700 mb-8 leading-relaxed">
+            Our values guide every decision we make and define who we are as an organization.
+          </p>
         </div>
       </div>
     </div>
@@ -85,9 +123,7 @@ export const Culture = () => {
         <h1 className="text-5xl font-bold text-slate-900 mb-8">Our Culture</h1>
         <div className="bg-white rounded-2xl shadow-xl p-10">
           <p className="text-xl text-slate-700 mb-8 leading-relaxed">
-            At ARVISH CONSULTING, we foster a culture of innovation, collaboration, and continuous growth. 
-            Our team members are encouraged to think creatively, take ownership, and contribute 
-            to meaningful projects that make a difference.
+            At ARVISH CONSULTING, we foster a culture of innovation, collaboration, and continuous growth.
           </p>
           <div className="space-y-6">
             <div className="border-l-4 border-teal-500 pl-6 py-4">
@@ -140,53 +176,8 @@ export const ArtificialIntelligence = () => {
         <h1 className="text-5xl font-bold text-slate-900 mb-8">Artificial Intelligence</h1>
         <div className="bg-white rounded-2xl shadow-xl p-10">
           <p className="text-xl text-slate-700 mb-8 leading-relaxed">
-            Empower your enterprise with cutting-edge Artificial Intelligence solutions that transform 
-            data into actionable insights and drive intelligent automation across your business processes.
+            Empower your enterprise with cutting-edge Artificial Intelligence solutions.
           </p>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Our AI Services</h3>
-              <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-600 font-bold">•</span>
-                  Machine Learning Solutions
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-600 font-bold">•</span>
-                  Natural Language Processing
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-600 font-bold">•</span>
-                  Computer Vision
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-purple-600 font-bold">•</span>
-                  Predictive Analytics
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Benefits</h3>
-              <ul className="space-y-3 text-slate-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  Automated Decision Making
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  Enhanced Customer Experience
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  Improved Operational Efficiency
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-green-600 font-bold">✓</span>
-                  Data-Driven Insights
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -200,23 +191,8 @@ export const DigitalExperience = () => {
         <h1 className="text-5xl font-bold text-slate-900 mb-8">Digital Experience</h1>
         <div className="bg-white rounded-2xl shadow-xl p-10">
           <p className="text-xl text-slate-700 mb-8 leading-relaxed">
-            Our industry-leading digital experience services are designed to drive brand engagement 
-            from strategy, operations to enablement while improving productivity and process efficiency.
+            Our industry-leading digital experience services are designed to drive brand engagement.
           </p>
-          <div className="space-y-6">
-            <div className="bg-blue-50 rounded-xl p-6">
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">User Experience Design</h3>
-              <p className="text-slate-700">Creating intuitive and engaging digital experiences that delight users.</p>
-            </div>
-            <div className="bg-indigo-50 rounded-xl p-6">
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">Digital Strategy</h3>
-              <p className="text-slate-700">Comprehensive digital transformation strategies aligned with business goals.</p>
-            </div>
-            <div className="bg-cyan-50 rounded-xl p-6">
-              <h3 className="text-2xl font-bold text-slate-900 mb-3">Omnichannel Solutions</h3>
-              <p className="text-slate-700">Seamless experiences across all digital touchpoints.</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -230,26 +206,8 @@ export const DataAnalytics = () => {
         <h1 className="text-5xl font-bold text-slate-900 mb-8">Data Analytics</h1>
         <div className="bg-white rounded-2xl shadow-xl p-10">
           <p className="text-xl text-slate-700 mb-8 leading-relaxed">
-            Unlock the power of your data with advanced analytics solutions that provide deep insights, 
-            predictive modeling, and real-time intelligence for strategic decision-making.
+            Unlock the power of your data with advanced analytics solutions.
           </p>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-emerald-50 rounded-xl p-6 text-center">
-              <div className="text-4xl mb-3">📊</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Business Intelligence</h3>
-              <p className="text-slate-600">Transform data into actionable insights</p>
-            </div>
-            <div className="bg-teal-50 rounded-xl p-6 text-center">
-              <div className="text-4xl mb-3">🔍</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Predictive Analytics</h3>
-              <p className="text-slate-600">Forecast trends and patterns</p>
-            </div>
-            <div className="bg-cyan-50 rounded-xl p-6 text-center">
-              <div className="text-4xl mb-3">📈</div>
-              <h3 className="text-xl font-bold text-slate-900 mb-2">Data Visualization</h3>
-              <p className="text-slate-600">Present data in compelling ways</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -263,19 +221,8 @@ export const EnterpriseApplication = () => {
         <h1 className="text-5xl font-bold text-slate-900 mb-8">Enterprise Application Services</h1>
         <div className="bg-white rounded-2xl shadow-xl p-10">
           <p className="text-xl text-slate-700 mb-8 leading-relaxed">
-            Modernize and scale your enterprise platforms with our comprehensive application services, 
-            delivering seamless integration, enhanced performance, and digital transformation.
+            Modernize and scale your enterprise platforms with our comprehensive application services.
           </p>
-          <div className="space-y-4">
-            {['Application Development', 'Legacy Modernization', 'Cloud Migration', 'API Integration', 'Microservices Architecture'].map((service, i) => (
-              <div key={i} className="flex items-center gap-4 p-4 bg-orange-50 rounded-lg">
-                <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
-                  {i + 1}
-                </div>
-                <span className="text-lg font-medium text-slate-900">{service}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </div>
@@ -289,8 +236,7 @@ export const DigitalIntegration = () => {
         <h1 className="text-5xl font-bold text-slate-900 mb-8">Digital Integration</h1>
         <div className="bg-white rounded-2xl shadow-xl p-10">
           <p className="text-xl text-slate-700 mb-8">
-            Seamless integration solutions that connect your systems, applications, and data sources 
-            for a unified digital ecosystem.
+            Seamless integration solutions that connect your systems, applications, and data sources.
           </p>
         </div>
       </div>
@@ -437,9 +383,6 @@ export const DevOps = () => {
 
 // ============== INSIGHTS & CAREERS PAGES ==============
 
-// Note: Blog/Insights page uses the existing Blog.jsx component from Home
-// No separate InsightsBlog page needed
-
 export const WhatWeOffer = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
@@ -502,20 +445,12 @@ export const CurrentOpenings = () => {
 export const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200/30 rounded-full animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-48 h-48 bg-purple-200/20 rounded-full animate-bounce" style={{animationDuration: '3s'}}></div>
-      </div>
-
       <div className="max-w-6xl mx-auto px-6 py-20 relative z-10">
         <div className="text-center mb-16">
           <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">Get In Touch</h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">Ready to transform your business? Let's discuss how we can help you achieve your goals.</p>
         </div>
-
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
           <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/20">
             <h2 className="text-3xl font-bold text-slate-900 mb-8">Send us a Message</h2>
             <form className="space-y-6">
@@ -553,16 +488,11 @@ export const Contact = () => {
                 <label className="block text-slate-700 font-semibold mb-2">Message</label>
                 <textarea rows="4" className="w-full px-4 py-3 border-2 border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all resize-none" placeholder="Tell us about your project..."></textarea>
               </div>
-              <button type="submit" className="group w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-                <span className="flex items-center justify-center gap-2">
-                  Send Message
-                  <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin group-hover:animate-pulse"></div>
-                </span>
+              <button type="submit" className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                Send Message
               </button>
             </form>
           </div>
-
-          {/* Contact Info */}
           <div className="space-y-8">
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/20">
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Contact Information</h2>
@@ -596,7 +526,6 @@ export const Contact = () => {
                 </div>
               </div>
             </div>
-
             <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-2xl p-8 border border-white/20">
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Business Hours</h3>
               <div className="space-y-2 text-slate-600">
@@ -612,17 +541,6 @@ export const Contact = () => {
                   <span>Sunday</span>
                   <span className="font-semibold text-red-500">Closed</span>
                 </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Follow Us</h3>
-              <div className="flex gap-4">
-                {['LinkedIn', 'Twitter', 'Facebook', 'Instagram'].map((social, i) => (
-                  <div key={i} className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all cursor-pointer transform hover:scale-110">
-                    <span className="text-sm font-bold">{social[0]}</span>
-                  </div>
-                ))}
               </div>
             </div>
           </div>

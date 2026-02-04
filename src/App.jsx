@@ -8,16 +8,16 @@ import BlogDetail from './pages/BlogDetail';
 
 import ServiceDetails from "./pages/ServiceDetails";
 
+// Import CompanyOverview, CoreValues, OurCulture, and MeetTheLeaders from separate files
+import { CompanyOverview } from './pages/CompanyOverview';
+import { CoreValues } from './pages/CoreValues';
+import { OurCulture } from './pages/OurCulture';
+import { MeetTheLeaders } from './pages/MeetTheLeaders';
 
-
-// Import all pages
+// Import all other pages
 import {
   Home,
-  // About Pages
-  CompanyOverview,
-  CoreValues,
-  Culture,
-  Leaders,
+  // About Pages (excluding separate files)
   // Services Pages
   ArtificialIntelligence,
   DigitalExperience,
@@ -77,8 +77,8 @@ function App() {
             {/* About Us Routes */}
             <Route path="/about/company-overview" element={<CompanyOverview />} />
             <Route path="/about/core-values" element={<CoreValues />} />
-            <Route path="/about/culture" element={<Culture />} />
-            <Route path="/about/leaders" element={<Leaders />} />
+            <Route path="/about/culture" element={<OurCulture />} />
+            <Route path="/about/leaders" element={<MeetTheLeaders />} />
             
             {/* Services Routes */}
             {/* <Route path="/services/artificial-intelligence" element={<ArtificialIntelligence />} />

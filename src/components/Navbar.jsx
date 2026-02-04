@@ -68,18 +68,26 @@ const Navbar = () => {
           
           {/* Logo Section */}
           <div className="flex items-center flex-shrink-0">
-            <Link to="/" className="flex items-center gap-2 sm:gap-3 group">
-              <img
-                src={arvishLogo}
-                alt="Arvish Consulting Logo"
-                className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full transition-transform group-hover:scale-110 shadow-md"
-              />
-              <span className="text-lg sm:text-xl lg:text-2xl font-bold tracking-tight font-serif bg-gradient-to-r from-[#1e2875] to-[#3b5998] bg-clip-text text-transparent hidden sm:block">
-                Arvish Consulting
-              </span>
-              <span className="text-sm font-bold tracking-tight font-serif bg-gradient-to-r from-[#1e2875] to-[#3b5998] bg-clip-text text-transparent sm:hidden">
-                Arvish
-              </span>
+            <Link to="/" className="flex items-center gap-3 sm:gap-4 group">
+              <div className="relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 rounded-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
+                <img
+                  src={arvishLogo}
+                  alt="Arvish Consulting Logo"
+                  className="relative w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 transition-all duration-300 group-hover:scale-110 rounded-xl border-2 border-slate-200 group-hover:border-blue-400"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-lg sm:text-xl lg:text-2xl font-bold tracking-tight bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-700 bg-clip-text text-transparent hidden sm:block leading-tight group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
+                  Arvish Consulting
+                </span>
+                <span className="text-xs text-slate-500 font-medium hidden lg:block -mt-1 group-hover:text-blue-600 transition-colors duration-300">
+                  Excellence in Technology
+                </span>
+                <span className="text-sm font-bold tracking-tight bg-gradient-to-r from-slate-800 to-blue-700 bg-clip-text text-transparent sm:hidden group-hover:from-blue-600 group-hover:to-purple-600 transition-all duration-300">
+                  Arvish
+                </span>
+              </div>
             </Link>
           </div>
 
@@ -110,17 +118,23 @@ const Navbar = () => {
 
                 {/* Dropdown Menu */}
                 {activeDropdown === menu && (
-                  <div className="absolute top-full left-0 mt-1 bg-white shadow-xl rounded-lg border border-slate-100 min-w-[250px] xl:min-w-[280px] py-3 animate-fade-in-down">
-                    {menuItems[menu].map((item, index) => (
-                      <Link
-                        key={index}
-                        to={item.link}
-                        onClick={closeDropdown}
-                        className="block px-4 xl:px-6 py-2 xl:py-3 text-sm xl:text-base text-slate-700 hover:bg-slate-50 hover:text-[#1e2875] transition-colors font-medium"
-                      >
-                        {item.name}
-                      </Link>
-                    ))}
+                  <div 
+                    className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-xl rounded-lg border border-slate-100 min-w-[250px] xl:min-w-[280px] py-2 animate-fade-in-down max-h-80 overflow-hidden"
+                    onMouseEnter={() => handleMouseEnter(menu)}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    <div className="overflow-y-auto max-h-72 scrollbar-hide">
+                      {menuItems[menu].map((item, index) => (
+                        <Link
+                          key={index}
+                          to={item.link}
+                          onClick={closeDropdown}
+                          className="block px-4 xl:px-5 py-2 text-sm xl:text-base text-slate-700 hover:bg-slate-50 hover:text-[#1e2875] transition-colors font-medium"
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
@@ -172,7 +186,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Add fade-in-down animation */}
+      {/* Simple animations */}
       <style jsx>{`
         @keyframes fade-in-down {
           from {
@@ -187,6 +201,15 @@ const Navbar = () => {
         
         .animate-fade-in-down {
           animation: fade-in-down 0.2s ease-out;
+        }
+        
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+        
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
         }
       `}</style>
 
@@ -214,17 +237,19 @@ const Navbar = () => {
 
                   {/* Mobile Dropdown */}
                   {activeDropdown === menu && (
-                    <div className="ml-4 mt-2 space-y-1">
-                      {menuItems[menu].map((item, index) => (
-                        <Link
-                          key={index}
-                          to={item.link}
-                          onClick={closeMobileMenu}
-                          className="block py-2 px-4 text-slate-600 hover:text-[#1e2875] hover:bg-slate-50 rounded-md transition-colors text-sm"
-                        >
-                          {item.name}
-                        </Link>
-                      ))}
+                    <div className="ml-3 mt-2 space-y-1 max-h-60 overflow-hidden">
+                      <div className="overflow-y-auto max-h-56 scrollbar-hide">
+                        {menuItems[menu].map((item, index) => (
+                          <Link
+                            key={index}
+                            to={item.link}
+                            onClick={closeMobileMenu}
+                            className="block py-2 px-3 text-slate-600 hover:text-[#1e2875] hover:bg-slate-50 rounded-md transition-colors text-sm"
+                          >
+                            {item.name}
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -260,5 +285,6 @@ const Navbar = () => {
     </header>
   );
 };
+
 
 export default Navbar;
