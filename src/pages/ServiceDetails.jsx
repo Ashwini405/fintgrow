@@ -1473,7 +1473,7 @@ export default function ServiceDetails() {
                                 <div className="grid md:grid-cols-2 gap-16 items-start">
                                     <div className="text-slate-700 leading-relaxed space-y-6 animate-fadeInLeft">
                                         <p className="hover:text-slate-900 transition-colors duration-300">
-                                            At FINT, we leverage a <b class="hover:text-blue-700 transition-colors duration-200">robust, future-ready AI technology stack</b>
+                                            At Arvish Consulting, we leverage a <b class="hover:text-blue-700 transition-colors duration-200">robust, future-ready AI technology stack</b>
                                             that combines large language models, agentic AI frameworks, and
                                             enterprise-grade cloud infrastructure.
                                         </p>
@@ -1825,7 +1825,7 @@ export default function ServiceDetails() {
                                         </div>
 
                                         <p className="animate-fadeInUp stagger-1">
-                                            FINT partners with enterprises at every stage of their AI maturity.
+                                            Arvish Consulting partners with enterprises at every stage of their AI maturity.
                                             Whether you're experimenting with proof of concept or operationalizing
                                             AI across business units, our AI Maturity Framework helps assess
                                             readiness, define a roadmap, and drive measurable impact.
@@ -1881,7 +1881,7 @@ export default function ServiceDetails() {
 
                                         <div className="bg-gradient-to-r from-slate-50 to-slate-100 p-6 rounded-xl border-l-4 border-slate-500 animate-fadeInUp stagger-3">
                                             <p className="text-slate-700">
-                                                <span className="font-semibold text-slate-900">🎯 Expert Partnership:</span> FINT's experts work closely with business and technology leaders to
+                                                <span className="font-semibold text-slate-900">🎯 Expert Partnership:</span> Arvish Consulting's experts work closely with business and technology leaders to
                                                 define strategy, establish governance, and prioritize investments
                                                 aligned with transformation goals.
                                             </p>
@@ -1909,7 +1909,7 @@ export default function ServiceDetails() {
                                         </p>
 
                                         <p>
-                                            At FINT, we integrate AI into the heart of Quality Engineering
+                                            At Arvish Consulting, we integrate AI into the heart of Quality Engineering
                                             to make software delivery faster, smarter, and more reliable.
                                         </p>
 
@@ -1949,12 +1949,12 @@ export default function ServiceDetails() {
                             </div>
                         </section>
 
-                        {/* ================= WHY FINT FOR AI ================= */}
+                        {/* ================= WHY Arvish Consulting FOR AI ================= */}
                         <section className="mt-24 bg-slate-50 py-20 px-6 rounded-lg">
                             <div className="max-w-6xl mx-auto">
                                 <div className="text-center mb-16 animate-fadeInUp">
                                     <h2 className="text-3xl font-bold text-blue-900 mb-4 hover:text-blue-700 transition-colors duration-300">
-                                        Why FINT For AI?
+                                        Why Arvish Consulting For AI?
                                     </h2>
                                     <div className="flex items-center justify-center gap-3">
                                         <span className="w-20 h-1 bg-green-200 rounded"></span>
@@ -2553,94 +2553,434 @@ export default function ServiceDetails() {
                         </section>
 
                         <section className="mt-24 py-20 px-6 bg-white">
-                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-                                <div className="flex justify-center">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&auto=format&fit=crop"
-                                        alt="Application Modernization"
-                                        className="max-w-md w-full rounded-lg shadow-lg hover-scale hover-glow transition-all duration-300 animate-fadeInLeft"
-                                    />
-                                </div>
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+    
+    <div className="space-y-6 text-slate-700 md:order-1 order-2">
+      <h2 className="text-3xl font-bold text-blue-900">
+        Application Modernization
+      </h2>
 
-                                <div className="space-y-6 text-slate-700">
-                                    <h2 className="text-3xl font-bold text-blue-900">
-                                        Application Modernization
-                                    </h2>
+      <p>
+        Modernize core applications using cloud-native architectures, CI/CD,
+        containerization, and DevOps best practices.
+      </p>
 
-                                    <p>
-                                        Modernize core applications using cloud-native architectures, CI/CD,
-                                        containerization, and DevOps best practices.
-                                    </p>
+      <ul className="list-disc pl-6 space-y-2">
+        <li className="hover:translate-x-2 transition-transform duration-300">Cloud-native re-architecture</li>
+        <li className="hover:translate-x-2 transition-transform duration-300">CI/CD automation</li>
+        <li className="hover:translate-x-2 transition-transform duration-300">Portfolio assessment & roadmap</li>
+        <li className="hover:translate-x-2 transition-transform duration-300">Containerized deployments</li>
+        <li className="hover:translate-x-2 transition-transform duration-300">DevOps-driven acceleration</li>
+        <li className="hover:translate-x-2 transition-transform duration-300">SaaS & PaaS optimization</li>
+      </ul>
+    </div>
 
-                                    <ul className="list-disc pl-6 space-y-2">
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Cloud-native re-architecture</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">CI/CD automation</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Portfolio assessment & roadmap</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">Containerized deployments</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">DevOps-driven acceleration</li>
-                                        <li className="hover:translate-x-2 transition-transform duration-300">SaaS & PaaS optimization</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
+    {/* Cloud Modernization Animation (on the right, larger size) */}
+    <div className="relative w-full h-[320px] bg-gradient-to-br from-sky-50 to-blue-50 rounded-xl p-6 border border-sky-100 overflow-hidden md:order-2 order-1">
+      
+      {/* Cloud Platform */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2">
+        <div className="relative">
+          {/* Main Cloud */}
+          <div className="w-32 h-20 bg-gradient-to-r from-sky-400 to-blue-500 rounded-full shadow-lg animate-float">
+            <div className="absolute -top-4 left-6 w-16 h-16 bg-gradient-to-r from-sky-300 to-blue-400 rounded-full"></div>
+            <div className="absolute -top-6 right-8 w-20 h-20 bg-gradient-to-r from-sky-500 to-blue-600 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Containers floating up */}
+      <div className="absolute top-1/2 left-1/4 -translate-x-1/2">
+        <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-green-500 rounded-lg shadow-md animate-float-up flex items-center justify-center text-white">
+          📦
+        </div>
+      </div>
+      
+      <div className="absolute top-1/2 right-1/4 translate-x-1/2">
+        <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-lg shadow-md animate-float-up flex items-center justify-center text-white"
+          style={{animationDelay: '0.5s'}}>
+          📦
+        </div>
+      </div>
+      
+      {/* CI/CD Arrows */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="flex gap-8">
+          <div className="text-2xl text-sky-600 animate-move-left">⬅️</div>
+          <div className="text-2xl text-blue-600 animate-move-right">➡️</div>
+        </div>
+      </div>
+      
+      {/* Modernization Progress */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-48">
+        <div className="w-full h-2 bg-gradient-to-r from-sky-300 to-blue-300 rounded-full overflow-hidden">
+          <div className="h-full bg-gradient-to-r from-emerald-400 to-green-500 rounded-full animate-progress" 
+               style={{width: '85%'}}></div>
+        </div>
+        <div className="text-center mt-2 text-sm font-medium text-blue-700">85% Modernized</div>
+      </div>
+      
+      {/* DevOps Icons */}
+      <div className="absolute top-8 left-8 text-sky-600 animate-bounce">⚡</div>
+      <div className="absolute top-8 right-8 text-blue-600 animate-bounce" style={{animationDelay: '0.3s'}}>🔄</div>
+      <div className="absolute bottom-20 left-10 text-emerald-600 animate-spin-slow">☁️</div>
+      <div className="absolute bottom-20 right-10 text-amber-600 animate-spin-reverse">⚙️</div>
+      
+      {/* Background Grid */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(to right, #0ea5e9 1px, transparent 1px),
+                            linear-gradient(to bottom, #0ea5e9 1px, transparent 1px)`,
+          backgroundSize: '20px 20px'
+        }}></div>
+      </div>
+    </div>
+    
+  </div>
 
-                        <section className="mt-24 py-20 px-6 bg-slate-50">
-                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                                <div className="flex justify-center">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop"
-                                        alt="Application Security"
-                                        className="max-w-sm w-full rounded-lg shadow-lg hover-scale hover-glow transition-all duration-300 animate-fadeInLeft"
-                                    />
-                                </div>
+  <style jsx>{`
+    @keyframes float {
+      0%, 100% { transform: translateY(0) translateX(-50%); }
+      25% { transform: translateY(-10px) translateX(-50%) rotate(5deg); }
+      75% { transform: translateY(5px) translateX(-50%) rotate(-5deg); }
+    }
+    @keyframes float-up {
+      0% { transform: translateY(0) translateX(-50%); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateY(-100px) translateX(-50%); opacity: 0; }
+    }
+    @keyframes move-left {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(-10px); }
+    }
+    @keyframes move-right {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(10px); }
+    }
+    @keyframes progress {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(0); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spin-reverse {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    .animate-float { animation: float 6s ease-in-out infinite; }
+    .animate-float-up { animation: float-up 3s ease-in infinite; }
+    .animate-move-left { animation: move-left 2s ease-in-out infinite; }
+    .animate-move-right { animation: move-right 2s ease-in-out infinite; }
+    .animate-progress { animation: progress 2s ease-out forwards; }
+    .animate-bounce { animation: bounce 2s ease-in-out infinite; }
+    .animate-spin-slow { animation: spin-slow 10s linear infinite; }
+    .animate-spin-reverse { animation: spin-reverse 15s linear infinite; }
+  `}</style>
+</section>
 
-                                <div className="space-y-6 text-slate-700">
-                                    <h2 className="text-3xl font-bold text-blue-900">
-                                        Application Security Services
-                                    </h2>
+                      <section className="mt-24 py-20 px-6 bg-slate-50">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    
+    <div className="space-y-6 text-slate-700 md:order-1 order-2">
+      <h2 className="text-3xl font-bold text-blue-900">
+        Application Security Services
+      </h2>
 
-                                    <p>
-                                        Our security assessments help identify risks, vulnerabilities, and
-                                        threats while transforming security into a continuous governance
-                                        process.
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
+      <p>
+        Our security assessments help identify risks, vulnerabilities, and
+        threats while transforming security into a continuous governance
+        process.
+      </p>
+    </div>
+
+    {/* Security Shield Animation (on the right) */}
+    <div className="relative w-full h-[250px] bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-4 border border-blue-100 overflow-hidden md:order-2 order-1">
+      
+      {/* Shield with Scan */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="relative">
+          {/* Shield Base */}
+          <div className="w-20 h-24 bg-gradient-to-b from-blue-500 to-indigo-600 rounded-t-lg 
+            flex items-center justify-center text-3xl text-white shadow-xl animate-pulse">
+            🔒
+          </div>
+          
+          {/* Scanning Ring */}
+          <div className="absolute -inset-4 border-2 border-blue-400 rounded-full animate-ping opacity-0 group-hover:opacity-100"></div>
+        </div>
+      </div>
+      
+      {/* Security Dots */}
+      <div className="absolute top-4 left-4 w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+      <div className="absolute top-4 right-4 w-3 h-3 bg-green-500 rounded-full animate-pulse" style={{animationDelay: '0.3s'}}></div>
+      <div className="absolute bottom-4 left-4 w-3 h-3 bg-yellow-500 rounded-full animate-pulse" style={{animationDelay: '0.6s'}}></div>
+      <div className="absolute bottom-4 right-4 w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.9s'}}></div>
+      
+      {/* Scan Line */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-400 to-transparent 
+        animate-scan"></div>
+      
+      {/* Security Badge */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 px-3 py-2 rounded-lg shadow animate-bounce-slow">
+        <span className="text-sm font-bold text-blue-700">Protected</span>
+      </div>
+      
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="grid grid-cols-10 grid-rows-10 gap-1 w-full h-full">
+          {[...Array(100)].map((_, i) => (
+            <div key={i} className="bg-blue-500 rounded-sm animate-pulse" 
+                 style={{ animationDelay: `${i * 0.05}s` }}></div>
+          ))}
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <style jsx>{`
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    @keyframes ping {
+      75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+    @keyframes scan {
+      0% { top: 0; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { top: 100%; opacity: 0; }
+    }
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-5px); }
+    }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+    .animate-ping { animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite; }
+    .animate-scan { animation: scan 3s linear infinite; }
+    .animate-bounce-slow { animation: bounce-slow 3s ease-in-out infinite; }
+  `}</style>
+</section>
 
                         <section className="mt-24 py-20 px-6 bg-white">
-                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                                <div className="flex justify-center">
-                                    <img
-                                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop"
-                                        alt="Application Testing"
-                                        className="max-w-sm w-full rounded-lg shadow-lg hover-scale hover-glow transition-all duration-300 animate-fadeInLeft"
-                                    />
-                                </div>
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    
+    {/* Application Testing Animation */}
+    <div className="relative w-full h-[250px] bg-gradient-to-br from-emerald-50 to-green-50 rounded-xl p-4 border border-emerald-100 overflow-hidden">
+      
+      {/* Testing Pyramid */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-40">
+        {/* Base - Unit Tests */}
+        <div className="w-40 h-8 bg-gradient-to-r from-emerald-400 to-green-500 rounded-t-lg animate-pulse"></div>
+        
+        {/* Middle - Integration Tests */}
+        <div className="w-28 h-8 bg-gradient-to-r from-emerald-500 to-green-600 rounded-t-lg mx-auto animate-pulse" 
+             style={{animationDelay: '0.2s'}}></div>
+        
+        {/* Top - UI Tests */}
+        <div className="w-16 h-8 bg-gradient-to-r from-emerald-600 to-green-700 rounded-t-lg mx-auto animate-pulse" 
+             style={{animationDelay: '0.4s'}}></div>
+      </div>
+      
+      {/* Testing Icons */}
+      <div className="absolute top-4 left-4 text-emerald-600 animate-bounce">📱</div>
+      <div className="absolute top-4 right-4 text-green-600 animate-bounce" style={{animationDelay: '0.2s'}}>🌐</div>
+      <div className="absolute bottom-12 left-8 text-emerald-500 animate-float">✅</div>
+      <div className="absolute bottom-12 right-8 text-green-500 animate-float" style={{animationDelay: '0.3s'}}>🔄</div>
+      
+      {/* Test Progress Line */}
+      <div className="absolute top-1/3 left-4 right-4 h-1 bg-gradient-to-r from-emerald-300 to-green-300 rounded-full overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
+      </div>
+      
+      {/* Quality Score */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 px-3 py-1 rounded-lg shadow animate-bounce-slow">
+        <span className="text-sm font-bold text-emerald-700">99.8% Pass</span>
+      </div>
+    </div>
 
-                                <div className="space-y-6 text-slate-700">
-                                    <h2 className="text-3xl font-bold text-blue-900">
-                                        Application Testing
-                                    </h2>
+    <div className="space-y-6 text-slate-700">
+      <h2 className="text-3xl font-bold text-blue-900">
+        Application Testing
+      </h2>
 
+      <p>
+        Our testing services ensure seamless performance, security, and
+        reliability across web, mobile, automation, and security testing.
+      </p>
+
+      <p>
+        We use holistic QA approaches to minimize risk and maximize application
+        quality while aligning with your business needs.
+      </p>
+    </div>
+  </div>
+
+  <style jsx>{`
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-5px) rotate(5deg); }
+    }
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.8; }
+      50% { opacity: 1; }
+    }
+    .animate-bounce { animation: bounce 2s ease-in-out infinite; }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-shimmer { animation: shimmer 2s linear infinite; }
+    .animate-bounce-slow { animation: bounce-slow 3s ease-in-out infinite; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+  `}</style>
+</section>
+                    </>
+                )}
+                
+                
+
+                {/* ================= INTELLIGENT IT & CLOUD ================= */}
+                {serviceName === "intelligent-it-and-cloud" && (
+                    <>
+                        <div className="grid md:grid-cols-2 gap-12 items-center mb-20 it-bg">
+                            <div>
+                                <h1 className="text-4xl font-bold text-blue-900 mb-4 hover:text-blue-700 transition-colors duration-300 animate-fadeInLeft">
+                                    Intelligent IT & Cloud
+                                </h1>
+                                <p className="italic text-lg text-slate-600 mb-6 hover:text-slate-800 transition-colors duration-300">
+                                    Cloud-first strategies for scalable and secure IT operations
+                                </p>
+                                <p className="text-slate-700 leading-relaxed">
+                                    Transform your IT infrastructure with our intelligent cloud solutions
+                                    that deliver scalability, security, and operational excellence.
+                                </p>
+                            </div>
+                            <CloudOperationsIllustration />
+                        </div>
+
+                        <section className="py-20 px-6 bg-white">
+                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                                <CloudOperationsIllustration />
+
+                                <div className="text-slate-700 leading-relaxed space-y-6">
                                     <p>
-                                        Our testing services ensure seamless performance, security, and
-                                        reliability across web, mobile, automation, and security testing.
+                                        Our intelligent IT and cloud services help organizations modernize their
+                                        infrastructure, optimize operations, and accelerate digital transformation
+                                        through cloud-native technologies and best practices.
                                     </p>
 
                                     <p>
-                                        We use holistic QA approaches to minimize risk and maximize application
-                                        quality while aligning with your business needs.
+                                        We provide comprehensive cloud migration, management, and optimization
+                                        services that ensure your IT infrastructure is scalable, secure, and
+                                        cost-effective while enabling innovation and business growth.
                                     </p>
                                 </div>
                             </div>
                         </section>
                     </>
                 )}
-                
-                
 
-                {/* ================= MICROSOFT DYNAMICS 365 ================= */}
+                {/* ================= SERVICENOW PLATFORM ================= */}
+                {serviceName === "servicenow-platform" && (
+                    <>
+                        <div className="grid md:grid-cols-2 gap-12 items-center mb-20 sn-bg">
+                            <div>
+                                <h1 className="text-4xl font-bold text-blue-900 mb-4 hover:text-blue-700 transition-colors duration-300 animate-fadeInLeft">
+                                    ServiceNow Platform
+                                </h1>
+                                <p className="italic text-lg text-slate-600 mb-6 hover:text-slate-800 transition-colors duration-300">
+                                    Digital workflows that simplify enterprise service management
+                                </p>
+                                <p className="text-slate-700 leading-relaxed">
+                                    Streamline your enterprise operations with ServiceNow's powerful
+                                    platform for digital workflow automation and service management.
+                                </p>
+                            </div>
+                            <ServiceNowIllustration />
+                        </div>
+
+                        <section className="py-20 px-6 bg-white">
+                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                                <ServiceNowIllustration />
+
+                                <div className="text-slate-700 leading-relaxed space-y-6">
+                                    <p>
+                                        ServiceNow transforms how work gets done by automating and connecting
+                                        processes across departments, creating seamless experiences for
+                                        employees, customers, and partners.
+                                    </p>
+
+                                    <p>
+                                        Our ServiceNow implementation and optimization services help organizations
+                                        achieve operational excellence through intelligent automation, streamlined
+                                        workflows, and enhanced service delivery capabilities.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section className="py-20 px-6 bg-slate-50">
+                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                                <div className="flex justify-center">
+                                    <HRSDIllustration />
+                                </div>
+
+                                <div>
+                                    <h2 className="text-3xl font-bold text-blue-900 mb-4 hover:text-blue-700 transition-colors duration-300 animate-fadeInUp">
+                                        HR Service Delivery (HRSD)
+                                    </h2>
+
+                                    <p className="text-slate-700 leading-relaxed">
+                                        Transform HR service delivery with automated workflows, self-service
+                                        portals, and intelligent case management that improves employee
+                                        experience and operational efficiency.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section className="py-20 px-6 bg-white">
+                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                                <div className="flex justify-center">
+                                    <CSMIllustration />
+                                </div>
+
+                                <div>
+                                    <h2 className="text-3xl font-bold text-blue-900 mb-4 hover:text-blue-700 transition-colors duration-300 animate-fadeInUp">
+                                        Customer Service Management (CSM)
+                                    </h2>
+
+                                    <p className="text-slate-700 leading-relaxed">
+                                        Deliver exceptional customer experiences with integrated service
+                                        management capabilities that connect customer service, field service,
+                                        and customer success operations.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </>
+                )}
                 {serviceName === "microsoft-dynamics-365" && (
                     <>
                         <div className="grid md:grid-cols-2 gap-12 items-center mb-20 md-bg">
@@ -2660,23 +3000,301 @@ export default function ServiceDetails() {
                             <MicrosoftDynamicsIllustration />
                         </div>
 
-                        <section className="mt-24 py-20 px-6 bg-white">
-                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                                <img
-                                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop"
-                                    className="max-w-sm w-full mx-auto rounded-lg shadow-lg"
-                                    alt="CRM"
-                                />
+                        <section className="mt-24 py-20 px-4 md:px-6 bg-gradient-to-br from-white via-blue-50/30 to-slate-50 relative overflow-hidden">
+  {/* Background Elements */}
+  <div className="absolute inset-0 opacity-10">
+    <div className="absolute top-10 left-10 w-24 h-24 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full blur-3xl"></div>
+    <div className="absolute bottom-10 right-10 w-32 h-32 bg-gradient-to-br from-indigo-400 to-purple-400 rounded-full blur-3xl"></div>
+    <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-gradient-to-br from-emerald-400 to-green-400 rounded-full blur-3xl"></div>
+  </div>
+  
+  {/* Floating Particles */}
+  <div className="absolute inset-0">
+    {[...Array(15)].map((_, i) => (
+      <div key={i} className="absolute w-2 h-2 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-full animate-float"
+        style={{
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * 100}%`,
+          animationDelay: `${i * 0.3}s`,
+          animationDuration: `${3 + Math.random() * 4}s`
+        }}>
+      </div>
+    ))}
+  </div>
 
-                                <p className="text-slate-700 leading-relaxed">
-                                    FINT's expertise in implementing CRM solutions is achieved through its technically skilled and certified professionals.
-                                    As your technology partner, FINT delivers Modern Workplace applications utilizing Dynamics CRM that accelerate
-                                    business growth and faster ROI. Whether it is a single application or multiple applications, we have you covered
-                                    with our expertise.
-                                </p>
-                            </div>
-                        </section>
+  <div className="max-w-7xl mx-auto relative z-10">
+    {/* Main Heading */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 via-indigo-700 to-purple-700 
+        bg-clip-text text-transparent mb-6 animate-slide-up">
+        The Heart of Digital Transformation
+      </h2>
+      <div className="w-32 h-1 bg-gradient-to-r from-blue-500 via-cyan-500 to-purple-500 mx-auto rounded-full"></div>
+    </div>
 
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      
+      {/* CRM Ecosystem Animation */}
+      <div className="relative w-full h-[320px] bg-gradient-to-br from-white to-blue-50/50 rounded-2xl 
+        p-6 border-2 border-blue-100 shadow-2xl shadow-blue-100/50 overflow-hidden">
+        
+        {/* Central CRM Hub */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="relative">
+            {/* Pulse Rings */}
+            <div className="absolute -inset-8 border-4 border-blue-400/30 rounded-full animate-ping-slow"></div>
+            <div className="absolute -inset-12 border-2 border-cyan-400/20 rounded-full animate-ping-slower"></div>
+            
+            {/* CRM Core */}
+            <div className="w-24 h-24 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 
+              rounded-2xl shadow-2xl flex items-center justify-center text-white text-2xl animate-pulse-glow group">
+              <div className="relative">
+                <div className="text-3xl">🚀</div>
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-sm font-bold whitespace-nowrap">
+                  CRM Core
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Connected Business Elements */}
+        {[
+          { icon: "👥", label: "Customers", color: "from-emerald-500 to-green-500", pos: "top-8 left-1/4" },
+          { icon: "💰", label: "Sales", color: "from-cyan-500 to-blue-500", pos: "top-8 right-1/4" },
+          { icon: "🛠️", label: "Service", color: "from-amber-500 to-orange-500", pos: "bottom-8 left-1/4" },
+          { icon: "📊", label: "Analytics", color: "from-purple-500 to-pink-500", pos: "bottom-8 right-1/4" },
+          { icon: "🔗", label: "Integration", color: "from-indigo-500 to-purple-500", pos: "top-1/2 left-8" },
+          { icon: "⚡", label: "Automation", color: "from-red-500 to-rose-500", pos: "top-1/2 right-8" }
+        ].map((element, i) => (
+          <div key={i} className={`absolute ${element.pos} -translate-x-1/2 -translate-y-1/2`}>
+            {/* Connection Line */}
+            <div className="absolute top-1/2 left-1/2 w-20 h-0.5 bg-gradient-to-r from-blue-300/50 to-transparent 
+              origin-left rotate-45 scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+            
+            {/* Business Node */}
+            <div className={`relative w-14 h-14 bg-gradient-to-br ${element.color} rounded-xl shadow-lg 
+              flex items-center justify-center text-white text-xl group animate-orbit`}
+              style={{ animationDuration: `${8 + i * 2}s`, animationDelay: `${i * 0.5}s` }}>
+              
+              {element.icon}
+              
+              {/* Node Label */}
+              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-slate-900 text-white px-2 py-1 
+                rounded text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300
+                whitespace-nowrap">
+                {element.label}
+              </div>
+            </div>
+          </div>
+        ))}
+        
+        {/* ROI Indicator */}
+        <div className="absolute top-6 left-6 bg-gradient-to-r from-emerald-500/10 to-green-500/10 
+          backdrop-blur-sm px-4 py-3 rounded-xl border border-emerald-200 animate-pulse-slow">
+          <div className="text-center">
+            <div className="text-xl font-bold text-emerald-700">2.5x</div>
+            <div className="text-sm text-emerald-600">Faster ROI</div>
+          </div>
+        </div>
+        
+        {/* Growth Indicator */}
+        <div className="absolute top-6 right-6 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 
+          backdrop-blur-sm px-4 py-3 rounded-xl border border-blue-200 animate-pulse-slow"
+          style={{animationDelay: '0.5s'}}>
+          <div className="text-center">
+            <div className="text-xl font-bold text-blue-700">+300%</div>
+            <div className="text-sm text-blue-600">Growth</div>
+          </div>
+        </div>
+        
+        {/* Implementation Success */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 py-2 
+          rounded-xl border border-purple-200 shadow-lg animate-bounce-slow">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <span className="text-sm font-bold text-purple-700">100% Implementation Success</span>
+          </div>
+        </div>
+        
+        {/* Certified Expertise */}
+        <div className="absolute bottom-6 right-6 flex items-center gap-2">
+          <div className="text-xl text-amber-600 animate-spin-slow">🏆</div>
+          <div className="text-sm font-medium text-amber-700">Certified Experts</div>
+        </div>
+      </div>
+
+      {/* Content Section */}
+      <div className="space-y-8">
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-blue-100 shadow-xl">
+          <h3 className="text-3xl font-bold text-blue-900 mb-6 flex items-center gap-3">
+            <span className="text-4xl animate-pulse">❤️</span>
+            Our CRM Excellence
+          </h3>
+          
+          <p className="text-gray-700 leading-relaxed text-lg mb-6">
+            <span className="font-bold text-blue-700">Arvish Consulting's expertise</span> in implementing CRM solutions 
+            is achieved through its <span className="text-indigo-600 font-semibold">technically skilled and certified professionals</span>.
+          </p>
+          
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100 mb-6">
+            <p className="text-gray-700 leading-relaxed">
+              As your technology partner, we deliver <span className="font-bold text-purple-700">Modern Workplace applications</span> 
+              utilizing Dynamics CRM that accelerate business growth and achieve <span className="font-bold text-emerald-700">faster ROI</span>.
+            </p>
+          </div>
+          
+          <p className="text-gray-700 leading-relaxed">
+            Whether it's a single application or multiple applications, we have you covered with our comprehensive expertise 
+            and commitment to your <span className="font-bold text-cyan-700">digital transformation journey</span>.
+          </p>
+        </div>
+        
+        {/* Stats Bar */}
+        <div className="grid grid-cols-3 gap-4">
+          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-4 rounded-xl text-center border border-blue-100 group hover:scale-105 transition-transform duration-300">
+            <div className="text-2xl font-bold text-blue-700 group-hover:animate-bounce">50+</div>
+            <div className="text-sm text-blue-600">CRM Projects</div>
+          </div>
+          <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-xl text-center border border-purple-100 group hover:scale-105 transition-transform duration-300">
+            <div className="text-2xl font-bold text-purple-700 group-hover:animate-bounce">100%</div>
+            <div className="text-sm text-purple-600">Success Rate</div>
+          </div>
+          <div className="bg-gradient-to-br from-emerald-50 to-green-50 p-4 rounded-xl text-center border border-emerald-100 group hover:scale-105 transition-transform duration-300">
+            <div className="text-2xl font-bold text-emerald-700 group-hover:animate-bounce">2.5x</div>
+            <div className="text-sm text-emerald-600">ROI Multiplier</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style jsx>{`
+    @keyframes slide-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+    @keyframes orbit {
+      0% {
+        transform: rotate(0deg) translateX(80px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(80px) rotate(-360deg);
+      }
+    }
+    @keyframes ping-slow {
+      75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+    @keyframes ping-slower {
+      75%, 100% {
+        transform: scale(3);
+        opacity: 0;
+      }
+    }
+    @keyframes pulse-glow {
+      0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(37, 99, 235, 0.5);
+      }
+      50% {
+        opacity: 0.9;
+        box-shadow: 0 0 40px rgba(37, 99, 235, 0.8);
+      }
+    }
+    @keyframes pulse-slow {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+      }
+    }
+    @keyframes bounce-slow {
+      0%, 100% {
+        transform: translateX(-50%) translateY(0);
+      }
+      50% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
+    @keyframes spin-slow {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .animate-slide-up {
+      animation: slide-up 1s ease-out;
+    }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    .animate-orbit {
+      animation: orbit linear infinite;
+    }
+    .animate-ping-slow {
+      animation: ping-slow 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+    .animate-ping-slower {
+      animation: ping-slower 4s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+    .animate-pulse-glow {
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+    .animate-pulse-slow {
+      animation: pulse-slow 3s ease-in-out infinite;
+    }
+    .animate-bounce-slow {
+      animation: bounce-slow 3s ease-in-out infinite;
+    }
+    .animate-spin-slow {
+      animation: spin-slow 20s linear infinite;
+    }
+    .animate-bounce {
+      animation: bounce 0.5s ease-in-out;
+    }
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+  `}</style>
+</section>
                         <section className="mt-24 py-20 px-6 bg-slate-50 rounded-xl">
                             <div className="max-w-6xl mx-auto">
                                 <div className="text-center mb-16">
@@ -2718,74 +3336,394 @@ export default function ServiceDetails() {
                         </section>
 
                         <section className="mt-24 py-20 px-6 bg-white">
-                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-                                <MicrosoftDynamicsIllustration />
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    
+    {/* Development Process Animation */}
+    <div className="relative w-full h-[280px] bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-6 border border-indigo-100 overflow-hidden">
+      
+      {/* Development Pipeline Flow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48">
+        {/* Pipeline Line */}
+        <div className="w-full h-2 bg-gradient-to-r from-indigo-300 to-purple-300 rounded-full overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
+        </div>
+        
+        {/* Process Stages */}
+        {[
+          { step: "1", label: "Diligence", icon: "📋" },
+          { step: "2", label: "Design", icon: "🎨" },
+          { step: "3", label: "Build", icon: "🛠️" },
+          { step: "4", label: "QA", icon: "✅" },
+          { step: "5", label: "Rollout", icon: "🚀" }
+        ].map((stage, i) => (
+          <div key={i} className="absolute top-1/2 -translate-y-1/2" 
+               style={{ left: `${i * 25}%` }}>
+            
+            {/* Stage Node */}
+            <div className="w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 
+              rounded-full flex items-center justify-center text-white text-xl shadow-lg 
+              animate-pulse-slow group hover:scale-110 transition-transform duration-300">
+              {stage.icon}
+              
+              {/* Stage Indicator */}
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-br from-emerald-500 to-green-600 
+                rounded-full flex items-center justify-center text-xs font-bold text-white">
+                {stage.step}
+              </div>
+            </div>
+            
+            {/* Stage Label */}
+            <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs font-medium text-indigo-700 
+              whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {stage.label}
+            </div>
+          </div>
+        ))}
+        
+        {/* Moving Code Indicator */}
+        <div className="absolute top-1/2 -translate-y-1/2 w-4 h-4 
+          bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full shadow-lg animate-flow"
+          style={{ animationDuration: '5s' }}>
+        </div>
+      </div>
+      
+      {/* Code Snippets Background */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-4 left-4 font-mono text-xs text-indigo-800 animate-pulse">
+          {`<Component />`}
+        </div>
+        <div className="absolute top-10 right-6 font-mono text-xs text-purple-800 animate-pulse" 
+             style={{animationDelay: '0.5s'}}>
+          {`export default`}
+        </div>
+        <div className="absolute bottom-6 left-6 font-mono text-xs text-blue-800 animate-pulse" 
+             style={{animationDelay: '1s'}}>
+          {`const api = {}`}
+        </div>
+        <div className="absolute bottom-4 right-4 font-mono text-xs text-cyan-800 animate-pulse" 
+             style={{animationDelay: '1.5s'}}>
+          {`return (<>)`}
+        </div>
+      </div>
+      
+      {/* Success Metrics */}
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 flex gap-6">
+        <div className="text-center animate-bounce-slow">
+          <div className="text-lg font-bold text-indigo-700">100%</div>
+          <div className="text-xs text-indigo-600">Success</div>
+        </div>
+        <div className="text-center animate-bounce-slow" style={{animationDelay: '0.3s'}}>
+          <div className="text-lg font-bold text-purple-700">50+</div>
+          <div className="text-xs text-purple-600">Projects</div>
+        </div>
+      </div>
+      
+      {/* Active Development */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/90 px-4 py-2 
+        rounded-lg shadow-lg border border-indigo-200 animate-pulse">
+        <div className="flex items-center gap-2">
+          <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+          <span className="text-sm font-medium text-indigo-800">Active Development</span>
+        </div>
+      </div>
+    </div>
 
-                                <div className="space-y-6 text-slate-700">
-                                    <h2 className="text-3xl font-bold text-blue-900">
-                                        Development & Consulting Services
-                                    </h2>
+    <div className="space-y-6 text-slate-700">
+      <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-indigo-800 to-purple-700 bg-clip-text text-transparent">
+        Development & Consulting Services
+      </h2>
 
-                                    <p>
-                                        FINT Solutions is a specialist technology success partner delivering strategic business outcomes.
-                                        We help organizations identify, build, implement, service and support Dynamics CRM solutions.
-                                    </p>
+      <p className="text-gray-700 leading-relaxed">
+        Arvish Consulting Solutions is a specialist technology success partner delivering strategic business outcomes.
+        We help organizations identify, build, implement, service and support Dynamics CRM solutions.
+      </p>
 
-                                    <ul className="space-y-3">
-                                        <li className="text-red-600">■ Due Diligence</li>
-                                        <li className="text-red-600">■ Discovery & Design</li>
-                                        <li className="text-red-600">■ Build Core Components</li>
-                                        <li className="text-red-600">■ Build Integration Components</li>
-                                        <li className="text-red-600">■ Quality Assurance</li>
-                                        <li className="text-red-600">■ Rollout</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
+      <ul className="space-y-3">
+        {[
+          "Due Diligence",
+          "Discovery & Design", 
+          "Build Core Components",
+          "Build Integration Components",
+          "Quality Assurance",
+          "Rollout"
+        ].map((item, index) => (
+          <li key={index} className="flex items-center gap-3 text-gray-700 
+            group hover:text-red-600 transition-colors duration-300">
+            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" 
+                 style={{animationDelay: `${index * 0.2}s`}}></div>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
 
-                        <section className="mt-24 py-20 px-6 bg-white">
-                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-                                <MicrosoftDynamicsIllustration />
+  <style jsx>{`
+    @keyframes flow {
+      0% { left: 0; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { left: calc(100% - 1rem); opacity: 0; }
+    }
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.05); }
+    }
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .animate-flow { animation: flow linear infinite; }
+    .animate-shimmer { animation: shimmer 2s linear infinite; }
+    .animate-pulse-slow { animation: pulse-slow 3s ease-in-out infinite; }
+    .animate-bounce-slow { animation: bounce-slow 2s ease-in-out infinite; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+  `}</style>
+</section>
 
-                                <div className="space-y-6 text-slate-700">
-                                    <h2 className="text-3xl font-bold text-blue-900">
-                                        Customer Engagement (Sales)
-                                    </h2>
+                       <section className="mt-24 py-20 px-6 bg-white">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    
+    {/* Sales Engagement Animation */}
+    <div className="relative w-full h-[250px] bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-4 border border-cyan-100 overflow-hidden">
+      
+      {/* Sales Dashboard */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl shadow-lg 
+          flex items-center justify-center text-2xl text-white animate-pulse">
+          💰
+        </div>
+        
+        {/* Sales Graph Line */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32">
+          <div className="w-full h-1 bg-gradient-to-r from-cyan-300 to-blue-300 rounded-full overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Sales Metrics */}
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 flex gap-6">
+        <div className="text-center animate-float">
+          <div className="text-lg font-bold text-cyan-700">42%</div>
+          <div className="text-xs text-cyan-600">Growth</div>
+        </div>
+        <div className="text-center animate-float" style={{animationDelay: '0.3s'}}>
+          <div className="text-lg font-bold text-blue-700">98%</div>
+          <div className="text-xs text-blue-600">Retention</div>
+        </div>
+      </div>
+      
+      {/* Sales Process */}
+      {[
+        { step: "Connect", icon: "🤝", color: "from-emerald-400 to-green-500" },
+        { step: "Engage", icon: "💬", color: "from-blue-400 to-cyan-500" },
+        { step: "Close", icon: "✅", color: "from-purple-400 to-pink-500" },
+        { step: "Grow", icon: "📈", color: "from-amber-400 to-orange-500" }
+      ].map((item, i) => (
+        <div key={i} className="absolute" style={{
+          top: `${25 + (i * 25)}%`,
+          left: i % 2 === 0 ? '20%' : '70%'
+        }}>
+          <div className={`w-10 h-10 bg-gradient-to-br ${item.color} rounded-lg 
+            flex items-center justify-center text-white shadow-md animate-bounce`}
+            style={{ animationDelay: `${i * 0.2}s` }}>
+            {item.icon}
+          </div>
+        </div>
+      ))}
+      
+      {/* Active Deal */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 px-3 py-2 
+        rounded-lg shadow animate-bounce-slow">
+        <span className="text-sm font-bold text-blue-700">$125K Deal</span>
+        <span className="text-xs text-blue-600 ml-2">Active</span>
+      </div>
+      
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="grid grid-cols-10 grid-rows-10 gap-1 w-full h-full">
+          {[...Array(100)].map((_, i) => (
+            <div key={i} className="bg-cyan-500 rounded-sm animate-pulse" 
+                 style={{ animationDelay: `${i * 0.05}s` }}></div>
+          ))}
+        </div>
+      </div>
+    </div>
 
-                                    <ul className="space-y-3">
-                                        <li className="text-red-600">■ Personal customer engagement</li>
-                                        <li className="text-red-600">■ 360-degree customer data view</li>
-                                        <li className="text-red-600">■ Smarter selling strategies</li>
-                                        <li className="text-red-600">■ Unified relationships</li>
-                                        <li className="text-red-600">■ Predictive sales performance</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
+    <div className="space-y-6 text-slate-700">
+      <h2 className="text-3xl font-bold text-blue-900">
+        Customer Engagement (Sales)
+      </h2>
 
-                        <section className="mt-24 py-20 px-6 bg-white">
-                            <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
-                                <img
-                                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&auto=format&fit=crop"
-                                    className="max-w-sm w-full mx-auto rounded-lg shadow-lg"
-                                    alt="Service Desk"
-                                />
+      <ul className="space-y-3">
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+          Personal customer engagement
+        </li>
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+          360-degree customer data view
+        </li>
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+          Smarter selling strategies
+        </li>
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{animationDelay: '0.6s'}}></div>
+          Unified relationships
+        </li>
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{animationDelay: '0.8s'}}></div>
+          Predictive sales performance
+        </li>
+      </ul>
+    </div>
+  </div>
 
-                                <div className="space-y-6 text-slate-700">
-                                    <h2 className="text-3xl font-bold text-blue-900">
-                                        Unified Service Desk
-                                    </h2>
+  <style jsx>{`
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-5px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-shimmer { animation: shimmer 2s linear infinite; }
+    .animate-bounce { animation: bounce 2s ease-in-out infinite; }
+    .animate-bounce-slow { animation: bounce-slow 3s ease-in-out infinite; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+  `}</style>
+</section>
 
-                                    <ul className="space-y-3">
-                                        <li className="text-red-600">■ Faster customer issue resolution</li>
-                                        <li className="text-red-600">■ Personalized interactions</li>
-                                        <li className="text-red-600">■ Preferred customer channels</li>
-                                        <li className="text-red-600">■ Unified customer experience</li>
-                                        <li className="text-red-600">■ Intelligent knowledge search</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
+                       <section className="mt-24 py-20 px-6 bg-white">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    
+    {/* Service Desk Dashboard Animation (left side) */}
+    <div className="relative w-full h-[250px] bg-gradient-to-br from-red-50 to-orange-50 rounded-xl p-4 border border-red-100 overflow-hidden">
+      
+      {/* Service Desk Console */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="w-24 h-24 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl shadow-lg 
+          flex items-center justify-center text-3xl text-white animate-pulse">
+          💬
+        </div>
+        
+        {/* Active Indicators */}
+        <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-500 rounded-full border-2 border-white animate-pulse"></div>
+      </div>
+      
+      {/* Support Channels */}
+      <div className="absolute top-4 left-4 w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 
+        rounded-lg flex items-center justify-center text-white animate-float">
+        📞
+      </div>
+      
+      <div className="absolute top-4 right-4 w-10 h-10 bg-gradient-to-br from-emerald-500 to-green-500 
+        rounded-lg flex items-center justify-center text-white animate-float" style={{animationDelay: '0.3s'}}>
+        📧
+      </div>
+      
+      <div className="absolute bottom-4 left-4 w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 
+        rounded-lg flex items-center justify-center text-white animate-float" style={{animationDelay: '0.6s'}}>
+        💬
+      </div>
+      
+      <div className="absolute bottom-4 right-4 w-10 h-10 bg-gradient-to-br from-amber-500 to-yellow-500 
+        rounded-lg flex items-center justify-center text-white animate-float" style={{animationDelay: '0.9s'}}>
+        🤖
+      </div>
+      
+      {/* Resolution Flow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="w-48 h-1 bg-gradient-to-r from-red-300 to-orange-300 rounded-full overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
+        </div>
+      </div>
+      
+      {/* Live Metrics */}
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 bg-white/90 px-3 py-2 rounded-lg shadow animate-bounce-slow">
+        <span className="text-sm font-bold text-red-700">2.4m</span>
+        <span className="text-xs text-red-600 ml-1">Resolved</span>
+      </div>
+    </div>
+
+    {/* Text Content (right side) */}
+    <div className="space-y-6 text-slate-700">
+      <h2 className="text-3xl font-bold text-blue-900">
+        Unified Service Desk
+      </h2>
+
+      <ul className="space-y-3">
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+          Faster customer issue resolution
+        </li>
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+          Personalized interactions
+        </li>
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+          Preferred customer channels
+        </li>
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{animationDelay: '0.6s'}}></div>
+          Unified customer experience
+        </li>
+        <li className="flex items-center gap-3 text-gray-700 group hover:text-red-600 transition-colors duration-300">
+          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse" style={{animationDelay: '0.8s'}}></div>
+          Intelligent knowledge search
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <style jsx>{`
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-10px) rotate(5deg); }
+    }
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-8px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-shimmer { animation: shimmer 2s linear infinite; }
+    .animate-bounce-slow { animation: bounce-slow 3s ease-in-out infinite; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+  `}</style>
+</section>
                     </>
                 )}
 
@@ -2906,12 +3844,79 @@ export default function ServiceDetails() {
                         {/* ================= QUALITY ENGINEERING & ASSURANCE ================= */}
 
 <section className="py-16 px-8 max-w-7xl mx-auto">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1581091012184-7b3c5b2a7f6a?w=600&auto=format&fit=crop"
-      alt="Quality Engineering"
-      className="w-full max-w-md rounded-lg shadow-lg"
-    />
+  <div className="grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* Quality Assurance Cube Animation */}
+    <div className="relative w-full h-[300px] bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-6 border border-blue-100 overflow-hidden">
+      
+      {/* 3D Cube Container */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="relative w-32 h-32 perspective-1000">
+          {/* Rotating Cube */}
+          <div className="absolute w-full h-full animate-3d-spin">
+            {/* Front Face */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg 
+              flex items-center justify-center text-white text-2xl shadow-xl border-4 border-white/30">
+              QA
+            </div>
+            
+            {/* Top Face */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg 
+              flex items-center justify-center text-white text-xl shadow-lg transform -rotate-x-90 
+              origin-bottom border-2 border-white/20">
+              Test
+            </div>
+            
+            {/* Right Face */}
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-700 rounded-lg 
+              flex items-center justify-center text-white text-xl shadow-lg transform rotate-y-90 
+              origin-left border-2 border-white/20">
+              Check
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Floating Quality Indicators */}
+      <div className="absolute top-4 left-1/2 -translate-x-1/2 flex gap-4">
+        {["✅", "⚡", "🔄", "📊", "🔒"].map((icon, i) => (
+          <div key={i} className="text-xl animate-float" 
+               style={{ animationDelay: `${i * 0.3}s`, animationDuration: '3s' }}>
+            {icon}
+          </div>
+        ))}
+      </div>
+      
+      {/* Quality Rings */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="w-48 h-48 border-2 border-blue-300/40 rounded-full animate-pulse-slow"></div>
+        <div className="w-64 h-64 border border-purple-300/30 rounded-full animate-pulse-slow" 
+             style={{animationDelay: '1s'}}></div>
+      </div>
+      
+      {/* Quality Score Display */}
+      <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 
+        rounded-lg shadow-lg border border-blue-200 animate-bounce-slow">
+        <div className="text-center">
+          <div className="text-lg font-bold text-blue-700">99.9%</div>
+          <div className="text-xs text-blue-600">Quality Score</div>
+        </div>
+      </div>
+      
+      {/* Testing Status */}
+      <div className="absolute bottom-6 right-6 flex items-center gap-2">
+        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+        <div className="text-sm font-medium text-green-700">All Tests Pass</div>
+      </div>
+      
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 14px, #3b82f6 14px, #3b82f6 16px)`,
+          backgroundSize: '100% 16px'
+        }}></div>
+      </div>
+    </div>
 
     <div>
       <p className="text-gray-700 leading-relaxed mb-4">
@@ -2925,25 +3930,69 @@ export default function ServiceDetails() {
         Our Quality Engineering services include:
       </p>
 
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li className="hover:translate-x-2 transition-transform duration-300">
-          End-to-end functional testing
-        </li>
-        <li className="hover:translate-x-2 transition-transform duration-300">
-          Automation strategy and execution
-        </li>
-        <li className="hover:translate-x-2 transition-transform duration-300">
-          Performance and load testing
-        </li>
-        <li className="hover:translate-x-2 transition-transform duration-300">
-          Security and penetration testing
-        </li>
-        <li className="hover:translate-x-2 transition-transform duration-300">
-          Continuous quality monitoring
-        </li>
+      <ul className="space-y-3">
+        {[
+          { service: "End-to-end functional testing", icon: "🧪", color: "from-blue-100 to-cyan-100" },
+          { service: "Automation strategy and execution", icon: "🤖", color: "from-purple-100 to-pink-100" },
+          { service: "Performance and load testing", icon: "⚡", color: "from-amber-100 to-orange-100" },
+          { service: "Security and penetration testing", icon: "🔒", color: "from-emerald-100 to-green-100" },
+          { service: "Continuous quality monitoring", icon: "📊", color: "from-indigo-100 to-blue-100" }
+        ].map((item, index) => (
+          <li key={index} className="flex items-center gap-3 p-3 rounded-lg hover:scale-105 
+            transition-all duration-300 bg-gradient-to-r hover:shadow-md">
+            <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${item.color} 
+              flex items-center justify-center text-xl`}>
+              {item.icon}
+            </div>
+            <span className="text-gray-700 font-medium">{item.service}</span>
+          </li>
+        ))}
       </ul>
     </div>
   </div>
+
+  <style jsx>{`
+    @keyframes 3d-spin {
+      0% {
+        transform: rotateX(0) rotateY(0) rotateZ(0);
+      }
+      25% {
+        transform: rotateX(90deg) rotateY(90deg) rotateZ(0);
+      }
+      50% {
+        transform: rotateX(180deg) rotateY(180deg) rotateZ(90deg);
+      }
+      75% {
+        transform: rotateX(270deg) rotateY(270deg) rotateZ(180deg);
+      }
+      100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      33% { transform: translateY(-10px) rotate(5deg); }
+      66% { transform: translateY(5px) rotate(-5deg); }
+    }
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.05); }
+    }
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .perspective-1000 { perspective: 1000px; }
+    .animate-3d-spin { animation: 3d-spin 8s linear infinite; }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-pulse-slow { animation: pulse-slow 4s ease-in-out infinite; }
+    .animate-bounce-slow { animation: bounce-slow 2s ease-in-out infinite; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  `}</style>
 </section>
 
 <section className="bg-gray-50 py-16">
@@ -2975,12 +4024,68 @@ export default function ServiceDetails() {
 </section>
 
 <section className="py-16 px-8 max-w-7xl mx-auto">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop"
-      className="w-full max-w-sm rounded-lg shadow-lg"
-      alt="Test Automation"
-    />
+  <div className="grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* Automation Gears Animation */}
+    <div className="relative w-full h-[250px] bg-gradient-to-br from-cyan-50 to-blue-50 rounded-xl p-4 border border-cyan-100 overflow-hidden">
+      
+      {/* Interlocking Gears */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center gap-8">
+        
+        {/* Large Gear */}
+        <div className="w-20 h-20 relative animate-gear-slow">
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full"></div>
+          {/* Gear Teeth */}
+          {[...Array(8)].map((_, i) => (
+            <div key={i} className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-8 
+              bg-gradient-to-b from-cyan-400 to-blue-500 rounded-t-md"
+              style={{ transform: `rotate(${i * 45}deg)` }}>
+            </div>
+          ))}
+          <div className="absolute inset-4 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-full"></div>
+        </div>
+        
+        {/* Small Gear */}
+        <div className="w-14 h-14 relative animate-gear-fast">
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full"></div>
+          {/* Gear Teeth */}
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-6 
+              bg-gradient-to-b from-emerald-400 to-green-500 rounded-t-sm"
+              style={{ transform: `rotate(${i * 60}deg)` }}>
+            </div>
+          ))}
+          <div className="absolute inset-3 bg-gradient-to-br from-emerald-100 to-green-100 rounded-full"></div>
+        </div>
+      </div>
+      
+      {/* Moving Test Cases */}
+      <div className="absolute top-4 left-4 right-4 flex justify-between">
+        {["✅", "🔄", "⚡", "📊"].map((icon, i) => (
+          <div key={i} className="text-2xl animate-float" style={{ animationDelay: `${i * 0.2}s` }}>
+            {icon}
+          </div>
+        ))}
+      </div>
+      
+      {/* Test Flow Arrow */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2">
+        <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full overflow-hidden">
+          <div className="w-full h-full bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
+        </div>
+        <div className="text-cyan-600 animate-bounce-right">➡️</div>
+      </div>
+      
+      {/* Code Blocks */}
+      <div className="absolute top-4 left-4 opacity-20">
+        <div className="font-mono text-xs text-cyan-800 animate-pulse">{`{ test: "automated" }`}</div>
+      </div>
+      <div className="absolute bottom-4 right-4 opacity-20">
+        <div className="font-mono text-xs text-blue-800 animate-pulse" style={{animationDelay: '0.5s'}}>
+          {`-> CI/CD`}
+        </div>
+      </div>
+    </div>
 
     <div>
       <h3 className="text-2xl font-semibold text-blue-900 mb-4">
@@ -2993,15 +4098,99 @@ export default function ServiceDetails() {
       </p>
     </div>
   </div>
+
+  <style jsx>{`
+    @keyframes gear-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes gear-fast {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(-360deg); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes bounce-right {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(5px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.2; }
+      50% { opacity: 0.5; }
+    }
+    .animate-gear-slow { animation: gear-slow 5s linear infinite; }
+    .animate-gear-fast { animation: gear-fast 3s linear infinite; }
+    .animate-float { animation: float 2s ease-in-out infinite; }
+    .animate-shimmer { animation: shimmer 2s linear infinite; }
+    .animate-bounce-right { animation: bounce-right 1s ease-in-out infinite; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+  `}</style>
 </section>
 
 <section className="py-16 px-8 max-w-7xl mx-auto border-t">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&auto=format&fit=crop"
-      className="w-full max-w-sm rounded-lg shadow-lg"
-      alt="Performance Testing"
-    />
+  <div className="grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* Performance Graph Animation */}
+    <div className="relative w-full h-[250px] bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-4 border border-orange-100 overflow-hidden">
+      
+      {/* Performance Grid */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="grid grid-cols-10 grid-rows-10 gap-1 w-full h-full">
+          {[...Array(100)].map((_, i) => (
+            <div key={i} className="bg-current rounded-sm animate-pulse" 
+                 style={{ animationDelay: `${i * 0.1}s` }}></div>
+          ))}
+        </div>
+      </div>
+      
+      {/* Performance Bars */}
+      <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between h-32 gap-2">
+        {[30, 60, 45, 80, 55, 70, 40, 90, 65, 50].map((height, i) => (
+          <div key={i} className="flex-1 relative">
+            <div 
+              className="w-full bg-gradient-to-t from-orange-500 to-red-500 rounded-t animate-rise"
+              style={{ 
+                height: `${height}%`,
+                animationDelay: `${i * 0.1}s`,
+                animationDuration: '1s'
+              }}
+            ></div>
+            
+            {/* Peak Load Indicator */}
+            {height > 70 && (
+              <div className="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-bold text-red-600 animate-bounce">
+                ⚡
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+      
+      {/* Moving Speed Line */}
+      <div className="absolute top-1/2 left-0 right-0 h-1">
+        <div className="h-full bg-gradient-to-r from-transparent via-orange-500 to-transparent animate-move-right"></div>
+      </div>
+      
+      {/* Performance Dots */}
+      {[25, 50, 75].map((percent, i) => (
+        <div key={i} className="absolute bottom-4 w-2 h-2 bg-current rounded-full animate-pulse"
+             style={{ 
+               left: `${percent}%`,
+               animationDelay: `${i * 0.5}s`
+             }}></div>
+      ))}
+      
+      {/* Speed Indicator */}
+      <div className="absolute top-4 right-4 bg-white/90 px-3 py-2 rounded-lg shadow animate-bounce-slow">
+        <div className="text-sm font-bold text-red-600">⚡ Fast</div>
+      </div>
+    </div>
 
     <div>
       <h3 className="text-2xl font-semibold text-blue-900 mb-4">
@@ -3014,15 +4203,80 @@ export default function ServiceDetails() {
       </p>
     </div>
   </div>
+
+  <style jsx>{`
+    @keyframes rise {
+      from { height: 0%; }
+      to { height: var(--target-height); }
+    }
+    @keyframes move-right {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .animate-rise { animation: rise 1s ease-out forwards; }
+    .animate-move-right { animation: move-right 2s linear infinite; }
+    .animate-bounce { animation: bounce 0.5s ease-in-out infinite; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+    .animate-bounce-slow { animation: bounce-slow 2s ease-in-out infinite; }
+  `}</style>
 </section>
 
 <section className="py-16 px-8 max-w-7xl mx-auto border-t">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop"
-      className="w-full max-w-sm rounded-lg shadow-lg"
-      alt="Security Testing"
-    />
+  <div className="grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* Security Shield Animation */}
+    <div className="relative w-full h-[250px] bg-gradient-to-br from-slate-50 to-blue-50 rounded-xl p-4 border border-blue-100 overflow-hidden">
+      
+      {/* Rotating Shield */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="relative w-32 h-32">
+          {/* Outer Shield */}
+          <div className="absolute inset-0 border-4 border-blue-400 rounded-full animate-spin-slow"></div>
+          
+          {/* Middle Shield */}
+          <div className="absolute inset-6 border-4 border-red-400 rounded-full animate-spin-reverse"></div>
+          
+          {/* Inner Shield */}
+          <div className="absolute inset-12 border-4 border-emerald-400 rounded-full flex items-center justify-center text-3xl animate-pulse">
+            🔒
+          </div>
+        </div>
+      </div>
+      
+      {/* Scanning Beam */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-full 
+        bg-gradient-to-b from-transparent via-blue-400/50 to-transparent animate-scan"></div>
+      
+      {/* Security Badges */}
+      {[
+        { icon: "✅", pos: "top-4 left-4", delay: "0s" },
+        { icon: "🛡️", pos: "top-4 right-4", delay: "0.3s" },
+        { icon: "🔐", pos: "bottom-4 left-4", delay: "0.6s" },
+        { icon: "⚡", pos: "bottom-4 right-4", delay: "0.9s" }
+      ].map((badge, i) => (
+        <div key={i} className={`absolute ${badge.pos} text-2xl animate-float`} 
+             style={{ animationDelay: badge.delay }}>
+          {badge.icon}
+        </div>
+      ))}
+      
+      {/* Compliance Rings */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="w-48 h-48 border-2 border-slate-300/50 rounded-full animate-pulse-slow"></div>
+      </div>
+    </div>
 
     <div>
       <h3 className="text-2xl font-semibold text-blue-900 mb-4">
@@ -3035,15 +4289,91 @@ export default function ServiceDetails() {
       </p>
     </div>
   </div>
+
+  <style jsx>{`
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spin-reverse {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes scan {
+      0% { transform: translateY(-100%); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(100%); opacity: 0; }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(0.95); }
+    }
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.6; }
+    }
+    .animate-spin-slow { animation: spin-slow 20s linear infinite; }
+    .animate-spin-reverse { animation: spin-reverse 15s linear infinite; }
+    .animate-float { animation: float 3s ease-in-out infinite; }
+    .animate-scan { animation: scan 3s linear infinite; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+    .animate-pulse-slow { animation: pulse-slow 4s ease-in-out infinite; }
+  `}</style>
 </section>
 
 <section className="py-16 px-8 max-w-7xl mx-auto border-t">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop"
-      className="w-full max-w-md rounded-lg shadow-lg"
-      alt="Quality Operations"
-    />
+  <div className="grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* Quality Pipeline Animation */}
+    <div className="relative w-full h-[250px] bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl p-4 border border-emerald-100 overflow-hidden">
+      
+      {/* Pipeline Flow */}
+      <div className="absolute top-1/2 left-4 right-4 h-2 bg-gradient-to-r from-emerald-300 to-teal-300 rounded-full overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shimmer"></div>
+      </div>
+      
+      {/* Stages */}
+      {["Code", "Test", "Deploy", "Monitor"].map((stage, i) => (
+        <div key={i} className="absolute top-1/2 -translate-y-1/2" 
+             style={{ left: `${25 * (i + 1)}%` }}>
+          
+          {/* Stage Node */}
+          <div className={`w-12 h-12 rounded-full bg-gradient-to-br 
+            ${i === 0 ? 'from-blue-500 to-cyan-500' : 
+              i === 1 ? 'from-amber-500 to-orange-500' : 
+              i === 2 ? 'from-emerald-500 to-green-500' : 
+              'from-purple-500 to-pink-500'} 
+            flex items-center justify-center text-white text-sm font-bold shadow-lg animate-bounce-slow`}
+            style={{ animationDelay: `${i * 0.3}s` }}>
+            {stage}
+          </div>
+          
+          {/* Animated Checkmark */}
+          {i > 0 && (
+            <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-6 h-6 
+              bg-green-500 rounded-full flex items-center justify-center text-white text-xs animate-fade-in"
+              style={{ animationDelay: `${i * 0.8}s`, animationDuration: '1s' }}>
+              ✓
+            </div>
+          )}
+        </div>
+      ))}
+      
+      {/* Moving Quality Indicator */}
+      <div className="absolute top-1/2 -translate-y-1/2 w-4 h-4 
+        bg-white rounded-full shadow-lg animate-slide-right"
+        style={{ animationDuration: '4s' }}>
+        <div className="w-full h-full bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full"></div>
+      </div>
+      
+      {/* Background Checks */}
+      <div className="absolute top-4 left-4 text-emerald-600 animate-pulse">✅</div>
+      <div className="absolute bottom-4 right-4 text-green-600 animate-pulse" style={{animationDelay: '0.5s'}}>✅</div>
+    </div>
 
     <div>
       <h3 className="text-2xl font-semibold text-blue-900 mb-4">
@@ -3056,6 +4386,36 @@ export default function ServiceDetails() {
       </p>
     </div>
   </div>
+
+  <style jsx>{`
+    @keyframes bounce-slow {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes slide-right {
+      0% { left: 0; opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { left: calc(100% - 1rem); opacity: 0; }
+    }
+    @keyframes shimmer {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    @keyframes fade-in {
+      0% { opacity: 0; transform: scale(0); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .animate-bounce-slow { animation: bounce-slow 2s ease-in-out infinite; }
+    .animate-slide-right { animation: slide-right 4s linear infinite; }
+    .animate-shimmer { animation: shimmer 2s infinite; }
+    .animate-fade-in { animation: fade-in 1s ease-out forwards; }
+    .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+  `}</style>
 </section>
 
                     </>
@@ -3166,14 +4526,96 @@ export default function ServiceDetails() {
                         </div>
                         {/* ================= SERVICENOW PLATFORM ================= */}
 
-<section className="py-16 px-8 max-w-7xl mx-auto">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <img
-      src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&auto=format&fit=crop"
-      alt="ServiceNow Platform"
-      className="w-full max-w-md rounded-lg shadow-lg"
-    />
+<section className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
+  <div className="grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* Animated ServiceNow Workflow Illustration */}
+    <div className="relative w-full h-[300px] md:h-[400px] bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-6 overflow-hidden">
+      {/* Background Grid */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(to right, #3b82f6 1px, transparent 1px),
+                            linear-gradient(to bottom, #3b82f6 1px, transparent 1px)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+      </div>
+      
+      {/* Platform Base */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-64 h-3 bg-gradient-to-r from-gray-400 via-gray-300 to-gray-400 rounded-full"></div>
+      
+      {/* Animated Process Flow */}
+      <div className="relative w-full h-full">
+        
+        {/* Flow Line */}
+        <div className="absolute top-1/2 left-8 right-8 h-1 bg-gradient-to-r from-blue-300 via-indigo-300 to-purple-300 rounded-full overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
+        </div>
+        
+        {/* Process Nodes */}
+        {[
+          { icon: "⚙️", label: "ITSM", color: "from-blue-500 to-blue-600", delay: "0s", pos: "left-8" },
+          { icon: "📊", label: "ITOM", color: "from-indigo-500 to-indigo-600", delay: "0.2s", pos: "left-1/4" },
+          { icon: "💼", label: "ITAM", color: "from-purple-500 to-purple-600", delay: "0.4s", pos: "left-1/2" },
+          { icon: "👥", label: "HRSD", color: "from-pink-500 to-pink-600", delay: "0.6s", pos: "right-1/4" },
+          { icon: "💬", label: "CSM", color: "from-cyan-500 to-cyan-600", delay: "0.8s", pos: "right-8" }
+        ].map((node, i) => (
+          <div key={i} className={`absolute top-1/2 ${node.pos} -translate-x-1/2 -translate-y-1/2`}>
+            {/* Node Connection */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-24 bg-gradient-to-b from-blue-300/50 to-transparent"></div>
+            
+            {/* Node */}
+            <div className={`relative w-16 h-16 bg-gradient-to-br ${node.color} rounded-2xl shadow-lg 
+              flex items-center justify-center text-2xl animate-float group cursor-pointer`}
+              style={{ animationDelay: node.delay }}>
+              
+              {/* Icon */}
+              <span className="group-hover:scale-110 transition-transform duration-300">{node.icon}</span>
+              
+              {/* Pulsing Ring */}
+              <div className="absolute -inset-2 border-2 border-current rounded-2xl opacity-0 group-hover:opacity-30 animate-ping"></div>
+              
+              {/* Tooltip/Label */}
+              <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-3 py-1 rounded-lg 
+                text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                {node.label}
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-b-4 border-l-transparent border-r-transparent border-b-gray-900"></div>
+              </div>
+            </div>
+          </div>
+        ))}
+        
+        {/* Data Flow Animation */}
+        <div className="absolute top-1/2 left-8 right-8 h-2 -translate-y-1/2 overflow-hidden">
+          {[...Array(3)].map((_, i) => (
+            <div key={i} className="absolute top-0 w-4 h-4 bg-white rounded-full shadow-lg animate-flow"
+              style={{
+                left: `${-20 + i * 20}%`,
+                animationDelay: `${i * 0.5}s`,
+                animationDuration: '6s'
+              }}>
+              <div className="w-full h-full bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full"></div>
+            </div>
+          ))}
+        </div>
+        
+        {/* Cloud Platform Base */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 w-48 h-6 bg-gradient-to-r from-blue-400/20 via-indigo-400/20 to-purple-400/20 
+          backdrop-blur-sm rounded-lg border border-white/20"></div>
+      </div>
+      
+      {/* Floating Elements */}
+      <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full 
+        backdrop-blur-sm animate-float" style={{ animationDelay: '1s' }}>
+        <div className="w-full h-full flex items-center justify-center text-blue-600">☁️</div>
+      </div>
+      
+      <div className="absolute top-4 left-4 w-10 h-10 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-lg 
+        backdrop-blur-sm animate-float" style={{ animationDelay: '1.5s' }}>
+        <div className="w-full h-full flex items-center justify-center text-purple-600">🔄</div>
+      </div>
+    </div>
 
+    {/* Text Content (Remaining as it is) */}
     <div>
       <p className="text-gray-700 leading-relaxed mb-4">
         ServiceNow is a cloud-based digital workflow platform that helps
@@ -3185,420 +4627,1682 @@ export default function ServiceDetails() {
         Our ServiceNow services include:
       </p>
 
-      <ul className="list-disc list-inside space-y-2 text-gray-700">
-        <li className="hover:translate-x-1 transition-transform duration-150">
-          IT Service Management (ITSM)
-        </li>
-        <li className="hover:translate-x-1 transition-transform duration-150">
-          IT Operations Management (ITOM)
-        </li>
-        <li className="hover:translate-x-1 transition-transform duration-150">
-          IT Asset Management (ITAM)
-        </li>
-        <li className="hover:translate-x-1 transition-transform duration-150">
-          HR Service Delivery (HRSD)
-        </li>
-        <li className="hover:translate-x-1 transition-transform duration-150">
-          Customer Service Management (CSM)
-        </li>
+      <ul className="space-y-3">
+        {[
+          { service: "IT Service Management (ITSM)", icon: "⚙️", color: "text-blue-600" },
+          { service: "IT Operations Management (ITOM)", icon: "📊", color: "text-indigo-600" },
+          { service: "IT Asset Management (ITAM)", icon: "💼", color: "text-purple-600" },
+          { service: "HR Service Delivery (HRSD)", icon: "👥", color: "text-pink-600" },
+          { service: "Customer Service Management (CSM)", icon: "💬", color: "text-cyan-600" }
+        ].map((item, index) => (
+          <li key={index} 
+            className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 transition-all duration-300 
+                     hover:translate-x-2 group">
+            <div className={`w-10 h-10 rounded-lg ${item.color.replace('text-', 'bg-')} bg-opacity-10 
+              flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-300`}>
+              {item.icon}
+            </div>
+            <span className="text-gray-700 font-medium group-hover:text-gray-900 transition-colors duration-300">
+              {item.service}
+            </span>
+            <div className="ml-auto w-2 h-2 bg-current rounded-full opacity-0 group-hover:opacity-100 
+              transition-opacity duration-300"></div>
+          </li>
+        ))}
       </ul>
+      
+      {/* Stats Bar */}
+      <div className="mt-8 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
+        <div className="grid grid-cols-3 gap-4 text-center">
+          <div className="group">
+            <div className="text-2xl font-bold text-blue-600 group-hover:scale-110 transition-transform duration-300">99.9%</div>
+            <div className="text-sm text-gray-600">Uptime</div>
+          </div>
+          <div className="group">
+            <div className="text-2xl font-bold text-indigo-600 group-hover:scale-110 transition-transform duration-300">50+</div>
+            <div className="text-sm text-gray-600">Projects</div>
+          </div>
+          <div className="group">
+            <div className="text-2xl font-bold text-purple-600 group-hover:scale-110 transition-transform duration-300">24/7</div>
+            <div className="text-sm text-gray-600">Support</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  {/* Animation Styles */}
+  <style jsx>{`
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes flow {
+      0% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(calc(100% + 20px));
+        opacity: 0;
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes ping {
+      75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-flow {
+      animation: flow linear infinite;
+    }
+
+    .animate-shimmer {
+      animation: shimmer 2s infinite;
+    }
+
+    .animate-ping {
+      animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+  `}</style>
 </section>
 
-<section className="bg-gray-50 py-16">
-  <h2 className="text-center text-3xl font-semibold text-blue-900 mb-10">
-    The Competitive Advantage We Offer
-  </h2>
 
-  <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto px-6">
-    <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow">
-      ✔ Faster service delivery with automated workflows
-    </div>
 
-    <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow">
-      ✔ Improved operational visibility and control
-    </div>
-
-    <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow">
-      ✔ Reduced operational costs
-    </div>
-
-    <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow">
-      ✔ Enhanced employee and customer experience
-    </div>
-
-    <div className="bg-white p-5 rounded shadow-md hover-lift hover-glow col-span-2 text-center">
-      ✔ Scalable, secure, and enterprise-ready platform
-    </div>
-  </div>
-</section>
-
-<section className="py-16 px-8 max-w-7xl mx-auto">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <div className="w-full max-w-sm rounded-lg shadow-lg" style={{
-      height: "280px",
-      padding: "16px",
-      background: "linear-gradient(145deg, #020617 0%, #0f172a 50%, #020617 100%)",
-      boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08), 0 8px 32px rgba(0,0,0,0.3)",
-      position: "relative",
-      overflow: "hidden"
-    }}>
-      <div style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        marginBottom: "12px",
-        color: "#e5e7eb",
-        fontSize: "11px"
-      }}>
-        <span style={{
-          opacity: 0.9,
-          fontWeight: 600,
-          letterSpacing: "0.5px"
-        }}>🚀 ENTERPRISE SUCCESS METRICS · LIVE</span>
-        <span style={{
-          padding: "3px 10px",
-          borderRadius: "999px",
-          fontSize: "9px",
-          fontWeight: 700,
-          color: "white",
-          backgroundColor: "#16a34a",
-          textShadow: "0 1px 2px rgba(0,0,0,0.3)",
-          animation: "pulse 2s infinite"
-        }}>🔥 PROVEN ROI</span>
+<section className="py-16 px-4 md:px-8 max-w-7xl mx-auto">
+  <div className="grid md:grid-cols-2 gap-10 items-center">
+    
+    {/* Animated ITSM Workflow Visualization */}
+    <div className="relative w-full h-[400px] bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-2xl p-6 overflow-hidden border border-slate-700">
+      
+      {/* Background Grid Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(to right, #22d3ee 1px, transparent 1px),
+                            linear-gradient(to bottom, #22d3ee 1px, transparent 1px)`,
+          backgroundSize: '30px 30px'
+        }}></div>
       </div>
       
-      <div style={{
-        display: "flex",
-        gap: "20px",
-        marginBottom: "16px"
-      }}>
-        <div style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start"
-        }}>
-          <span style={{
-            color: "#22d3ee",
-            fontSize: "18px",
-            fontWeight: 700,
-            lineHeight: 1,
-            textShadow: "0 0 10px rgba(34,211,238,0.5)"
-          }}>300%</span>
-          <span style={{
-            color: "#94a3b8",
-            fontSize: "10px",
-            opacity: 0.8,
-            marginTop: "2px"
-          }}>ROI Increase</span>
+      {/* Floating ITSM Nodes in Workflow */}
+      <div className="relative w-full h-full">
+        
+        {/* Main Workflow Line */}
+        <div className="absolute top-1/2 left-4 right-4 h-0.5 bg-gradient-to-r from-transparent via-cyan-500 to-transparent rounded-full overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
         </div>
-        <div style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start"
-        }}>
-          <span style={{
-            color: "#22d3ee",
-            fontSize: "18px",
-            fontWeight: 700,
-            lineHeight: 1,
-            textShadow: "0 0 10px rgba(34,211,238,0.5)"
-          }}>85%</span>
-          <span style={{
-            color: "#94a3b8",
-            fontSize: "10px",
-            opacity: 0.8,
-            marginTop: "2px"
-          }}>Cost Reduction</span>
-        </div>
-      </div>
-
-      <svg viewBox="0 0 300 140" style={{
-        width: "100%",
-        height: "160px"
-      }}>
-        {/* Grid lines */}
-        {[25, 50, 75, 100, 125].map((y) => (
-          <line
-            key={y}
-            x1="0"
-            y1={y}
-            x2="300"
-            y2={y}
-            stroke="rgba(255,255,255,0.06)"
-            strokeDasharray="2,4"
-          />
+        
+        {/* ITSM Nodes with Animations */}
+        {[
+          { 
+            icon: "🚨", 
+            label: "Incident", 
+            color: "from-red-500 to-orange-500",
+            metric: "MTTR: 2.4h",
+            status: "active",
+            delay: "0s",
+            pos: "left-4"
+          },
+          { 
+            icon: "🔍", 
+            label: "Problem", 
+            color: "from-orange-500 to-yellow-500",
+            metric: "Root Cause",
+            status: "analyzing",
+            delay: "0.5s",
+            pos: "left-1/4"
+          },
+          { 
+            icon: "🔄", 
+            label: "Change", 
+            color: "from-blue-500 to-cyan-500",
+            metric: "99.9% Success",
+            status: "pending",
+            delay: "1s",
+            pos: "left-1/2"
+          },
+          { 
+            icon: "📋", 
+            label: "Request", 
+            color: "from-green-500 to-emerald-500",
+            metric: "Auto-Fulfill",
+            status: "completed",
+            delay: "1.5s",
+            pos: "right-1/4"
+          }
+        ].map((node, i) => (
+          <div key={i} className={`absolute top-1/2 ${node.pos} -translate-x-1/2 -translate-y-1/2`}>
+            
+            {/* Node Connection Line */}
+            <div className="absolute top-1/2 left-1/2 w-24 h-0.5 bg-gradient-to-r from-cyan-400/30 to-transparent 
+              origin-left rotate-90 group-hover:rotate-0 transition-transform duration-500"></div>
+            
+            {/* Node Container */}
+            <div className={`relative w-20 h-20 bg-gradient-to-br ${node.color} rounded-2xl shadow-2xl 
+              flex flex-col items-center justify-center group animate-float hover:scale-110 transition-all duration-300`}
+              style={{ animationDelay: node.delay }}>
+              
+              {/* Icon */}
+              <div className="text-2xl mb-1 group-hover:animate-bounce">{node.icon}</div>
+              
+              {/* Label */}
+              <div className="text-xs font-bold text-white">{node.label}</div>
+              
+              {/* Status Indicator */}
+              <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 border-slate-900
+                ${node.status === 'active' ? 'bg-red-500 animate-pulse' : 
+                  node.status === 'analyzing' ? 'bg-yellow-500 animate-pulse' : 
+                  node.status === 'pending' ? 'bg-blue-500' : 'bg-green-500'}`}>
+              </div>
+              
+              {/* Metric Tooltip */}
+              <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 bg-slate-800 text-white px-3 py-1 rounded-lg 
+                text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap 
+                border border-slate-700 shadow-lg">
+                {node.metric}
+                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-b-4 
+                  border-l-transparent border-r-transparent border-b-slate-800"></div>
+              </div>
+              
+              {/* Node Glow Effect */}
+              <div className="absolute -inset-4 bg-gradient-to-br from-current to-transparent rounded-2xl 
+                opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-300"></div>
+            </div>
+          </div>
         ))}
         
-        {/* Vertical grid */}
-        {[50, 100, 150, 200, 250].map((x) => (
-          <line
-            key={x}
-            x1={x}
-            y1="0"
-            x2={x}
-            y2="140"
-            stroke="rgba(255,255,255,0.04)"
-            strokeDasharray="1,3"
-          />
-        ))}
-
-        {/* Area fill */}
-        <path
-          d="M 20,85 L 60,75 L 100,65 L 140,80 L 180,60 L 220,70 L 260,55 L 260,140 L 20,140 Z"
-          fill="url(#areaGradient)"
-          style={{
-            transition: "all 1.2s ease"
-          }}
-        />
-
-        {/* Bars */}
-        {[85, 75, 65, 80, 60, 70, 55].map((p, i) => (
-          <rect
-            key={i}
-            x={i * 40 + 14}
-            y={140 - p}
-            width="12"
-            height={p}
-            rx="2"
-            fill="url(#barGradient)"
+        {/* Workflow Animation - Moving Tickets */}
+        {[...Array(4)].map((_, i) => (
+          <div key={i} className="absolute w-8 h-8 bg-gradient-to-br from-cyan-500 to-blue-600 
+            rounded-lg shadow-lg animate-flow-ticket flex items-center justify-center text-xs text-white font-bold"
             style={{
-              transition: "all 1.2s ease",
-              filter: "drop-shadow(0 0 8px rgba(34,211,238,0.8))"
-            }}
-          />
+              left: `${-20 + i * 30}%`,
+              top: '45%',
+              animationDelay: `${i * 0.3}s`,
+              animationDuration: '10s'
+            }}>
+            <span className="animate-pulse">🎫</span>
+          </div>
         ))}
-
-        {/* Line */}
-        <polyline
-          points="20,85 60,75 100,65 140,80 180,60 220,70 260,55"
-          fill="none"
-          stroke="#22d3ee"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          style={{
-            filter: "drop-shadow(0 0 8px rgba(34,211,238,0.6))",
-            transition: "all 1.2s ease"
-          }}
-        />
-
-        {/* Data points */}
-        {[[20,85], [60,75], [100,65], [140,80], [180,60], [220,70], [260,55]].map(([x,y], i) => (
-          <circle
-            key={i}
-            cx={x}
-            cy={y}
-            r="3"
-            fill="#22d3ee"
-            style={{
-              filter: "drop-shadow(0 0 4px rgba(34,211,238,0.9))",
-              transition: "all 1.2s ease"
-            }}
-          />
-        ))}
-
-        <defs>
-          <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#22d3ee" stopOpacity="0.9" />
-            <stop offset="50%" stopColor="#0ea5e9" stopOpacity="0.7" />
-            <stop offset="100%" stopColor="#1e40af" stopOpacity="0.5" />
-          </linearGradient>
-          <linearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#22d3ee" stopOpacity="0.3" />
-            <stop offset="100%" stopColor="#22d3ee" stopOpacity="0.05" />
-          </linearGradient>
-        </defs>
-      </svg>
-
-      <style>{`
-        @keyframes pulse {
-          0%, 100% { opacity: 1; transform: scale(1); }
-          50% { opacity: 0.7; transform: scale(1.2); }
-        }
-      `}</style>
+        
+        {/* ITIL Best Practices Banner */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-slate-800/80 
+          backdrop-blur-sm px-4 py-2 rounded-xl border border-slate-700 shadow-lg">
+          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+          <span className="text-sm font-medium text-cyan-300">ITIL v4 Best Practices</span>
+          <div className="text-xs text-slate-400 ml-2">✓ Aligned</div>
+        </div>
+        
+        {/* Live Metrics Display */}
+        <div className="absolute top-4 left-4 bg-slate-800/80 backdrop-blur-sm px-4 py-3 rounded-xl border border-slate-700 shadow-lg">
+          <div className="flex items-center gap-3">
+            <div className="relative">
+              <div className="text-xl font-bold text-cyan-400 group-hover:scale-110 transition-transform duration-300">300%</div>
+              <div className="text-xs text-slate-400">ROI Increase</div>
+              <div className="absolute -top-1 -right-1 w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            </div>
+            <div className="h-8 w-px bg-slate-700"></div>
+            <div>
+              <div className="text-xl font-bold text-emerald-400 group-hover:scale-110 transition-transform duration-300">85%</div>
+              <div className="text-xs text-slate-400">Cost Reduction</div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Service Level Indicator */}
+        <div className="absolute top-4 right-4 bg-slate-800/80 backdrop-blur-sm px-4 py-3 rounded-xl border border-slate-700 shadow-lg">
+          <div className="text-center">
+            <div className="text-sm font-bold text-white flex items-center justify-center gap-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+              SLA: 99.9%
+            </div>
+            <div className="text-xs text-slate-400 mt-1">Uptime</div>
+          </div>
+        </div>
+        
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Floating Particles */}
+          {[...Array(12)].map((_, i) => (
+            <div key={i} className="absolute w-1 h-1 bg-cyan-400/30 rounded-full animate-float"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${i * 0.5}s`,
+                animationDuration: `${8 + Math.random() * 8}s`
+              }}>
+            </div>
+          ))}
+          
+          {/* Circuit Lines */}
+          <svg className="absolute inset-0 w-full h-full opacity-10">
+            <path d="M50,100 Q100,50 150,100 Q200,150 250,100" 
+                  stroke="#22d3ee" strokeWidth="1" strokeDasharray="5,5" className="animate-dash" />
+            <path d="M50,200 Q100,150 150,200 Q200,250 250,200" 
+                  stroke="#22d3ee" strokeWidth="1" strokeDasharray="5,5" className="animate-dash" style={{animationDelay: '0.5s'}} />
+          </svg>
+        </div>
+      </div>
     </div>
 
+    {/* Text Content */}
     <div>
-      <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+      <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-700 to-blue-900 bg-clip-text text-transparent mb-6">
         IT Service Management (ITSM)
       </h3>
 
-      <p className="text-gray-700 leading-relaxed">
+      <p className="text-gray-700 leading-relaxed mb-6 text-lg">
         We implement ServiceNow ITSM solutions that streamline incident,
         problem, change, and request management while aligning with ITIL
         best practices.
       </p>
+
+      {/* ITSM Process Flow */}
+      <div className="mb-8">
+        <div className="grid grid-cols-2 gap-4 mb-6">
+          {[
+            { phase: "Identify", desc: "Detect and log incidents", color: "bg-red-100 text-red-800", icon: "📝" },
+            { phase: "Analyze", desc: "Root cause investigation", color: "bg-orange-100 text-orange-800", icon: "🔍" },
+            { phase: "Resolve", desc: "Implement solutions", color: "bg-blue-100 text-blue-800", icon: "🛠️" },
+            { phase: "Improve", desc: "Prevent recurrence", color: "bg-green-100 text-green-800", icon: "📈" }
+          ].map((step, index) => (
+            <div key={index} className={`p-4 rounded-xl ${step.color} border border-current border-opacity-20 
+              hover:scale-105 transition-transform duration-300 group`}>
+              <div className="flex items-center gap-3">
+                <div className="text-xl">{step.icon}</div>
+                <div>
+                  <div className="font-bold">{step.phase}</div>
+                  <div className="text-sm opacity-80">{step.desc}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Key Features */}
+        <div className="space-y-3">
+          <h4 className="font-bold text-gray-800 flex items-center gap-2">
+            <span className="text-cyan-600">⚡</span> Key Features
+          </h4>
+          {[
+            "Automated Incident Management",
+            "Problem Management with Root Cause Analysis",
+            "Change Management with Risk Assessment",
+            "Service Request Catalog & Fulfillment",
+            "Configuration Management Database (CMDB)",
+            "Service Level Management (SLAs)"
+          ].map((feature, index) => (
+            <div key={index} className="flex items-center gap-3 group">
+              <div className="w-2 h-2 bg-cyan-500 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+              <span className="text-gray-700 group-hover:text-gray-900 transition-colors duration-300">
+                {feature}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Benefits Stats */}
+      <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-xl p-6 border border-slate-200">
+        <h4 className="font-bold text-slate-800 mb-4 flex items-center gap-2">
+          <span className="text-xl">🎯</span> Measurable Results
+        </h4>
+        <div className="grid grid-cols-3 gap-4">
+          <div className="text-center group">
+            <div className="text-2xl font-bold text-cyan-600 group-hover:scale-110 transition-transform duration-300">60%</div>
+            <div className="text-sm text-gray-700">Faster Resolution</div>
+          </div>
+          <div className="text-center group">
+            <div className="text-2xl font-bold text-blue-600 group-hover:scale-110 transition-transform duration-300">45%</div>
+            <div className="text-sm text-gray-700">Cost Savings</div>
+          </div>
+          <div className="text-center group">
+            <div className="text-2xl font-bold text-emerald-600 group-hover:scale-110 transition-transform duration-300">99.9%</div>
+            <div className="text-sm text-gray-700">SLA Compliance</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  {/* Animation Styles */}
+  <style jsx>{`
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-8px) rotate(3deg);
+      }
+      75% {
+        transform: translateY(4px) rotate(-3deg);
+      }
+    }
+
+    @keyframes flow-ticket {
+      0% {
+        transform: translateX(0) translateY(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(calc(100vw - 100px)) translateY(var(--random-y));
+        opacity: 0;
+      }
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 20;
+      }
+    }
+
+    @keyframes ping {
+      75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-flow-ticket {
+      animation: flow-ticket linear infinite;
+    }
+
+    .animate-dash {
+      animation: dash 1s linear infinite;
+    }
+
+    .animate-ping {
+      animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .animate-bounce {
+      animation: bounce 0.5s ease-in-out;
+    }
+
+    .animate-shimmer {
+      animation: shimmer 2s infinite;
+    }
+
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+  `}</style>
 </section>
 
-<section className="py-16 px-8 max-w-7xl mx-auto border-t">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <div className="relative">
-      <img
-        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&auto=format&fit=crop"
-        className="w-full max-w-sm rounded-lg shadow-lg"
-        alt="ServiceNow ITOM"
-      />
-      {/* SVG Orbit Animation */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 300">
-        <circle
-          cx="200"
-          cy="150"
-          r="180"
-          fill="none"
-          stroke="#3b82f6"
-          strokeWidth="2"
-          strokeDasharray="20 10"
-          opacity="0.6"
-          style={{
-            animation: "rotate 8s linear infinite"
-          }}
-        />
-        <circle cx="380" cy="150" r="3" fill="#3b82f6" opacity="0.8">
-          <animateTransform
-            attributeName="transform"
-            type="rotate"
-            values="0 200 150;360 200 150"
-            dur="8s"
-            repeatCount="indefinite"
-          />
-        </circle>
-      </svg>
-      <style>{`
-        @keyframes rotate {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
+<section className="py-16 px-4 md:px-8 max-w-7xl mx-auto border-t bg-gradient-to-b from-white to-slate-50">
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+
+    {/* Animated ITOM Visualization */}
+    <div className="relative w-full h-[350px] md:h-[400px] bg-gradient-to-br from-blue-50 via-sky-50 to-cyan-50 rounded-2xl p-6 overflow-hidden border border-blue-100 shadow-lg">
+      
+      {/* Background Network Grid */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `linear-gradient(to right, #3b82f6 1px, transparent 1px),
+                            linear-gradient(to bottom, #3b82f6 1px, transparent 1px)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+      </div>
+      
+      {/* Central Monitoring Core */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="relative">
+          {/* Pulsing Core */}
+          <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl shadow-2xl 
+            flex items-center justify-center text-white animate-pulse-slow group">
+            <div className="text-center">
+              <div className="text-2xl mb-1 group-hover:animate-spin-slow">⚙️</div>
+              <div className="text-xs font-bold">ITOM Core</div>
+            </div>
+            
+            {/* Outer Rings */}
+            <div className="absolute -inset-4 border-2 border-blue-400 rounded-2xl animate-ping opacity-0 group-hover:opacity-100"></div>
+            <div className="absolute -inset-6 border border-cyan-300 rounded-2xl opacity-0 group-hover:opacity-30 animate-pulse-slow"></div>
+          </div>
+          
+          {/* Real-time Metrics Display */}
+          <div className="absolute -top-16 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 py-2 
+            rounded-xl shadow-lg border border-blue-200 animate-float">
+            <div className="text-center">
+              <div className="text-xs text-blue-600 font-bold">Real-time</div>
+              <div className="text-lg font-bold text-cyan-700">99.97%</div>
+              <div className="text-xs text-gray-600">Uptime</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Infrastructure Nodes - Arranged in Circular Pattern */}
+      {[
+        { 
+          type: "Server", 
+          icon: "🖥️", 
+          status: "healthy", 
+          metrics: { cpu: "32%", mem: "64%" },
+          color: "from-emerald-500 to-green-500",
+          pos: "top-8 left-1/4",
+          delay: "0s"
+        },
+        { 
+          type: "Database", 
+          icon: "🗄️", 
+          status: "warning", 
+          metrics: { cpu: "85%", mem: "72%" },
+          color: "from-yellow-500 to-orange-500",
+          pos: "top-8 right-1/4",
+          delay: "0.2s"
+        },
+        { 
+          type: "Network", 
+          icon: "🌐", 
+          status: "healthy", 
+          metrics: { cpu: "28%", mem: "41%" },
+          color: "from-blue-500 to-cyan-500",
+          pos: "bottom-8 left-1/4",
+          delay: "0.4s"
+        },
+        { 
+          type: "Storage", 
+          icon: "💾", 
+          status: "critical", 
+          metrics: { cpu: "92%", mem: "88%" },
+          color: "from-red-500 to-pink-500",
+          pos: "bottom-8 right-1/4",
+          delay: "0.6s"
+        },
+        { 
+          type: "VM", 
+          icon: "🖧", 
+          status: "healthy", 
+          metrics: { cpu: "45%", mem: "58%" },
+          color: "from-purple-500 to-indigo-500",
+          pos: "top-1/2 left-8",
+          delay: "0.8s"
+        },
+        { 
+          type: "Container", 
+          icon: "📦", 
+          status: "healthy", 
+          metrics: { cpu: "38%", mem: "49%" },
+          color: "from-teal-500 to-emerald-500",
+          pos: "top-1/2 right-8",
+          delay: "1s"
         }
-      `}</style>
+      ].map((node, i) => (
+        <div key={i} className={`absolute ${node.pos} -translate-x-1/2 -translate-y-1/2`}>
+          
+          {/* Connection Line to Core */}
+          <div className="absolute top-1/2 left-1/2 w-32 h-0.5 bg-gradient-to-r from-blue-300/30 to-transparent 
+            origin-left opacity-0 group-hover:opacity-100 transition-opacity duration-500" 
+            style={{ transform: `rotate(${i * 60}deg)` }}></div>
+          
+          {/* Node Container */}
+          <div className={`relative w-16 h-16 bg-gradient-to-br ${node.color} rounded-xl shadow-lg 
+            flex flex-col items-center justify-center group animate-float hover:scale-125 transition-transform duration-300`}
+            style={{ animationDelay: node.delay }}>
+            
+            {/* Icon */}
+            <div className="text-lg group-hover:animate-bounce">{node.icon}</div>
+            
+            {/* Status Indicator */}
+            <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 border-white
+              ${node.status === 'healthy' ? 'bg-green-500 animate-pulse' : 
+                node.status === 'warning' ? 'bg-yellow-500 animate-pulse' : 
+                'bg-red-500 animate-pulse'}`}>
+            </div>
+            
+            {/* Detailed Metrics on Hover */}
+            <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 bg-slate-900 text-white px-3 py-2 
+              rounded-lg text-xs opacity-0 group-hover:opacity-100 transition-all duration-300 
+              backdrop-blur-sm border border-slate-700 shadow-xl min-w-[120px] z-10">
+              <div className="font-bold text-white mb-1">{node.type}</div>
+              <div className="flex justify-between gap-2">
+                <div>
+                  <div className="text-cyan-300">CPU</div>
+                  <div className="font-bold">{node.metrics.cpu}</div>
+                </div>
+                <div>
+                  <div className="text-cyan-300">MEM</div>
+                  <div className="font-bold">{node.metrics.mem}</div>
+                </div>
+              </div>
+              <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-b-4 
+                border-l-transparent border-r-transparent border-b-slate-900"></div>
+            </div>
+          </div>
+        </div>
+      ))}
+      
+      {/* Data Flow Animation - Monitoring Data */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        {/* Animated Rings */}
+        <div className="absolute inset-0 border-2 border-blue-300/30 rounded-full animate-spin-slow"
+          style={{ animationDuration: '20s' }}></div>
+        <div className="absolute inset-8 border border-cyan-300/20 rounded-full animate-spin-reverse"
+          style={{ animationDuration: '15s' }}></div>
+        
+        {/* Floating Data Points */}
+        {[...Array(8)].map((_, i) => (
+          <div key={i} className="absolute w-2 h-2 bg-gradient-to-br from-cyan-400 to-blue-500 
+            rounded-full animate-float" style={{
+              left: `${Math.cos(i * 45 * Math.PI/180) * 120 + 50}%`,
+              top: `${Math.sin(i * 45 * Math.PI/180) * 120 + 50}%`,
+              animationDelay: `${i * 0.3}s`,
+              animationDuration: '4s'
+            }}>
+          </div>
+        ))}
+      </div>
+      
+      {/* Alert Panel */}
+      <div className="absolute bottom-4 left-4 bg-gradient-to-r from-orange-50 to-red-50 
+        backdrop-blur-sm px-4 py-3 rounded-xl border border-orange-200 shadow-lg animate-pulse-slow">
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+          <div className="text-sm font-medium text-orange-800">Alert: Storage 92%</div>
+          <div className="text-xs text-orange-600 ml-2 bg-orange-100 px-2 py-1 rounded animate-pulse">
+            🔄 Auto-Remediating
+          </div>
+        </div>
+      </div>
+      
+      {/* Health Dashboard */}
+      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-xl 
+        border border-blue-200 shadow-lg">
+        <div className="text-center">
+          <div className="text-xs text-blue-600 font-bold mb-1">Infrastructure Health</div>
+          <div className="flex items-center justify-center gap-2">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+            <div className="text-lg font-bold text-green-700">83%</div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Performance Stats */}
+      <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-xl 
+        border border-blue-200 shadow-lg">
+        <div className="grid grid-cols-2 gap-3 text-center">
+          <div className="group">
+            <div className="text-xl font-bold text-blue-600 group-hover:scale-110 transition-transform duration-300">1.2M</div>
+            <div className="text-xs text-gray-600">Events/Day</div>
+          </div>
+          <div className="group">
+            <div className="text-xl font-bold text-emerald-600 group-hover:scale-110 transition-transform duration-300">0.3s</div>
+            <div className="text-xs text-gray-600">Response Time</div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Automated Workflow Indicator */}
+      <div className="absolute bottom-4 right-4 bg-gradient-to-r from-emerald-50 to-green-50 
+        backdrop-blur-sm px-4 py-2 rounded-xl border border-emerald-200 shadow-lg">
+        <div className="flex items-center gap-2">
+          <div className="text-lg">⚡</div>
+          <div className="text-sm font-medium text-emerald-800">85% Auto-Resolved</div>
+        </div>
+      </div>
     </div>
 
+    {/* Text Content */}
     <div>
-      <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+      <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-800 to-cyan-700 bg-clip-text text-transparent mb-6">
         IT Operations Management (ITOM)
       </h3>
 
-      <p className="text-gray-700 leading-relaxed">
-        Gain real-time visibility into your infrastructure with ServiceNow
-        ITOM. We enable proactive monitoring, event management, and
-        automated remediation.
+      <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+        Gain real-time visibility into your infrastructure with proactive
+        monitoring, intelligent event management, and automated remediation —
+        delivered through a stable and unified IT operations platform.
       </p>
+
+      {/* Enhanced Feature List */}
+      <div className="mb-8">
+        <div className="grid grid-cols-2 gap-4 mb-6">
+          {[
+            { feature: "Real-time Monitoring", icon: "👁️", color: "bg-blue-100 text-blue-800" },
+            { feature: "Event Correlation", icon: "🧩", color: "bg-purple-100 text-purple-800" },
+            { feature: "Health Analytics", icon: "📊", color: "bg-cyan-100 text-cyan-800" },
+            { feature: "Auto-Remediation", icon: "⚡", color: "bg-emerald-100 text-emerald-800" }
+          ].map((item, index) => (
+            <div key={index} className={`p-4 rounded-xl ${item.color} border border-current border-opacity-20 
+              hover:scale-105 transition-transform duration-300 group`}>
+              <div className="flex items-center gap-3">
+                <div className="text-xl group-hover:animate-bounce">{item.icon}</div>
+                <div className="text-sm font-medium">{item.feature}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Key Capabilities */}
+        <div className="space-y-3">
+          <h4 className="font-bold text-gray-800 flex items-center gap-2">
+            <span className="text-cyan-600">🔧</span> Key Capabilities
+          </h4>
+          {[
+            "Real-time infrastructure visibility across hybrid environments",
+            "Intelligent event correlation and root cause analysis",
+            "Continuous health monitoring and predictive analytics",
+            "Automated remediation workflows and incident response",
+            "Performance optimization and capacity planning",
+            "Comprehensive dashboards and reporting"
+          ].map((capability, index) => (
+            <div key={index} className="flex items-start gap-3 group">
+              <div className="w-5 h-5 rounded-full bg-gradient-to-r from-cyan-100 to-blue-100 
+                flex items-center justify-center text-cyan-600 text-xs mt-0.5 group-hover:scale-125 
+                transition-transform duration-300">
+                ✓
+              </div>
+              <span className="text-gray-700 group-hover:text-gray-900 transition-colors duration-300">
+                {capability}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Benefits Banner */}
+      <div className="bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl p-6 border border-blue-200">
+        <h4 className="font-bold text-blue-800 mb-4 flex items-center gap-2">
+          <span className="text-xl">📈</span> Operational Benefits
+        </h4>
+        <div className="grid grid-cols-3 gap-4">
+          <div className="text-center group">
+            <div className="text-2xl font-bold text-blue-600 group-hover:scale-110 transition-transform duration-300">70%</div>
+            <div className="text-sm text-gray-700">MTTR Reduction</div>
+          </div>
+          <div className="text-center group">
+            <div className="text-2xl font-bold text-cyan-600 group-hover:scale-110 transition-transform duration-300">50%</div>
+            <div className="text-sm text-gray-700">Cost Savings</div>
+          </div>
+          <div className="text-center group">
+            <div className="text-2xl font-bold text-emerald-600 group-hover:scale-110 transition-transform duration-300">99.9%</div>
+            <div className="text-sm text-gray-700">Availability</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  {/* Animation Styles */}
+  <style jsx>{`
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-6px) rotate(2deg);
+      }
+      75% {
+        transform: translateY(3px) rotate(-2deg);
+      }
+    }
+
+    @keyframes spin-slow {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin-reverse {
+      from {
+        transform: rotate(360deg);
+      }
+      to {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes ping {
+      75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes pulse-slow {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+      }
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-spin-slow {
+      animation: spin-slow 20s linear infinite;
+    }
+
+    .animate-spin-reverse {
+      animation: spin-reverse 25s linear infinite;
+    }
+
+    .animate-ping {
+      animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .animate-bounce {
+      animation: bounce 0.5s ease-in-out;
+    }
+
+    .animate-pulse-slow {
+      animation: pulse-slow 3s ease-in-out infinite;
+    }
+
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+  `}</style>
 </section>
 
-<section className="py-16 px-8 max-w-7xl mx-auto border-t">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <div className="relative">
-      <img
-        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&auto=format&fit=crop"
-        className="w-full max-w-sm rounded-lg shadow-lg"
-        alt="ServiceNow HRSD"
-      />
-      {/* SVG Orbit Animation */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 300">
-        <circle
-          cx="200"
-          cy="150"
-          r="170"
-          fill="none"
-          stroke="#10b981"
-          strokeWidth="2"
-          strokeDasharray="15 8"
-          opacity="0.7"
-          style={{
-            animation: "rotate 10s linear infinite reverse"
-          }}
-        />
-        <circle cx="370" cy="150" r="2.5" fill="#10b981" opacity="0.9">
-          <animateTransform
-            attributeName="transform"
-            type="rotate"
-            values="360 200 150;0 200 150"
-            dur="10s"
-            repeatCount="indefinite"
-          />
-        </circle>
-      </svg>
+
+<section className="py-16 px-4 md:px-8 max-w-7xl mx-auto border-t bg-gradient-to-b from-white to-slate-50">
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+
+    {/* Animated HRSD Visualization */}
+    <div className="relative w-full h-[350px] md:h-[400px] bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 rounded-2xl p-6 overflow-hidden border border-amber-100 shadow-lg">
+      
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 25px 25px, #f59e0b 2px, transparent 2px)`,
+          backgroundSize: '40px 40px'
+        }}></div>
+      </div>
+      
+      {/* Central HR Service Hub */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <div className="relative">
+          {/* HR Service Center */}
+          <div className="w-24 h-24 bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl shadow-2xl 
+            flex items-center justify-center text-white animate-pulse-slow group">
+            <div className="text-center">
+              <div className="text-2xl mb-1 group-hover:animate-bounce">🏢</div>
+              <div className="text-xs font-bold">HR Hub</div>
+            </div>
+            
+            {/* Pulse Rings */}
+            <div className="absolute -inset-4 border-2 border-amber-400 rounded-2xl animate-ping opacity-0 group-hover:opacity-100"></div>
+            <div className="absolute -inset-6 border border-yellow-300 rounded-2xl opacity-0 group-hover:opacity-30 animate-pulse-slow"></div>
+          </div>
+          
+          {/* HR Metrics Display */}
+          <div className="absolute -top-16 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-sm px-4 py-2 
+            rounded-xl shadow-lg border border-amber-200 animate-float">
+            <div className="text-center">
+              <div className="text-xs text-amber-600 font-bold">Cases Today</div>
+              <div className="text-lg font-bold text-orange-700">248</div>
+              <div className="text-xs text-gray-600">Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Employee Service Nodes */}
+      {[
+        { 
+          type: "Onboarding", 
+          icon: "🎯", 
+          status: "processing", 
+          details: "New Hire: 3/5 steps",
+          color: "from-emerald-500 to-green-500",
+          pos: "top-8 left-1/4",
+          delay: "0s"
+        },
+        { 
+          type: "Benefits", 
+          icon: "🏥", 
+          status: "completed", 
+          details: "Enrollment: 100%",
+          color: "from-blue-500 to-cyan-500",
+          pos: "top-8 right-1/4",
+          delay: "0.3s"
+        },
+        { 
+          type: "Payroll", 
+          icon: "💰", 
+          status: "pending", 
+          details: "Query: Pay Discrepancy",
+          color: "from-purple-500 to-pink-500",
+          pos: "bottom-8 left-1/4",
+          delay: "0.6s"
+        },
+        { 
+          type: "Leave", 
+          icon: "🏝️", 
+          status: "processing", 
+          details: "Request: Pending Approval",
+          color: "from-sky-500 to-blue-500",
+          pos: "bottom-8 right-1/4",
+          delay: "0.9s"
+        },
+        { 
+          type: "Training", 
+          icon: "🎓", 
+          status: "active", 
+          details: "Course: Compliance 2024",
+          color: "from-red-500 to-orange-500",
+          pos: "top-1/2 left-8",
+          delay: "1.2s"
+        },
+        { 
+          type: "Documents", 
+          icon: "📄", 
+          status: "completed", 
+          details: "Signed: 42 docs",
+          color: "from-gray-500 to-slate-500",
+          pos: "top-1/2 right-8",
+          delay: "1.5s"
+        }
+      ].map((service, i) => (
+        <div key={i} className={`absolute ${service.pos} -translate-x-1/2 -translate-y-1/2`}>
+          
+          {/* Connection Line to HR Hub */}
+          <div className="absolute top-1/2 left-1/2 w-24 h-0.5 bg-gradient-to-r from-amber-300/30 to-transparent 
+            origin-left opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          {/* Service Node */}
+          <div className={`relative w-14 h-14 bg-gradient-to-br ${service.color} rounded-xl shadow-lg 
+            flex flex-col items-center justify-center group animate-float hover:scale-125 transition-transform duration-300`}
+            style={{ animationDelay: service.delay }}>
+            
+            {/* Icon */}
+            <div className="text-lg group-hover:animate-bounce">{service.icon}</div>
+            
+            {/* Status Indicator */}
+            <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 border-white
+              ${service.status === 'completed' ? 'bg-green-500' : 
+                service.status === 'processing' ? 'bg-yellow-500 animate-pulse' : 
+                service.status === 'active' ? 'bg-blue-500 animate-pulse' : 
+                'bg-gray-500'}`}>
+            </div>
+            
+            {/* Service Details on Hover */}
+            <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 bg-white px-3 py-2 rounded-lg 
+              text-xs opacity-0 group-hover:opacity-100 transition-all duration-300 
+              border border-gray-200 shadow-xl min-w-[120px] z-10">
+              <div className="font-bold text-gray-800 mb-1">{service.type}</div>
+              <div className="text-gray-600">{service.details}</div>
+              <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-b-4 
+                border-l-transparent border-r-transparent border-b-white"></div>
+            </div>
+          </div>
+        </div>
+      ))}
+      
+      {/* Employee Self-Service Portal */}
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3 
+        bg-gradient-to-r from-amber-50 to-orange-50 backdrop-blur-sm px-4 py-3 
+        rounded-xl border border-amber-200 shadow-lg animate-pulse-slow">
+        <div className="text-amber-600 text-xl">🖥️</div>
+        <div>
+          <div className="text-sm font-bold text-amber-800">Employee Portal</div>
+          <div className="text-xs text-amber-600">Self-Service Active</div>
+        </div>
+        <div className="ml-2 w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+      </div>
+      
+      {/* HR Metrics Dashboard */}
+      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-xl 
+        border border-amber-200 shadow-lg">
+        <div className="text-center">
+          <div className="text-xs text-amber-600 font-bold mb-1">Satisfaction</div>
+          <div className="flex items-center justify-center gap-2">
+            <div className="text-lg font-bold text-green-700">94%</div>
+            <div className="text-xs text-green-600 bg-green-100 px-2 py-1 rounded-full">↑ 12%</div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Service Level Stats */}
+      <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-xl 
+        border border-amber-200 shadow-lg">
+        <div className="grid grid-cols-2 gap-3 text-center">
+          <div className="group">
+            <div className="text-xl font-bold text-blue-600 group-hover:scale-110 transition-transform duration-300">2.1h</div>
+            <div className="text-xs text-gray-600">Avg. Resolution</div>
+          </div>
+          <div className="group">
+            <div className="text-xl font-bold text-emerald-600 group-hover:scale-110 transition-transform duration-300">85%</div>
+            <div className="text-xs text-gray-600">Auto-Complete</div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Workflow Automation */}
+      <div className="absolute bottom-4 right-4 bg-gradient-to-r from-emerald-50 to-green-50 
+        backdrop-blur-sm px-4 py-2 rounded-xl border border-emerald-200 shadow-lg">
+        <div className="flex items-center gap-2">
+          <div className="text-lg animate-spin-slow" style={{animationDuration: '3s'}}>⚡</div>
+          <div className="text-sm font-medium text-emerald-800">Auto-Workflows</div>
+        </div>
+      </div>
+      
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* Floating Documents */}
+        {[...Array(8)].map((_, i) => (
+          <div key={i} className="absolute w-6 h-6 bg-gradient-to-br from-amber-100 to-orange-100 
+            rounded shadow-sm animate-float flex items-center justify-center text-xs text-amber-600"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${i * 0.7}s`,
+              animationDuration: `${8 + Math.random() * 8}s`
+            }}>
+            📄
+          </div>
+        ))}
+        
+        {/* Animated Workflow Lines */}
+        <svg className="absolute inset-0 w-full h-full opacity-10">
+          <circle cx="50%" cy="50%" r="100" fill="none" stroke="#f59e0b" strokeWidth="1" strokeDasharray="5,5" className="animate-dash" />
+          <circle cx="50%" cy="50%" r="140" fill="none" stroke="#f59e0b" strokeWidth="1" strokeDasharray="5,5" className="animate-dash" style={{animationDelay: '0.5s'}} />
+        </svg>
+      </div>
     </div>
 
+    {/* Text Content */}
     <div>
-      <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+      <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-amber-800 to-orange-700 bg-clip-text text-transparent mb-6">
         HR Service Delivery (HRSD)
       </h3>
 
-      <p className="text-gray-700 leading-relaxed">
-        Transform employee experiences with self-service portals,
-        case management, and workflow automation across the
-        employee lifecycle.
+      <p className="text-gray-700 leading-relaxed mb-6 text-lg">
+        Transform employee experiences with intuitive self-service,
+        centralized HR case management, and automated workflows —
+        delivered through a secure, unified HR platform.
       </p>
+
+      {/* HR Service Categories */}
+      <div className="mb-8">
+        <div className="grid grid-cols-2 gap-4 mb-6">
+          {[
+            { category: "Employee Self-Service", icon: "👤", color: "bg-blue-100 text-blue-800", stat: "85% usage" },
+            { category: "Case Management", icon: "📋", color: "bg-amber-100 text-amber-800", stat: "2.1h avg" },
+            { category: "Workflow Automation", icon: "⚡", color: "bg-emerald-100 text-emerald-800", stat: "70% auto" },
+            { category: "Analytics & Insights", icon: "📊", color: "bg-purple-100 text-purple-800", stat: "94% CSAT" }
+          ].map((item, index) => (
+            <div key={index} className={`p-4 rounded-xl ${item.color} border border-current border-opacity-20 
+              hover:scale-105 transition-transform duration-300 group`}>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="text-xl group-hover:animate-bounce">{item.icon}</div>
+                  <div className="text-sm font-medium">{item.category}</div>
+                </div>
+                <div className="text-xs font-bold opacity-80">{item.stat}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Key Features */}
+        <div className="space-y-3">
+          <h4 className="font-bold text-gray-800 flex items-center gap-2">
+            <span className="text-amber-600">🎯</span> Key Features
+          </h4>
+          {[
+            "Guided employee self-service portal with intuitive interface",
+            "Centralized HR case visibility and tracking across all departments",
+            "Secure employee data management and request processing",
+            "Consistent, automated HR workflows for faster resolution",
+            "Mobile-first experience for on-the-go HR services",
+            "Real-time analytics and reporting on HR service performance"
+          ].map((feature, index) => (
+            <div key={index} className="flex items-start gap-3 group">
+              <div className="w-5 h-5 rounded-full bg-gradient-to-r from-amber-100 to-orange-100 
+                flex items-center justify-center text-amber-600 text-xs mt-0.5 group-hover:scale-125 
+                transition-transform duration-300">
+                ✓
+              </div>
+              <span className="text-gray-700 group-hover:text-gray-900 transition-colors duration-300">
+                {feature}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Benefits Banner */}
+      <div className="bg-gradient-to-r from-amber-50 to-orange-50 rounded-xl p-6 border border-amber-200">
+        <h4 className="font-bold text-amber-800 mb-4 flex items-center gap-2">
+          <span className="text-xl">📈</span> Employee Experience Benefits
+        </h4>
+        <div className="grid grid-cols-3 gap-4">
+          <div className="text-center group">
+            <div className="text-2xl font-bold text-amber-600 group-hover:scale-110 transition-transform duration-300">65%</div>
+            <div className="text-sm text-gray-700">Faster Resolution</div>
+          </div>
+          <div className="text-center group">
+            <div className="text-2xl font-bold text-orange-600 group-hover:scale-110 transition-transform duration-300">40%</div>
+            <div className="text-sm text-gray-700">Cost Reduction</div>
+          </div>
+          <div className="text-center group">
+            <div className="text-2xl font-bold text-green-600 group-hover:scale-110 transition-transform duration-300">94%</div>
+            <div className="text-sm text-gray-700">Employee Satisfaction</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  {/* Animation Styles */}
+  <style jsx>{`
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-6px) rotate(2deg);
+      }
+      75% {
+        transform: translateY(3px) rotate(-2deg);
+      }
+    }
+
+    @keyframes spin-slow {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 20;
+      }
+    }
+
+    @keyframes ping {
+      75%, 100% {
+        transform: scale(2);
+        opacity: 0;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes pulse-slow {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+      }
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-spin-slow {
+      animation: spin-slow 3s linear infinite;
+    }
+
+    .animate-dash {
+      animation: dash 1s linear infinite;
+    }
+
+    .animate-ping {
+      animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+
+    .animate-bounce {
+      animation: bounce 0.5s ease-in-out;
+    }
+
+    .animate-pulse-slow {
+      animation: pulse-slow 3s ease-in-out infinite;
+    }
+
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+  `}</style>
 </section>
 
-<section className="py-16 px-8 max-w-7xl mx-auto border-t">
-  <div className="grid md:grid-cols-2 gap-10 items-start">
-    <div className="relative">
-      <img
-        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&auto=format&fit=crop"
-        className="w-full max-w-md rounded-lg shadow-lg"
-        alt="ServiceNow CSM"
-      />
-      {/* SVG Orbit Animation */}
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 400 300">
-        <circle
-          cx="200"
-          cy="150"
-          r="160"
-          fill="none"
-          stroke="#8b5cf6"
-          strokeWidth="2"
-          strokeDasharray="25 5"
-          opacity="0.6"
-          style={{
-            animation: "rotate 12s linear infinite"
-          }}
-        />
-        <circle cx="360" cy="150" r="3" fill="#8b5cf6" opacity="0.8">
-          <animateTransform
-            attributeName="transform"
-            type="rotate"
-            values="0 200 150;360 200 150"
-            dur="12s"
-            repeatCount="indefinite"
-          />
-        </circle>
-        {/* Additional inner orbit */}
-        <circle
-          cx="200"
-          cy="150"
-          r="120"
-          fill="none"
-          stroke="#f59e0b"
-          strokeWidth="1"
-          strokeDasharray="10 15"
-          opacity="0.4"
-          style={{
-            animation: "rotate 6s linear infinite reverse"
-          }}
-        />
-      </svg>
+
+<section className="py-16 px-4 md:px-8 max-w-7xl mx-auto border-t">
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+
+    {/* Interactive CSM Galaxy Animation */}
+    <div className="relative w-full h-[400px] bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 rounded-2xl overflow-hidden border border-purple-100 shadow-2xl">
+      
+      {/* 3D Perspective Container */}
+      <div className="absolute inset-0 perspective-1000">
+        
+        {/* Central Customer Orbit System */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          
+          {/* Core Customer Planet */}
+          <div className="relative w-24 h-24 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full 
+            shadow-2xl animate-pulse-slow group">
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent 
+              animate-spin-slow opacity-0 group-hover:opacity-100"></div>
+            <div className="w-full h-full flex items-center justify-center text-white text-3xl">
+              👤
+            </div>
+            
+            {/* Atmosphere Rings */}
+            <div className="absolute -inset-4 border-2 border-purple-400/30 rounded-full animate-orbit-slow"></div>
+            <div className="absolute -inset-8 border border-pink-400/20 rounded-full animate-orbit-medium" 
+                 style={{animationDelay: '1s'}}></div>
+          </div>
+          
+          {/* Orbiting Support Channels */}
+          {[
+            { channel: "Chat", icon: "💬", color: "bg-emerald-500", size: "w-12 h-12", orbit: 120, speed: "20s", delay: "0s" },
+            { channel: "Email", icon: "📧", color: "bg-blue-500", size: "w-10 h-10", orbit: 100, speed: "15s", delay: "2s" },
+            { channel: "Phone", icon: "📞", color: "bg-cyan-500", size: "w-14 h-14", orbit: 140, speed: "25s", delay: "4s" },
+            { channel: "Social", icon: "📱", color: "bg-pink-500", size: "w-11 h-11", orbit: 90, speed: "18s", delay: "6s" }
+          ].map((orbit, index) => (
+            <div key={index} className="absolute top-0 left-0 animate-orbit" 
+                 style={{
+                   animationDuration: orbit.speed,
+                   animationDelay: orbit.delay,
+                   width: `${orbit.orbit * 2}px`,
+                   height: `${orbit.orbit * 2}px`,
+                   transformOrigin: 'center'
+                 }}>
+              <div className={`absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 ${orbit.size} ${orbit.color} 
+                rounded-full shadow-lg flex items-center justify-center text-white text-lg 
+                hover:scale-125 transition-transform duration-300 group`}>
+                {orbit.icon}
+                
+                {/* Connection Beam */}
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 w-1 h-12 
+                  bg-gradient-to-t from-current to-transparent opacity-0 group-hover:opacity-100 
+                  transition-opacity duration-300"></div>
+                
+                {/* Tooltip */}
+                <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-slate-900 text-white px-3 py-1 
+                  rounded-lg text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 
+                  whitespace-nowrap">
+                  {orbit.channel}
+                  <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-slate-900 rotate-45"></div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* Background Constellation */}
+        <div className="absolute inset-0">
+          {[...Array(20)].map((_, i) => (
+            <div key={i} className="absolute w-1 h-1 bg-purple-300 rounded-full animate-twinkle"
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 5}s`,
+                animationDuration: `${2 + Math.random() * 3}s`
+              }}>
+            </div>
+          ))}
+        </div>
+        
+        {/* Floating Data Nebulas */}
+        {[
+          { color: "from-blue-400/20 to-cyan-400/20", pos: "top-8 left-8", size: "w-24 h-24" },
+          { color: "from-purple-400/20 to-pink-400/20", pos: "bottom-8 right-8", size: "w-32 h-32" },
+          { color: "from-indigo-400/20 to-blue-400/20", pos: "top-8 right-12", size: "w-20 h-20" },
+          { color: "from-pink-400/20 to-rose-400/20", pos: "bottom-12 left-12", size: "w-28 h-28" }
+        ].map((nebula, i) => (
+          <div key={i} className={`absolute ${nebula.pos} ${nebula.size} bg-gradient-to-br ${nebula.color} 
+            rounded-full blur-xl opacity-50 animate-float`}
+            style={{ animationDelay: `${i * 0.5}s`, animationDuration: '8s' }}>
+          </div>
+        ))}
+        
+        {/* Case Routing Lines (3D effect) */}
+        <svg className="absolute inset-0 w-full h-full opacity-20">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0.8" />
+              <stop offset="100%" stopColor="#8b5cf6" stopOpacity="0" />
+            </radialGradient>
+          </defs>
+          <circle cx="50%" cy="50%" r="180" fill="url(#glow)" />
+        </svg>
+        
+        {/* Interactive AI Assistant */}
+        <div className="absolute bottom-6 left-6 bg-gradient-to-r from-white/90 to-white/70 backdrop-blur-sm 
+          px-4 py-3 rounded-2xl shadow-xl border border-purple-200 animate-slide-up">
+          <div className="flex items-center gap-3">
+            <div className="relative">
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full 
+                flex items-center justify-center text-white animate-bounce-slow">
+                🤖
+              </div>
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full border-2 border-white 
+                animate-pulse"></div>
+            </div>
+            <div>
+              <div className="text-sm font-bold text-purple-800">AI Assistant</div>
+              <div className="text-xs text-purple-600">Live • Routing cases</div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Real-time Metrics */}
+        <div className="absolute top-6 right-6 bg-gradient-to-r from-indigo-500/90 to-purple-500/90 
+          backdrop-blur-sm px-4 py-3 rounded-2xl shadow-xl text-white animate-slide-up" 
+          style={{animationDelay: '0.3s'}}>
+          <div className="text-center">
+            <div className="text-2xl font-bold">2.3s</div>
+            <div className="text-xs opacity-90">Avg. Response</div>
+            <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-indigo-500 rotate-45"></div>
+          </div>
+        </div>
+        
+        {/* Satisfaction Meter */}
+        <div className="absolute bottom-6 right-6 bg-white/90 backdrop-blur-sm px-4 py-3 rounded-2xl 
+          shadow-xl border border-emerald-200 animate-slide-up" style={{animationDelay: '0.6s'}}>
+          <div className="flex items-center gap-2">
+            <div className="text-emerald-600 text-lg">⭐</div>
+            <div>
+              <div className="text-sm font-bold text-emerald-800">97% CSAT</div>
+              <div className="text-xs text-emerald-600">This month</div>
+            </div>
+          </div>
+        </div>
+        
+        {/* Animated Case Particles */}
+        <div className="absolute inset-0 overflow-hidden">
+          {[...Array(12)].map((_, i) => (
+            <div key={i} className="absolute w-2 h-2 bg-gradient-to-r from-indigo-400 to-purple-400 
+              rounded-full animate-particle" 
+              style={{
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${i * 0.2}s`
+              }}>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
 
+    {/* Text Content */}
     <div>
-      <h3 className="text-2xl font-semibold text-blue-900 mb-4">
+      <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-indigo-700 to-purple-600 
+        bg-clip-text text-transparent mb-6">
         Customer Service Management (CSM)
       </h3>
 
-      <p className="text-gray-700 leading-relaxed mb-4">
+      <p className="text-gray-700 leading-relaxed mb-6 text-lg">
         Deliver seamless customer experiences with omnichannel engagement,
         intelligent case routing, and proactive service workflows.
       </p>
+
+      {/* Galaxy-inspired Feature Orbits */}
+      <div className="mb-8">
+        <div className="grid grid-cols-2 gap-4 mb-6">
+          {[
+            { feature: "Orbital Routing", desc: "Intelligent case assignment", icon: "🔄", color: "from-indigo-100 to-purple-100" },
+            { feature: "Gravity Assist", desc: "Automated escalation", icon: "⚡", color: "from-pink-100 to-rose-100" },
+            { feature: "Nebula Analytics", desc: "Real-time insights", icon: "📊", color: "from-blue-100 to-cyan-100" },
+            { feature: "Stellar Support", desc: "24/7 coverage", icon: "🌟", color: "from-emerald-100 to-green-100" }
+          ].map((orbit, index) => (
+            <div key={index} className={`relative p-4 rounded-xl bg-gradient-to-br ${orbit.color} 
+              border border-current border-opacity-20 hover:scale-105 transition-transform duration-300 
+              group overflow-hidden`}>
+              
+              {/* Animated background effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent 
+                -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              
+              <div className="relative flex items-center gap-3">
+                <div className="text-2xl animate-spin-slow group-hover:animate-none">{orbit.icon}</div>
+                <div>
+                  <div className="font-bold text-gray-800">{orbit.feature}</div>
+                  <div className="text-sm text-gray-600">{orbit.desc}</div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Quantum Service Features */}
+        <div className="space-y-4">
+          <h4 className="font-bold text-gray-800 flex items-center gap-2">
+            <span className="text-purple-600">🌌</span> Quantum Service Features
+          </h4>
+          
+          <div className="grid grid-cols-2 gap-3">
+            {[
+              { label: "Omnichannel Sync", value: "100%", color: "text-indigo-600" },
+              { label: "AI Accuracy", value: "98.5%", color: "text-purple-600" },
+              { label: "Auto-Resolve", value: "65%", color: "text-pink-600" },
+              { label: "SLA Compliance", value: "99.9%", color: "text-emerald-600" }
+            ].map((metric, index) => (
+              <div key={index} className="text-center p-3 rounded-lg bg-gradient-to-br from-slate-50 to-white 
+                border border-slate-200 hover:border-purple-300 transition-colors duration-300">
+                <div className={`text-xl font-bold ${metric.color}`}>{metric.value}</div>
+                <div className="text-xs text-gray-600">{metric.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Cosmic Benefits Banner */}
+      <div className="bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-6 border border-indigo-200 
+        relative overflow-hidden">
+        
+        {/* Animated background */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 50% 50%, #8b5cf6 1px, transparent 1px)`,
+            backgroundSize: '40px 40px'
+          }}></div>
+        </div>
+        
+        <div className="relative">
+          <h4 className="font-bold text-indigo-800 mb-4 flex items-center gap-2">
+            <span className="text-xl">🚀</span> Galactic Performance Metrics
+          </h4>
+          <div className="grid grid-cols-3 gap-4">
+            <div className="text-center group">
+              <div className="text-2xl font-bold text-indigo-600 group-hover:animate-bounce">40%</div>
+              <div className="text-sm text-gray-700">Faster Resolution</div>
+            </div>
+            <div className="text-center group">
+              <div className="text-2xl font-bold text-purple-600 group-hover:animate-bounce">55%</div>
+              <div className="text-sm text-gray-700">Cost Reduction</div>
+            </div>
+            <div className="text-center group">
+              <div className="text-2xl font-bold text-pink-600 group-hover:animate-bounce">97%</div>
+              <div className="text-sm text-gray-700">Customer Satisfaction</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  {/* Animation Styles */}
+  <style jsx>{`
+    @keyframes orbit {
+      0% {
+        transform: rotate(0deg) translateX(var(--radius)) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(var(--radius)) rotate(-360deg);
+      }
+    }
+
+    @keyframes orbit-slow {
+      0% {
+        transform: rotate(0deg);
+        opacity: 0.3;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        transform: rotate(360deg);
+        opacity: 0.3;
+      }
+    }
+
+    @keyframes orbit-medium {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(-360deg);
+      }
+    }
+
+    @keyframes pulse-slow {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes spin-slow {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-10px) rotate(5deg);
+      }
+      75% {
+        transform: translateY(5px) rotate(-5deg);
+      }
+    }
+
+    @keyframes twinkle {
+      0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.5);
+      }
+    }
+
+    @keyframes slide-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes bounce-slow {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes particle {
+      0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100px) translateX(50px);
+        opacity: 0;
+      }
+    }
+
+    .perspective-1000 {
+      perspective: 1000px;
+    }
+
+    .animate-orbit {
+      animation: orbit linear infinite;
+    }
+
+    .animate-orbit-slow {
+      animation: orbit-slow 8s linear infinite;
+    }
+
+    .animate-orbit-medium {
+      animation: orbit-medium 12s linear infinite;
+    }
+
+    .animate-pulse-slow {
+      animation: pulse-slow 4s ease-in-out infinite;
+    }
+
+    .animate-spin-slow {
+      animation: spin-slow 10s linear infinite;
+    }
+
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .animate-twinkle {
+      animation: twinkle 3s ease-in-out infinite;
+    }
+
+    .animate-slide-up {
+      animation: slide-up 0.6s ease-out forwards;
+    }
+
+    .animate-bounce-slow {
+      animation: bounce-slow 2s ease-in-out infinite;
+    }
+
+    .animate-particle {
+      animation: particle 3s linear infinite;
+    }
+
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.5;
+      }
+    }
+  `}</style>
 </section>
+
 
                     </>
                 )}

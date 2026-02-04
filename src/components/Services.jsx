@@ -4,41 +4,49 @@ const services = [
     title: "Artificial Intelligence",
     desc: "From generative AI to predictive analytics, our AI solutions help enterprises innovate faster.",
     icon: "https://cdn-icons-png.flaticon.com/512/4712/4712109.png",
+    slug: "artificial-intelligence"
   },
   {
     title: "Digital Experience",
     desc: "Providing solutions to connect the entire customer journey by optimizing operations.",
     icon: "https://cdn-icons-png.flaticon.com/512/4712/4712035.png",
+    slug: "digital-experience"
   },
   {
     title: "Data Analytics",
     desc: "Providing BI solutions that deliver actionable insights for strategic and tactical decisions.",
     icon: "https://cdn-icons-png.flaticon.com/512/4712/4712027.png",
+    slug: "data-analytics"
   },
   {
     title: "Enterprise Applications",
     desc: "Best-of-breed solutions enabling application-driven business transformation.",
     icon: "https://cdn-icons-png.flaticon.com/512/4712/4712040.png",
+    slug: "enterprise-application"
   },
   {
     title: "Microsoft Dynamics 365",
     desc: "ERP and CRM solutions that improve operational efficiency.",
     icon: "https://cdn-icons-png.flaticon.com/512/732/732221.png",
+    slug: "microsoft-dynamics-365"
   },
   {
     title: "Intelligent IT & Cloud",
     desc: "Cloud-first strategies for scalable and secure IT operations.",
     icon: "https://cdn-icons-png.flaticon.com/512/4149/4149653.png",
+    slug: "intelligent-it-and-cloud"
   },
   {
     title: "Quality Engineering",
     desc: "Advanced testing frameworks ensuring product reliability.",
     icon: "https://cdn-icons-png.flaticon.com/512/942/942748.png",
+    slug: "quality-engineering"
   },
   {
     title: "ServiceNow Platform",
     desc: "Digital workflows that simplify enterprise service management.",
     icon: "https://cdn-icons-png.flaticon.com/512/5968/5968342.png",
+    slug: "servicenow-platform"
   },
 ]
 
@@ -138,7 +146,7 @@ export default function Services() {
             {/* Premium Learn More Button */}
             <div className="text-center relative z-10 mt-auto">
               <Link
-                to={`/services/${s.title.toLowerCase().replace(/\s+/g, "-")}`}
+                to={`/services/${s.slug}`}
                 className="relative inline-block font-semibold text-blue-600 px-6 py-3 rounded-full border border-blue-200 overflow-hidden group transition-all duration-300 hover:scale-105 hover:shadow-lg transform active:scale-95"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-purple-500 to-blue-500 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"></span>

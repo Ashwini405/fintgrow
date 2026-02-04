@@ -8,8 +8,7 @@ const blogs = [
     title: "LLM Poisoning – Part 2: Defense Strategies for Resilient AI",
     date: "Dec 18, 2025",
     author: "Team Arvish Consulting",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1600&auto=format&fit=crop",
+    image: "tech-panel",
   },
   {
     id: 2, // Innovative panel
@@ -80,6 +79,39 @@ export default function Blog() {
         .card:hover .read-link {
           opacity: 1;
           transform: translateY(0);
+        }
+
+        /* Security-themed panel for blog 1 */
+        .security-panel {
+          position: relative;
+          height: 420px;
+          background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+          overflow: hidden;
+        }
+
+        .security-panel::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-image:
+            radial-gradient(circle at 25% 25%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+        }
+
+        .security-panel::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-image:
+            linear-gradient(45deg, rgba(255,255,255,0.02) 1px, transparent 1px),
+            linear-gradient(-45deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+          background-size: 20px 20px;
+          animation: securityMove 15s linear infinite;
+        }
+
+        @keyframes securityMove {
+          from { background-position: 0 0, 0 0; }
+          to { background-position: 40px 40px, -40px 40px; }
         }
 
         /* Innovative middle panel */
@@ -204,7 +236,132 @@ export default function Blog() {
                 className="card group flex flex-col"
               >
                 {/* MEDIA */}
-                {blog.image && blog.image !== "graph" && (
+                {blog.image === "tech-panel" && (
+                  <div className="security-panel">
+                    {/* Enhanced AI Neural Network */}
+                    <svg className="absolute inset-0 w-full h-full opacity-25" viewBox="0 0 400 420">
+                      <defs>
+                        <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" stopColor="#8b5cf6" />
+                          <stop offset="50%" stopColor="#06b6d4" />
+                          <stop offset="100%" stopColor="#3b82f6" />
+                        </linearGradient>
+                        <filter id="glow">
+                          <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                          <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                          </feMerge>
+                        </filter>
+                      </defs>
+                      
+                      {/* Neural Network Nodes */}
+                      <circle cx="80" cy="80" r="4" fill="#8b5cf6" filter="url(#glow)">
+                        <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite" />
+                        <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="200" cy="120" r="3" fill="#06b6d4" filter="url(#glow)">
+                        <animate attributeName="r" values="2;5;2" dur="3s" repeatCount="indefinite" begin="0.5s" />
+                      </circle>
+                      <circle cx="320" cy="100" r="4" fill="#3b82f6" filter="url(#glow)">
+                        <animate attributeName="r" values="3;7;3" dur="2.5s" repeatCount="indefinite" begin="1s" />
+                      </circle>
+                      <circle cx="150" cy="250" r="3" fill="#a855f7" filter="url(#glow)">
+                        <animate attributeName="r" values="2;6;2" dur="4s" repeatCount="indefinite" begin="1.5s" />
+                      </circle>
+                      <circle cx="280" cy="300" r="4" fill="#06b6d4" filter="url(#glow)">
+                        <animate attributeName="r" values="3;5;3" dur="3.5s" repeatCount="indefinite" begin="2s" />
+                      </circle>
+                      
+                      {/* Animated Connection Lines */}
+                      <line x1="80" y1="80" x2="200" y2="120" stroke="url(#aiGrad)" strokeWidth="1.5" opacity="0.6">
+                        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="3s" repeatCount="indefinite" />
+                        <animate attributeName="strokeWidth" values="1;2;1" dur="3s" repeatCount="indefinite" />
+                      </line>
+                      <line x1="200" y1="120" x2="320" y2="100" stroke="url(#aiGrad)" strokeWidth="1.5" opacity="0.4">
+                        <animate attributeName="opacity" values="0.1;0.7;0.1" dur="4s" repeatCount="indefinite" begin="1s" />
+                      </line>
+                      <line x1="150" y1="250" x2="280" y2="300" stroke="url(#aiGrad)" strokeWidth="1.5" opacity="0.5">
+                        <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.5s" repeatCount="indefinite" begin="2s" />
+                      </line>
+                      <line x1="80" y1="80" x2="150" y2="250" stroke="url(#aiGrad)" strokeWidth="1" opacity="0.3">
+                        <animate attributeName="opacity" values="0.1;0.6;0.1" dur="5s" repeatCount="indefinite" begin="0.5s" />
+                      </line>
+                      <line x1="320" y1="100" x2="280" y2="300" stroke="url(#aiGrad)" strokeWidth="1" opacity="0.4">
+                        <animate attributeName="opacity" values="0.2;0.7;0.2" dur="3.5s" repeatCount="indefinite" begin="1.5s" />
+                      </line>
+                      
+                      {/* Data Flow Particles */}
+                      <circle r="2" fill="#ffffff" opacity="0.8">
+                        <animateMotion dur="4s" repeatCount="indefinite">
+                          <path d="M80,80 Q140,100 200,120" />
+                        </animateMotion>
+                        <animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite" />
+                      </circle>
+                      <circle r="1.5" fill="#8b5cf6" opacity="0.9">
+                        <animateMotion dur="3s" repeatCount="indefinite" begin="1s">
+                          <path d="M200,120 Q260,110 320,100" />
+                        </animateMotion>
+                        <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" begin="1s" />
+                      </circle>
+                    </svg>
+                    
+                    {/* AI Brain Illustration */}
+                    <svg className="absolute top-16 left-1/2 transform -translate-x-1/2 w-20 h-20 opacity-30" viewBox="0 0 100 100">
+                      <path d="M50 20 C30 20, 20 35, 25 50 C20 65, 35 80, 50 75 C65 80, 80 65, 75 50 C80 35, 70 20, 50 20 Z" 
+                            fill="none" stroke="#8b5cf6" strokeWidth="2" strokeDasharray="5,5">
+                        <animate attributeName="stroke-dashoffset" values="0;10;0" dur="3s" repeatCount="indefinite" />
+                      </path>
+                      <circle cx="40" cy="40" r="2" fill="#06b6d4">
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="60" cy="45" r="2" fill="#3b82f6">
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite" begin="0.5s" />
+                      </circle>
+                      <circle cx="50" cy="60" r="2" fill="#a855f7">
+                        <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" begin="1s" />
+                      </circle>
+                    </svg>
+                    
+                    {/* Enhanced Floating AI Icons */}
+                    <div className="card-floating-icon top-8 right-8 w-12 h-12 bg-gradient-to-br from-purple-500/40 to-blue-500/40 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+                      <span className="text-white text-xl animate-pulse">🤖</span>
+                    </div>
+                    <div className="card-floating-icon top-28 left-8 w-10 h-10 bg-gradient-to-br from-blue-500/40 to-cyan-500/40 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+                      <span className="text-white text-base animate-bounce">🧠</span>
+                    </div>
+                    <div className="card-floating-icon bottom-16 right-12 w-11 h-11 bg-gradient-to-br from-indigo-500/40 to-purple-500/40 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+                      <span className="text-white text-lg" style={{animation: 'pulse 1.5s infinite'}}>⚡</span>
+                    </div>
+                    <div className="card-floating-icon bottom-24 left-16 w-9 h-9 bg-gradient-to-br from-violet-500/40 to-pink-500/40 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20">
+                      <span className="text-white text-sm animate-pulse">🔒</span>
+                    </div>
+                    <div className="card-floating-icon top-1/2 left-1/2 w-8 h-8 bg-gradient-to-br from-cyan-500/40 to-blue-500/40 rounded-full flex items-center justify-center backdrop-blur-sm border border-white/20" style={{transform: 'translate(-50%, -50%)'}}>
+                      <span className="text-white text-sm animate-spin" style={{animationDuration: '3s'}}>🛡️</span>
+                    </div>
+                    
+                    {/* AI Processing Indicator */}
+                    <div className="absolute top-1/3 right-16 flex space-x-1">
+                      <div className="w-2 h-2 bg-purple-400 rounded-full animate-bounce"></div>
+                      <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style={{animationDelay: '0.1s'}}></div>
+                      <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce" style={{animationDelay: '0.2s'}}></div>
+                    </div>
+                    
+                    {/* Enhanced AI Text Label */}
+                    <div className="absolute top-6 left-6 bg-gradient-to-r from-purple-500/30 to-blue-500/30 backdrop-blur-md border border-white/20 rounded-xl px-4 py-2 shadow-lg">
+                      <span className="text-white text-sm font-bold tracking-wide">AI DEFENSE SYSTEM</span>
+                      <div className="w-full h-0.5 bg-gradient-to-r from-purple-400 to-blue-400 mt-1 rounded animate-pulse"></div>
+                    </div>
+                    
+                    {/* Scanning Line Effect */}
+                    <div className="absolute inset-0 overflow-hidden">
+                      <div className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-60" 
+                           style={{animation: 'scan 4s linear infinite'}}></div>
+                    </div>
+                  </div>
+                )}
+
+                {blog.image && blog.image !== "graph" && blog.image !== "tech-panel" && (
                   <>
                     <img
                       src={blog.image}
@@ -224,12 +381,33 @@ export default function Blog() {
 
                 {blog.image === null && (
                   <div className="tech-panel">
-                    {/* Floating icons in tech panel */}
+                    {/* AI Circuit Pattern */}
+                    <svg className="absolute inset-0 w-full h-full opacity-15" viewBox="0 0 400 420">
+                      <circle cx="100" cy="100" r="30" fill="none" stroke="#3b82f6" strokeWidth="1" strokeDasharray="5,5">
+                        <animate attributeName="r" values="25;35;25" dur="4s" repeatCount="indefinite" />
+                      </circle>
+                      <circle cx="300" cy="300" r="25" fill="none" stroke="#6366f1" strokeWidth="1" strokeDasharray="3,3">
+                        <animate attributeName="r" values="20;30;20" dur="3s" repeatCount="indefinite" begin="1s" />
+                      </circle>
+                      <rect x="180" y="180" width="40" height="40" fill="none" stroke="#8b5cf6" strokeWidth="1" rx="5">
+                        <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite" />
+                      </rect>
+                    </svg>
+                    
+                    {/* AI-themed floating icons */}
                     <div className="card-floating-icon top-6 right-6 w-8 h-8 bg-black/40 rounded-full flex items-center justify-center">
-                      <span className="text-white text-sm">⚡</span>
+                      <span className="text-white text-sm">🤖</span>
                     </div>
                     <div className="card-floating-icon top-20 left-6 w-6 h-6 bg-black/40 rounded-full flex items-center justify-center">
-                      <span className="text-white text-xs">🛡️</span>
+                      <span className="text-white text-xs">📊</span>
+                    </div>
+                    <div className="card-floating-icon bottom-8 left-1/2 w-7 h-7 bg-black/40 rounded-full flex items-center justify-center" style={{transform: 'translateX(-50%)'}}>
+                      <span className="text-white text-sm">⚡</span>
+                    </div>
+                    
+                    {/* AI Guardrails Label */}
+                    <div className="absolute bottom-6 right-6 bg-gradient-to-r from-blue-500/20 to-purple-500/20 backdrop-blur-sm border border-white/10 rounded-lg px-3 py-1">
+                      <span className="text-white text-xs font-semibold">AI GUARDRAILS</span>
                     </div>
                   </div>
                 )}
