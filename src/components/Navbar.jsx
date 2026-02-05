@@ -69,12 +69,12 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center gap-3 sm:gap-4 group">
-              <div className="relative">
+              <div className="relative group-hover:drop-shadow-lg transition-all duration-300">
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 rounded-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
                 <img
                   src={arvishLogo}
                   alt="Arvish Consulting Logo"
-                  className="relative w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 transition-all duration-300 group-hover:scale-110 rounded-xl border-2 border-slate-200 group-hover:border-blue-400"
+                  className="relative w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 transition-all duration-300 group-hover:scale-110 rounded-xl border-2 border-slate-200 group-hover:border-blue-400 filter group-hover:brightness-110 group-hover:contrast-110"
                 />
               </div>
               <div className="flex flex-col">
@@ -119,7 +119,7 @@ const Navbar = () => {
                 {/* Dropdown Menu */}
                 {activeDropdown === menu && (
                   <div 
-                    className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-xl rounded-lg border border-slate-100 min-w-[250px] xl:min-w-[280px] py-2 animate-fade-in-down max-h-80 overflow-hidden"
+                    className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-xl rounded-lg border border-slate-100 min-w-[250px] xl:min-w-[280px] py-2 animate-fade-in-down max-h-80 overflow-hidden z-50"
                     onMouseEnter={() => handleMouseEnter(menu)}
                     onMouseLeave={handleMouseLeave}
                   >

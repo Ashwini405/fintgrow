@@ -493,3 +493,224 @@ a:focus-visible {
   width: 300px;
   height: 300px;
 }
+
+/* Enhanced Responsive Utilities */
+
+/* Mobile-first responsive text scaling */
+.text-responsive-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-responsive-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-responsive-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-responsive-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-responsive-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* Responsive spacing utilities */
+.space-responsive-xs {
+  margin: 0.25rem;
+}
+
+.space-responsive-sm {
+  margin: 0.5rem;
+}
+
+.space-responsive-md {
+  margin: 1rem;
+}
+
+.space-responsive-lg {
+  margin: 1.5rem;
+}
+
+.space-responsive-xl {
+  margin: 3rem;
+}
+
+/* Responsive padding utilities */
+.p-responsive-xs {
+  padding: 0.25rem;
+}
+
+.p-responsive-sm {
+  padding: 0.5rem;
+}
+
+.p-responsive-md {
+  padding: 1rem;
+}
+
+.p-responsive-lg {
+  padding: 1.5rem;
+}
+
+.p-responsive-xl {
+  padding: 3rem;
+}
+
+/* Mobile-specific utilities */
+@media (max-width: 374px) {
+  .mobile-hide {
+    display: none !important;
+  }
+  
+  .mobile-text-xs {
+    font-size: 0.625rem !important;
+    line-height: 0.875rem !important;
+  }
+  
+  .mobile-p-2 {
+    padding: 0.5rem !important;
+  }
+  
+  .mobile-m-1 {
+    margin: 0.25rem !important;
+  }
+}
+
+/* Tablet-specific utilities */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tablet-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  .tablet-text-lg {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+  }
+  
+  .tablet-p-6 {
+    padding: 1.5rem !important;
+  }
+}
+
+/* Desktop-specific utilities */
+@media (min-width: 1024px) {
+  .desktop-grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+  
+  .desktop-text-xl {
+    font-size: 1.25rem !important;
+    line-height: 1.75rem !important;
+  }
+  
+  .desktop-p-8 {
+    padding: 2rem !important;
+  }
+}
+
+/* Touch-friendly interactive elements */
+@media (hover: none) and (pointer: coarse) {
+  .touch-friendly {
+    min-height: 44px;
+    min-width: 44px;
+    padding: 0.75rem;
+  }
+  
+  .touch-button {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .retina-border {
+    border-width: 0.5px;
+  }
+  
+  .retina-text {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-spin-slow,
+  .animate-pulse-slow,
+  .animate-bounce-slow {
+    animation: none !important;
+  }
+  
+  .transition-all {
+    transition: none !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .dark-mode-bg {
+    background-color: #1f2937;
+  }
+  
+  .dark-mode-text {
+    color: #f9fafb;
+  }
+  
+  .dark-mode-border {
+    border-color: #374151;
+  }
+}
+
+/* Print styles */
+@media print {
+  .print-hide {
+    display: none !important;
+  }
+  
+  .print-show {
+    display: block !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .landscape-compact {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .landscape-hide {
+    display: none;
+  }
+}
+
+/* Ultra-wide screen support */
+@media (min-width: 1920px) {
+  .ultra-wide-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .ultra-wide-text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}

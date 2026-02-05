@@ -321,29 +321,29 @@ export default function Hero() {
         effect="fade"
         fadeEffect={{ crossFade: true }}
         loop={true}
-        className="h-[100vh] sm:h-[90vh] md:h-[85vh]"
+        className="h-[100vh] xs:h-[90vh] sm:h-[85vh] md:h-[80vh] lg:h-[85vh] xl:h-[90vh]"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className={`h-full w-full ${slide.bgColor} relative overflow-hidden`}>
               {/* Content Container */}
-              <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12">
-                <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center h-full py-8 sm:py-12 lg:py-16">
+              <div className="relative h-full max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 xl:px-12">
+                <div className="grid lg:grid-cols-2 gap-4 xs:gap-6 sm:gap-8 lg:gap-12 xl:gap-16 items-center h-full py-6 xs:py-8 sm:py-12 lg:py-16">
                   
                   {/* Left Content */}
-                  <div className="space-y-4 sm:space-y-6 lg:space-y-8 animate-slide-in-left text-center lg:text-left">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-900 leading-tight">
+                  <div className="space-y-3 xs:space-y-4 sm:space-y-6 lg:space-y-8 animate-slide-in-left text-center lg:text-left">
+                    <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-slate-900 leading-tight px-2 xs:px-0">
                       {slide.title}
                     </h1>
                     
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-700 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    <p className="text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl text-slate-700 leading-relaxed max-w-2xl mx-auto lg:mx-0 px-2 xs:px-0">
                       {slide.description}
                     </p>
                     
-                    <div className="pt-2 sm:pt-4 flex justify-center lg:justify-start">
+                    <div className="pt-2 xs:pt-3 sm:pt-4 flex justify-center lg:justify-start">
                       <button 
                         onClick={() => handleReadMore(slide.link)}
-                        className="group relative inline-flex items-center gap-2 sm:gap-3 lg:gap-4 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+                        className="group relative inline-flex items-center gap-2 xs:gap-3 lg:gap-4 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold text-xs xs:text-sm sm:text-base lg:text-lg px-4 xs:px-6 sm:px-8 py-2.5 xs:py-3 sm:py-4 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                       >
                         {/* Animated Background */}
                         <div className="absolute inset-0 bg-gradient-to-r from-red-400 to-red-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -352,14 +352,14 @@ export default function Hero() {
                         <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 transform scale-0 group-hover:scale-110 transition-all duration-500"></div>
                         
                         {/* Content */}
-                        <div className="relative flex items-center gap-2 sm:gap-3 lg:gap-4">
-                          <div className="relative w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10">
+                        <div className="relative flex items-center gap-2 xs:gap-3 lg:gap-4">
+                          <div className="relative w-4 h-4 xs:w-6 xs:h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10">
                             <div className="absolute inset-0 bg-white/30 transform rotate-45 animate-pulse group-hover:rotate-90 transition-all duration-500"></div>
                             <div className="absolute inset-1 bg-white/20 transform -rotate-12 animate-bounce group-hover:rotate-45 transition-all duration-700"></div>
                             <div className="absolute inset-2 bg-white rounded-full animate-ping group-hover:animate-pulse"></div>
                           </div>
                           <span className="group-hover:translate-x-1 sm:group-hover:translate-x-2 transition-transform duration-500">READ MORE</span>
-                          <div className="relative w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6">
+                          <div className="relative w-3 h-3 xs:w-4 xs:h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6">
                             <div className="absolute inset-0 border-2 border-white transform rotate-0 group-hover:rotate-180 transition-all duration-1000 ease-in-out"></div>
                             <div className="absolute inset-1 border border-white/60 transform rotate-45 group-hover:rotate-225 transition-all duration-800"></div>
                             <div className="absolute top-1/2 left-1/2 w-1 h-1 bg-white transform -translate-x-1/2 -translate-y-1/2 animate-pulse group-hover:scale-300"></div>
@@ -372,7 +372,7 @@ export default function Hero() {
                     </div>
                   </div>
                   
-                  {/* Right Illustration */}
+                  {/* Right Illustration - Hidden on mobile, visible on lg+ */}
                   <div className="hidden lg:flex items-center justify-center animate-fade-in order-first lg:order-last">
                     <div className="w-full max-w-lg xl:max-w-xl 2xl:max-w-2xl">
                       {slide.illustration === 'digital-experience' && <DigitalExperienceIllustration />}
@@ -385,7 +385,7 @@ export default function Hero() {
               </div>
               
               {/* Decorative Elements */}
-              <div className="absolute bottom-0 left-0 w-full h-16 sm:h-24 lg:h-32 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
+              <div className="absolute bottom-0 left-0 w-full h-12 xs:h-16 sm:h-24 lg:h-32 bg-gradient-to-t from-white/20 to-transparent pointer-events-none"></div>
             </div>
           </SwiperSlide>
         ))}
@@ -397,10 +397,18 @@ export default function Hero() {
         :global(.swiper-button-prev) {
           color: #1e293b !important;
           background: white;
-          width: 40px !important;
-          height: 40px !important;
+          width: 32px !important;
+          height: 32px !important;
           border-radius: 50%;
           box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+        
+        @media (min-width: 375px) {
+          :global(.swiper-button-next),
+          :global(.swiper-button-prev) {
+            width: 36px !important;
+            height: 36px !important;
+          }
         }
         
         @media (min-width: 640px) {
@@ -411,25 +419,55 @@ export default function Hero() {
           }
         }
         
+        @media (min-width: 1024px) {
+          :global(.swiper-button-next),
+          :global(.swiper-button-prev) {
+            width: 56px !important;
+            height: 56px !important;
+          }
+        }
+        
         :global(.swiper-button-next:after),
         :global(.swiper-button-prev:after) {
-          font-size: 16px !important;
+          font-size: 12px !important;
           font-weight: 900;
+        }
+        
+        @media (min-width: 375px) {
+          :global(.swiper-button-next:after),
+          :global(.swiper-button-prev:after) {
+            font-size: 14px !important;
+          }
         }
         
         @media (min-width: 640px) {
           :global(.swiper-button-next:after),
           :global(.swiper-button-prev:after) {
-            font-size: 20px !important;
+            font-size: 18px !important;
+          }
+        }
+        
+        @media (min-width: 1024px) {
+          :global(.swiper-button-next:after),
+          :global(.swiper-button-prev:after) {
+            font-size: 22px !important;
           }
         }
         
         :global(.swiper-pagination-bullet) {
-          width: 8px !important;
-          height: 8px !important;
+          width: 6px !important;
+          height: 6px !important;
           background: #cbd5e1 !important;
           opacity: 1 !important;
-          margin: 0 4px !important;
+          margin: 0 3px !important;
+        }
+        
+        @media (min-width: 375px) {
+          :global(.swiper-pagination-bullet) {
+            width: 8px !important;
+            height: 8px !important;
+            margin: 0 4px !important;
+          }
         }
         
         @media (min-width: 640px) {
@@ -442,8 +480,14 @@ export default function Hero() {
         
         :global(.swiper-pagination-bullet-active) {
           background: #dc2626 !important;
-          width: 24px !important;
+          width: 18px !important;
           border-radius: 6px !important;
+        }
+        
+        @media (min-width: 375px) {
+          :global(.swiper-pagination-bullet-active) {
+            width: 24px !important;
+          }
         }
         
         @media (min-width: 640px) {
@@ -453,12 +497,26 @@ export default function Hero() {
         }
         
         :global(.swiper-pagination) {
-          bottom: 20px !important;
+          bottom: 15px !important;
+        }
+        
+        @media (min-width: 375px) {
+          :global(.swiper-pagination) {
+            bottom: 20px !important;
+          }
         }
         
         @media (min-width: 640px) {
           :global(.swiper-pagination) {
             bottom: 30px !important;
+          }
+        }
+        
+        /* Hide navigation on very small screens */
+        @media (max-width: 374px) {
+          :global(.swiper-button-next),
+          :global(.swiper-button-prev) {
+            display: none !important;
           }
         }
         

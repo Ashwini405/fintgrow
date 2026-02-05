@@ -174,22 +174,22 @@ export default function About() {
         </div>
 
         {/* Floating particles */}
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full blur-3xl opacity-20 animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-32 xs:w-48 sm:w-64 h-32 xs:h-48 sm:h-64 bg-gradient-to-r from-blue-100 to-cyan-100 rounded-full blur-3xl opacity-20 animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-48 xs:w-64 sm:w-96 h-48 xs:h-64 sm:h-96 bg-gradient-to-r from-purple-100 to-pink-100 rounded-full blur-3xl opacity-20 animate-float" style={{ animationDelay: '2s' }}></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="relative max-w-7xl mx-auto px-3 xs:px-4 sm:px-6 lg:px-8 py-12 xs:py-16 sm:py-20 md:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xs:gap-10 sm:gap-12 lg:gap-20 items-center">
             
             {/* Left Content */}
             <div className="relative z-10">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-100 mb-8">
-                <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-blue-700">About Our Company</span>
+              <div className="inline-flex items-center gap-2 px-3 xs:px-4 py-1.5 xs:py-2 rounded-full bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-100 mb-6 xs:mb-8">
+                <div className="w-1.5 xs:w-2 h-1.5 xs:h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full animate-pulse"></div>
+                <span className="text-xs xs:text-sm font-medium text-blue-700">About Our Company</span>
               </div>
 
               {/* Main Heading */}
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-8">
+              <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 xs:mb-8 leading-tight">
                 <span className="bg-gradient-to-r from-blue-600 via-cyan-500 to-purple-600 bg-clip-text text-transparent">
                   Transforming Businesses
                 </span>
@@ -198,19 +198,19 @@ export default function About() {
               </h1>
 
               {/* Animated indicator */}
-              <div className="relative w-32 h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent mb-10 overflow-hidden">
+              <div className="relative w-24 xs:w-28 sm:w-32 h-0.5 xs:h-1 bg-gradient-to-r from-transparent via-blue-500 to-transparent mb-8 xs:mb-10 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shimmer"></div>
               </div>
 
               {/* Description */}
-              <div className="space-y-6 mb-10">
-                <p className="text-lg text-slate-700 leading-relaxed">
+              <div className="space-y-4 xs:space-y-6 mb-8 xs:mb-10">
+                <p className="text-base xs:text-lg text-slate-700 leading-relaxed">
                   <span className="font-bold text-blue-600">Arvish Consulting Solutions</span> is a premier 
                   technology partner that delivers value-added innovative IT and software solutions 
                   designed to optimize costs and maximize ROI for businesses worldwide.
                 </p>
                 
-                <p className="text-lg text-slate-700 leading-relaxed">
+                <p className="text-base xs:text-lg text-slate-700 leading-relaxed">
                   Our client-centered approach, combined with cutting-edge technology and 
                   customized service plans, drives measurable business success and sustainable 
                   growth in today's dynamic digital landscape.
@@ -218,7 +218,7 @@ export default function About() {
               </div>
 
               {/* Stats */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 xs:gap-4 sm:gap-6 mb-8 xs:mb-10">
                 {[
                   { value: "15+", label: "Years Experience" },
                   { value: "200+", label: "Projects Delivered" },
@@ -227,39 +227,39 @@ export default function About() {
                 ].map((stat, index) => (
                   <div 
                     key={index} 
-                    className="bg-white/80 backdrop-blur-sm p-4 rounded-xl border border-slate-200 hover-lift hover-glow"
+                    className="bg-white/80 backdrop-blur-sm p-3 xs:p-4 rounded-xl border border-slate-200 hover-lift hover-glow"
                   >
-                    <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                    <div className="text-lg xs:text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
                       {stat.value}
                     </div>
-                    <div className="text-sm text-slate-600 mt-1">{stat.label}</div>
+                    <div className="text-xs xs:text-sm text-slate-600 mt-1">{stat.label}</div>
                   </div>
                 ))}
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              <div className="flex flex-col sm:flex-row gap-3 xs:gap-4">
+                <button className="bg-gradient-to-r from-blue-600 to-cyan-600 text-white px-6 xs:px-8 py-3 xs:py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-sm xs:text-base">
                   Explore Our Services →
                 </button>
-                <button className="bg-white border border-slate-300 text-slate-700 px-8 py-4 rounded-xl font-semibold hover:bg-slate-50 transition-all duration-300">
+                <button className="bg-white border border-slate-300 text-slate-700 px-6 xs:px-8 py-3 xs:py-4 rounded-xl font-semibold hover:bg-slate-50 transition-all duration-300 text-sm xs:text-base">
                   Download Company Profile
                 </button>
               </div>
             </div>
 
             {/* Right Visual - Enhanced Orbit System */}
-            <div className="relative lg:min-h-[600px] flex items-center justify-center">
+            <div className="relative min-h-[400px] xs:min-h-[500px] lg:min-h-[600px] flex items-center justify-center">
               {/* Outer orbit rings */}
-              <div className="absolute w-[500px] h-[500px] sm:w-[550px] sm:h-[550px] lg:w-[600px] lg:h-[600px]">
+              <div className="absolute w-[300px] h-[300px] xs:w-[400px] xs:h-[400px] sm:w-[500px] sm:h-[500px] lg:w-[600px] lg:h-[600px]">
                 {/* Outer ring */}
                 <div className="absolute inset-0 border-2 border-dashed border-blue-200/50 rounded-full animate-spin-slow"></div>
                 
                 {/* Middle ring */}
-                <div className="absolute inset-12 border border-dotted border-cyan-200/50 rounded-full animate-spin-reverse"></div>
+                <div className="absolute inset-6 xs:inset-8 sm:inset-12 border border-dotted border-cyan-200/50 rounded-full animate-spin-reverse"></div>
                 
                 {/* Inner ring */}
-                <div className="absolute inset-24 border border-dashed border-purple-200/50 rounded-full animate-spin-slow"></div>
+                <div className="absolute inset-12 xs:inset-16 sm:inset-24 border border-dashed border-purple-200/50 rounded-full animate-spin-slow"></div>
 
                 {/* Floating nodes */}
                 {[
@@ -274,16 +274,16 @@ export default function About() {
                     key={index}
                     className={`absolute ${node.pos} group`}
                   >
-                    <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${node.color} 
+                    <div className={`w-10 xs:w-12 sm:w-16 h-10 xs:h-12 sm:h-16 rounded-full bg-gradient-to-r ${node.color} 
                       flex items-center justify-center shadow-xl hover-lift cursor-pointer
                       transition-all duration-300 animate-float`}
                       style={{ animationDelay: `${index * 0.5}s` }}
                     >
-                      <div className="text-2xl">{node.icon}</div>
+                      <div className="text-lg xs:text-xl sm:text-2xl">{node.icon}</div>
                     </div>
-                    <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 
-                      transition-all duration-300 text-sm font-semibold text-slate-700 bg-white/90 
-                      backdrop-blur-sm px-3 py-1 rounded-lg shadow-lg whitespace-nowrap">
+                    <div className="absolute -bottom-6 xs:-bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 
+                      transition-all duration-300 text-xs xs:text-sm font-semibold text-slate-700 bg-white/90 
+                      backdrop-blur-sm px-2 xs:px-3 py-1 rounded-lg shadow-lg whitespace-nowrap">
                       {node.label}
                     </div>
                   </div>
@@ -292,7 +292,7 @@ export default function About() {
 
               {/* Center Core */}
               <div className="relative z-10">
-                <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80">
+                <div className="relative w-40 h-40 xs:w-48 xs:h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80">
                   {/* Core gradient */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-cyan-500 to-purple-500 rounded-full blur-xl opacity-30 animate-pulse-slow"></div>
                   
@@ -303,14 +303,14 @@ export default function About() {
                   </div>
 
                   {/* Inner core */}
-                  <div className="absolute inset-8 bg-gradient-to-br from-white to-slate-100 rounded-full 
+                  <div className="absolute inset-4 xs:inset-6 sm:inset-8 bg-gradient-to-br from-white to-slate-100 rounded-full 
                     shadow-2xl flex items-center justify-center hover-scale transition-all duration-500">
-                    <div className="text-center p-6">
-                      <div className="text-4xl mb-4">🚀</div>
-                      <div className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                    <div className="text-center p-3 xs:p-4 sm:p-6">
+                      <div className="text-2xl xs:text-3xl sm:text-4xl mb-2 xs:mb-3 sm:mb-4">🚀</div>
+                      <div className="text-lg xs:text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                         Arvish
                       </div>
-                      <div className="text-sm text-slate-600 mt-2">Consulting</div>
+                      <div className="text-xs xs:text-sm text-slate-600 mt-1 xs:mt-2">Consulting</div>
                     </div>
                   </div>
                 </div>
@@ -318,15 +318,10 @@ export default function About() {
             </div>
           </div>
 
-        
-
-            
-             
-
         </div>
 
         {/* Bottom gradient */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-16 xs:h-24 sm:h-32 bg-gradient-to-t from-white to-transparent"></div>
       </section>
     </>
   );

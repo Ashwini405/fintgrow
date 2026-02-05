@@ -69,11 +69,14 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="flex items-center flex-shrink-0">
             <Link to="/" className="flex items-center gap-2 sm:gap-3 group">
-              <img
-                src={arvishLogo}
-                alt="Arvish Consulting Logo"
-                className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 rounded-full transition-transform group-hover:scale-110 shadow-md"
-              />
+              <div className="relative group-hover:drop-shadow-lg transition-all duration-300">
+                <img
+                  src={arvishLogo}
+                  alt="Arvish Consulting Logo"
+                  className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 transition-all duration-300 group-hover:scale-110 filter group-hover:brightness-110 group-hover:contrast-110 group-hover:saturate-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl"></div>
+              </div>
               <span className="text-lg sm:text-xl lg:text-2xl font-bold tracking-tight font-serif bg-gradient-to-r from-[#1e2875] to-[#3b5998] bg-clip-text text-transparent hidden sm:block">
                 Arvish Consulting
               </span>
@@ -110,7 +113,7 @@ const Navbar = () => {
 
                 {/* Dropdown Menu */}
                 {activeDropdown === menu && (
-                  <div className="absolute top-full left-0 mt-1 bg-white shadow-xl rounded-lg border border-slate-100 min-w-[280px] py-3 animate-fade-in-down z-50">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white shadow-xl rounded-lg border border-slate-100 min-w-[280px] py-3 animate-fade-in-down z-50">
                     {menuItems[menu].map((item, index) => (
                       <Link
                         key={index}
