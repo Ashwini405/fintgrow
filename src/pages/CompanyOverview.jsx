@@ -603,7 +603,7 @@ export const CompanyOverview = () => {
 
           <div className="space-y-6 text-blue-100/90 leading-relaxed">
             <p className="text-lg transform hover:translate-x-2 transition-all duration-500 hover:text-white animate-fade-in-up" style={{animationDelay: '0.3s'}}>
-              <span className="font-semibold text-cyan-300">Fint Solutions</span> was born in the pioneering times of the early 2000s when digital technology was transforming lives and reshaping industries. We've been at the forefront of this revolution ever since.
+              <span className="font-semibold text-cyan-300">Arvish Consulting</span> was born in the pioneering times of the early 2000s when digital technology was transforming lives and reshaping industries. We've been at the forefront of this revolution ever since.
             </p>
             <p className="text-lg transform hover:translate-x-2 transition-all duration-500 hover:text-white animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               As a leading professional services provider for banks, e-commerce, and healthcare companies, we bridge the gap between cutting-edge technology and business success through innovative solutions and strategic partnerships.
@@ -786,7 +786,7 @@ export const CompanyOverview = () => {
         <div className="text-center mb-16">
           <div className="inline-block relative">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-300 bg-clip-text text-transparent mb-4 animate-fade-in-up">
-              The Fint Advantage
+              The Arvish Advantage
             </h2>
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse"></div>
           </div>
